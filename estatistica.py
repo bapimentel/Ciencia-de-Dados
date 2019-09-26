@@ -1,0 +1,106 @@
+# -*- coding: utf-8 -*-
+"""
+
+
+@author: Bruno Pimentel
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Grafico de barras
+from matplotlib.ticker import FuncFormatter
+x = np.arange(4)
+money = [1.5e5, 2.5e6, 5.5e6, 2.0e7]
+def millions(x, pos):
+    'The two args are the value and tick position'
+    return '$%1.1fM' % (x * 1e-6)
+
+formatter = FuncFormatter(millions)
+
+fig, ax = plt.subplots()
+ax.yaxis.set_major_formatter(formatter)
+plt.bar(x, money)
+plt.xticks(x, ('Bill', 'Fred', 'Mary', 'Sue'))
+plt.show()
+
+
+
+# Grafico de pizza
+labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
+sizes = [15, 30, 45, 10]
+explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.show()
+
+
+
+# Histograma
+mu, sigma = 100, 15
+x = mu + sigma * np.random.randn(10000)
+n, bins, patches = plt.hist(x, 50, density=True, facecolor='g', alpha=0.75)
+plt.xlabel('Smarts')
+plt.ylabel('Probability')
+plt.title('Histogram of IQ')
+plt.xlim(40, 160)
+plt.ylim(0, 0.03)
+plt.grid(True)
+plt.show()
+
+
+
+# Grafico de linha
+t = np.arange(0.0, 2.0, 0.05)
+s = 1 + np.sin(2 * np.pi * t)
+fig, ax = plt.subplots()
+ax.plot(t, s, '-o')
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+       title='Line gragh')
+ax.grid()
+plt.show()
+
+
+
+# Grafico de dispersao
+from sklearn.datasets import load_iris
+iris = load_iris()
+x_index = 0
+y_index = 1
+# this formatter will label the colorbar with the correct target names
+formatter = plt.FuncFormatter(lambda i, *args: iris.target_names[int(i)])
+plt.figure(figsize=(5, 4))
+plt.scatter(iris.data[:, x_index], iris.data[:, y_index], c=iris.target)
+plt.colorbar(ticks=[0, 1, 2], format=formatter)
+plt.xlabel(iris.feature_names[x_index])
+plt.ylabel(iris.feature_names[y_index])
+plt.tight_layout()
+plt.show()
+
+
+# Medidas
+import statistics
+from scipy import stats as st
+media = statistics.mean(x)
+media2 = sum(x)/len(x)
+mediana = statistics.median(x)
+amplitude = max(x) - min(x)
+variancia = statistics.variance(x)
+desvio_padrao = statistics.stdev(x)
+coeficente_variacao = st.variation(x)
+
+
+
+# Quartil
+q1 = np.quantile(x, 0.25)
+q2 = np.quantile(x, 0.50)
+q3 = np.quantile(x, 0.75)
+
+
+
+# Boxplot
+fig1, ax1 = plt.subplots()
+ax1.set_title('Boxplot')
+ax1.boxplot(x, vert=False)
