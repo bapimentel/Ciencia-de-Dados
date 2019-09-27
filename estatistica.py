@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-
+Created on Fri Sep 26 13:25:55 2019
 
 @author: Bruno Pimentel
 """
@@ -101,9 +101,9 @@ q3 = np.quantile(x, 0.75)
 
 
 # Boxplot
-fig1, ax1 = plt.subplots()
-ax1.set_title('Boxplot')
-ax1.boxplot(x, vert=False)
+plt.title('Boxplot')
+plt.boxplot(x, vert=False)
+plt.show()
 
 
 
