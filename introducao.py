@@ -37,7 +37,9 @@ pi = math.pi
 100 != 99 + 3
 
 # Atribuicao
-frase = "Me dá um copo d'água"
+numero = 11
+numero
+frase = "Me da um copo d'agua"
 frase
 pi = 3.141592
 pi
@@ -52,25 +54,26 @@ type(y)
 type('Python')
 type(True)
 
+# str
 nome = 'Silvio Santos'
 nome
-canto1 = 'vem aí, '
-canto2 = 'lá '
+canto1 = 'vem ai, '
+canto2 = 'la '
 nome + ' ' + canto1 + canto2 * 6 + '!!'
 len('Abracadabra')
 
 # list
 lista = [100, 200, 300, 400, 500]
 lista[0] #primeiro elemento da lista
-lista[-1] #último elemento da lista
+lista[-1] #ultimo elemento da lista
 lista[-5] #primeiro elemento da lista
-lista[2:4] #da posição 2 até a 4 (não inclusa)
-lista[:3] #até a posição 3 (não incluso)
-lista[2:] #da posição 2 até o final
-lista = ['duas palavras', 42, True, ['batman', 'robin'], -0.84, 'hipófise']
+lista[2:4] #da posicao 2 ate a 4 (nao inclusa)
+lista[:3] #ate a posicao 3 (nao incluso)
+lista[2:] #da posicao 2 ate o final
+lista = ['duas palavras', 42, True, ['batman', 'robin'], -0.84, 'hipofise']
 42 in lista
 'domino' in lista
-'batman' in lista[3] #note que o elemento com índice 3 também é uma lista
+'batman' in lista[3] #note que o elemento com indice 3 tambem eh uma lista
 a = [1, 2, 3]
 b = [4, 5, 6]
 c = a + b
@@ -89,12 +92,12 @@ idades
 constantes = dict(pi=3.14, e=2.7, alpha=1/137)
 print(constantes)
 constantes['e']
-numeros_por_extenso = {2: "dois", 1: "um", 3: "três", 0: "zero"}
+numeros_por_extenso = {2: "dois", 1: "um", 3: "tres", 0: "zero"}
 numeros_por_extenso[0]
 numeros_por_extenso[2]
 numeros_por_extenso[2] = 'two'
 numeros_por_extenso[2]
-meses = {1: "Janeiro", 2: "Fevereiro", 3: "Março"}
+meses = {1: "Janeiro", 2: "Fevereiro", 3: "Marco"}
 meses[4] = "Abril"
 meses
 pessoa = {"nome": "Enzo", "RA": 242334, "curso": "fiscomp"}
@@ -104,6 +107,7 @@ valores = list(pessoa.values())
 valores
 pessoa.keys()
 chaves = list(pessoa.keys())
+chaves
 
 # Estruturas de controle
 True
@@ -125,10 +129,10 @@ for n in range(3):
 lista = [1, 2, 3, 4, 10]
 for numero in lista:
     print(numero ** 2)
-gatos = {"Português": "gato", "Inglês": "cat", "Francês": "chat", "Finlandês":"Kissa"}
+gatos = {"Portugues": "gato", "Ingles": "cat", "Frances": "chat", "Finlandes":"Kissa"}
 for chave, valor in gatos.items():
     print(chave, '->', valor)
-# Aqui iniciamos o n em 0, e repetimos o print até que seu valor seja maior ou igual a 3
+# Aqui iniciamos o n em 0, e repetimos o print ate que seu valor seja maior ou igual a 3
 n = 0
 while n < 3:
     print(n)
@@ -158,9 +162,9 @@ Lista de Alunos
 
 - - -
 
-João da Silva
+Joao da Silva
 
-José Lima
+Jose Lima
 
 Maria das Dores
 
@@ -171,8 +175,8 @@ arq = open('lista.txt', 'w')
 texto = []
 texto.append('Lista de Alunos\n')
 texto.append('- - -\n')
-texto.append('João da Silva\n')
-texto.append('José Lima\n')
+texto.append('Joao da Silva\n')
+texto.append('Jose Lima\n')
 texto.append('Maria das Dores')
 arq.writelines(texto)
 arq.close()
