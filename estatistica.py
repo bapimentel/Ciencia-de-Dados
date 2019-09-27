@@ -104,3 +104,20 @@ q3 = np.quantile(x, 0.75)
 fig1, ax1 = plt.subplots()
 ax1.set_title('Boxplot')
 ax1.boxplot(x, vert=False)
+
+
+
+# Distribuicao Normal
+import math
+SQRT_TWO_PI = math.sqrt(2 * math.pi)
+def normal_pdf(x, mu=0, sigma=1):
+    return (math.exp(-(x-mu) ** 2 / 2 / sigma ** 2) / (SQRT_TWO_PI * sigma))
+
+xs = [a / 10.0 for a in range(-50, 50)]
+plt.plot(xs,[normal_pdf(a,sigma=1) for a in xs],'-',label='mu=0,sigma=1')
+plt.plot(xs,[normal_pdf(a,sigma=2) for a in xs],'--',label='mu=0,sigma=2')
+plt.plot(xs,[normal_pdf(a,sigma=0.5) for a in xs],':',label='mu=0,sigma=0.5')
+plt.plot(xs,[normal_pdf(a,mu=-1)   for a in xs],'-.',label='mu=-1,sigma=1')
+plt.legend()
+plt.title("Various Normal pdfs")
+plt.show()
