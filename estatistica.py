@@ -121,3 +121,33 @@ plt.plot(xs,[normal_pdf(a,mu=-1)   for a in xs],'-.',label='mu=-1,sigma=1')
 plt.legend()
 plt.title("Various Normal pdfs")
 plt.show()
+
+# Exemplo
+from scipy.stats import ttest_ind
+metodo1 = [0.70, 0.75, 0.69, 0.76, 0.81, 0.85]
+metodo2 = [0.73, 0.70, 0.63, 0.61, 0.52, 0.70]
+stat, pvalue = ttest_ind(metodo1,metodo2)
+
+# Teste de normalidade
+import numpy as np
+# Generacao de amostra de uma normal (media=50, desvio=5)
+gauss_data = 5 * np.random.randn(100) + 50
+print('media=%.3f desvio=%.3f' % (np.mean(gauss_data), np.std(gauss_data)))
+# Histograma
+plt.hist(gauss_data)
+# QQ-plot
+from statsmodels.graphics.gofplots import qqplot
+qqplot_data = qqplot(gauss_data, line='s').gca().lines
+# Teste Shapiro-Wilk
+from scipy.stats import shapiro
+stat, pvalue = shapiro(gauss_data)
+
+# Generacao de amostra de uma uniforme
+uniform = np.random.uniform(low=-2, high=2, size=100)
+# Histograma
+plt.hist(uniform)
+# QQ-plot
+qqplot_data = qqplot(uniform, line='s').gca().lines
+# Teste Shapiro-Wilk
+stat, pvalue = shapiro(uniform)
+
