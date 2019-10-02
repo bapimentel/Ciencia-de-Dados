@@ -121,3 +121,63 @@ plt.plot(xs,[normal_pdf(a,mu=-1)   for a in xs],'-.',label='mu=-1,sigma=1')
 plt.legend()
 plt.title("Various Normal pdfs")
 plt.show()
+
+# Exemplo
+from scipy.stats import ttest_ind
+metodo1 = [0.70, 0.75, 0.69, 0.76, 0.81, 0.85]
+metodo2 = [0.73, 0.70, 0.63, 0.61, 0.52, 0.70]
+stat, pvalue = ttest_ind(metodo1,metodo2)
+
+# Teste de normalidade
+import numpy as np
+# Generacao de amostra de uma normal (media=50, desvio=5)
+gauss_data = 5 * np.random.randn(100) + 50
+print('media=%.3f desvio=%.3f' % (np.mean(gauss_data), np.std(gauss_data)))
+# Histograma
+plt.hist(gauss_data)
+# QQ-plot
+from statsmodels.graphics.gofplots import qqplot
+qqplot_data = qqplot(gauss_data, line='s').gca().lines
+# Teste Shapiro-Wilk
+from scipy.stats import shapiro
+stat, pvalue = shapiro(gauss_data)
+
+# Generacao de amostra de uma uniforme
+uniform = np.random.uniform(low=-2, high=2, size=100)
+# Histograma
+plt.hist(uniform)
+# QQ-plot
+qqplot_data = qqplot(uniform, line='s').gca().lines
+# Teste Shapiro-Wilk
+stat, pvalue = shapiro(uniform)
+
+# Intervalo de confianca 
+# Dados
+aluminum = np.array([6.4, 3.01, 2.36, 3.0, 7.0, 4.5, 3.8,4.2, 2.62, 3.6])
+copper = np.array([4.5, 1.97, 1.6, 1.97, 4.0, 2.4, 1.9, 2.41, 1.85, 3.3])
+steel = np.array([3.3, 1.2, 0.9, 1.2, 1.3, 1.6, 1.4,1.58, 1.32, 2.1])
+# Calcular a media
+aluminum_mean = np.mean(aluminum)
+copper_mean = np.mean(copper)
+steel_mean = np.mean(steel)
+# Calcular o desvio padrao
+aluminum_std = np.std(aluminum)
+copper_std = np.std(copper)
+steel_std = np.std(steel)
+# Definir labels e posicoes
+labels = ['Aluminio', 'Cobbre', 'Aco']
+x_pos = np.arange(len(labels))
+CTEs = [aluminum_mean, copper_mean, steel_mean]
+error = [aluminum_std, copper_std, steel_std]
+# Contrucao do grafico
+fig, ax = plt.subplots()
+ax.bar(x_pos,CTEs,yerr=error,align='center',alpha=0.5,ecolor='black',capsize=10)
+ax.set_ylabel('Coeficiente de expansao termica')
+ax.set_xticks(x_pos)
+ax.set_xticklabels(labels)
+ax.set_title('Coeficiente de expansao termica dos tres materiais')
+ax.yaxis.grid(True)
+plt.tight_layout()
+plt.show()
+
+
