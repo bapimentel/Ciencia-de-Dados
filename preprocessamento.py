@@ -12,7 +12,7 @@ from sklearn.impute import SimpleImputer # used for handling missing data
 from sklearn.model_selection import train_test_split # used for splitting training and testing data
 from sklearn.preprocessing import StandardScaler # used for feature scaling
 
-dataset = pd.read_csv('Data.csv') # to import the dataset into a variable
+dataset = pd.read_csv('Dados/Data.csv') # to import the dataset into a variable
 # Splitting the attributes into independent and dependent attributes
 X = dataset.iloc[:, :-1].values # attributes to determine dependent variable / Class
 Y = dataset.iloc[:, -1].values # dependent variable / Class
