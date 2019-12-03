@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
 
-
+# https://fred.stlouisfed.org/series/SPCS20RPSNSA
 data = pd.read_csv("Dados/SPCS20RPSNSA.csv",index_col=0)
 data.head()
 
