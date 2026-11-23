@@ -34,6 +34,7 @@ Principais colunas: `dteday` (data), `hr` (hora), `yr` (0 = 2011, 1 = 2012), `mn
 | 4. Prever a demanda | `04_prever_demanda.py` | `04_previsao_trimestre.png` |
 | 5. Validar a previsão | `05_validar_a_previsao.py` | `05_validar_a_previsao.png` |
 | 6. Janelas operacionais | `06_janelas_operacionais.py` | `06_janelas_operacionais.png` |
+| 7. Efeito das decisões | `07_efeito_das_decisoes.py` | `07_efeito_das_decisoes.png` |
 
 ---
 
@@ -166,39 +167,68 @@ Nos fins de semana, a média passa de 300 aluguéis por hora das 10h às 18h. En
 
 ![Janelas operacionais](figuras/06_janelas_operacionais.png)
 
+## Passo 7 · Qual o efeito medido das duas decisões?
+
+**Pergunta:** quanto a janela de manutenção e o dimensionamento pela previsão mudam, em números, a operação de 2012?
+
+**(a) Janela de manutenção.** Retirar bicicletas para manutenção só afeta quem quer alugar naquele horário. Medimos, para todas as janelas de 3 horas, a parte dos aluguéis de 2012 que acontece nela:
+
+| Janela | % dos aluguéis de 2012 | Maior número de aluguéis numa hora |
+|---|---|---|
+| **3h–5h** | **0,80%** (16 448 de 2 049 576) | **79** |
+| 2h–4h | 0,83% | 132 |
+| 1h–3h | 1,42% | 168 |
+| 16h–18h (a mais movimentada) | 26,5% | 977 (o pico do ano) |
+
+**(b) Equipe do dia dimensionada pela previsão.** A equipe que redistribui bicicletas é planejada pelo volume esperado do dia. Contamos os dias em que a demanda real ficou mais de 20% **acima** do planejado (equipe subdimensionada) ou mais de 20% **abaixo** (equipe ociosa), comparando a regra atual (média dos 7 dias anteriores) com o modelo do Passo 5, treinado em cada trimestre com tudo o que veio antes:
+
+| Trimestre | Fora da faixa de ±20%: regra atual → modelo | Subdimensionado: regra atual → modelo |
+|---|---|---|
+| 2012-T1 (treino só com 2011) | 39 → 53 | 23 → 49 |
+| 2012-T2 | 22 → 19 | 10 → 10 |
+| 2012-T3 | 14 → 9 | 7 → 2 |
+| 2012-T4 | 34 → 21 | 15 → 5 |
+| **T2 a T4** (com ≥ 1 ano de histórico) | **70 → 49 (−30%)** | **32 → 17 (−47%)** |
+
+![Efeito das decisões](figuras/07_efeito_das_decisoes.png)
+
+**Como ler:** a janela 3h–5h é a de menor uso do dia, com 0,8% dos aluguéis do ano e no máximo 79 aluguéis numa hora. Com pelo menos um ano de histórico, o modelo reduz em 30% os dias em que o planejamento erra por mais de 20%, e quase pela metade os dias de equipe insuficiente. Em 2012-T1 o modelo piora (Passo 5): sem um ano completo, ele não aprende o crescimento do sistema.
+
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- Nos dias úteis, 7–9h e 17–19h concentram de 50% a 55% dos aluguéis em **todos os 24 meses**, e 1h–5h fica entre 0,9% e 1,6%. O perfil de 2011 e o de 2012 têm correlação de 0,999 (Passo 3).
-- Nos fins de semana, o uso se concentra das 10h às 18h, com pico às 13h nos dois anos (Passos 3 e 6).
-- Um modelo linear com calendário, clima e nível recente reduz o erro da previsão diária em 10% a 20% depois de um ano de histórico, inclusive com clima previsto (Passo 5).
+- O perfil horário é estável: horas de pico com 50% a 55% do uso em todos os 24 meses, madrugada abaixo de 2% (Passo 3).
+- A janela 3h–5h concentra 0,8% dos aluguéis de 2012 (Passo 7).
+- Com pelo menos um ano de histórico, a previsão do modelo erra menos que a média dos 7 dias anteriores em todos os trimestres testados (Passos 5 e 7).
 
-**2. Ações.**
-- **Manutenção programada entre 3h e 5h**, a janela de menor uso em todos os dias (1h–2h ainda têm uso nos fins de semana).
-- **Redistribuição e equipe reforçadas antes das 7h e das 16h nos dias úteis**, e antes das 10h nos fins de semana.
-- **Dimensionar a equipe do dia** com a previsão do modelo e a previsão do tempo, sabendo que o erro típico é de cerca de 17% do volume. Nos primeiros meses de um sistema novo, ou depois de uma expansão grande, usar a média dos 7 dias anteriores: foi ela que funcionou melhor quando o histórico não cobria o novo nível (2012-T1).
+**2. Decisões e efeitos medidos.**
 
-**3. Como acompanhar, com referências medidas aqui:**
+| Decisão | Efeito medido em 2012 |
+|---|---|
+| Fazer a manutenção programada entre **3h e 5h** | afeta no máximo **0,8%** dos aluguéis do ano (no pior caso, 79 aluguéis numa hora), contra 26,5% se fosse feita das 16h às 18h |
+| Dimensionar a equipe diária pela **previsão do modelo**, sempre que houver pelo menos um ano de histórico | dias com equipe fora da faixa de ±20%: **70 → 49 (−30%)**; dias com equipe insuficiente: **32 → 17 (−47%)** (T2 a T4 de 2012) |
+| No primeiro ano de operação, ou depois de uma expansão grande, usar a **média dos 7 dias anteriores** | em 2012-T1, a regra simples errou em 39 dias, contra 53 do modelo |
+| Reforçar a redistribuição antes das 7h e das 16h nos dias úteis e antes das 10h nos fins de semana | as horas 7–9h e 17–19h concentram 50% a 55% dos aluguéis dos dias úteis em todos os meses |
 
-| Indicador | Referência medida | Sinal de alerta |
+**3. Como acompanhar:**
+
+| Indicador | Referência medida | Ação se sair da faixa |
 |---|---|---|
-| Participação de 7–9h e 17–19h nos dias úteis, por mês | 50% a 55% em 24 meses | fora dessa faixa por dois meses seguidos: o padrão mudou (por exemplo, trabalho remoto) e as escalas precisam ser revistas |
-| Participação de 1–5h | 0,9% a 1,6% | acima de 3%: a janela de manutenção deixou de ser vazia |
-| Erro da previsão diária, por trimestre | 16% a 17% da média (T4/2012) | acima de 20%, o nível da linha de base: o modelo deixou de compensar |
-
-**4. O que não podemos afirmar.** A base não tem estações nem demanda não atendida. Nos picos, o uso observado pode estar limitado pela falta de bicicletas ou de vagas. Para decidir **onde** colocar bicicletas, seria preciso registrar, por estação e por hora, quantas vezes ela ficou vazia ou cheia.
+| Dias por trimestre com equipe fora da faixa de ±20% | 9 a 21 com o modelo (T2–T4/2012) | acima de 25: retreinar o modelo |
+| Participação de 7–9h e 17–19h nos dias úteis | 50% a 55% em 24 meses | fora da faixa por dois meses: rever horários de reforço |
+| Participação de 3h–5h | 0,8% em 2012 | acima de 2%: rever a janela de manutenção |
 
 ## Limites
 
 - Uma cidade, dois anos; o crescimento de 64% entre os anos se mistura com a sazonalidade.
-- O erro da previsão do tempo foi simulado, não medido.
-- Horas sem nenhum aluguel não aparecem em `hour.csv`; as médias por hora consideram apenas as horas presentes (165 horas ausentes em dois anos, quase todas de madrugada).
+- O clima usado no Passo 7 é o observado; o Passo 5 mostrou que, com erro de previsão do tempo de 2 °C a 3 °C, o erro médio do modelo sobe de 834 para 880–890 aluguéis por dia, ainda abaixo dos 1 043 da regra atual.
+- A base não tem estações: as decisões são sobre o sistema inteiro, não sobre onde colocar cada bicicleta.
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 07 e confira os números deste texto.
 2. **Variação.** No script `05`, troque o modelo linear por uma floresta. Ela também perde em 2012-T1? Por quê?
 3. **Pergunta aberta.** Em que horas os usuários avulsos superam os assinantes? O que isso sugere sobre comunicação e preços para esse público?
 4. **Crítica.** A recomendação de manutenção usa 3h–5h. Que dado adicional você pediria à operadora antes de fixar essa janela (pense em turnos de trabalho e em segurança)?

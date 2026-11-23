@@ -65,25 +65,25 @@ O repositório tem mais de uma centena de figuras e onze animações, todas gera
 
 ## Sete problemas para investigar
 
-Os estudos de caso seguem sempre a mesma ordem: **primeiro encontrar o resultado, depois verificá-lo em dados que não foram usados para encontrá-lo, e só então recomendar**. Em três deles, a verificação muda a recomendação que a análise inicial parecia sugerir.
+Os estudos de caso seguem sempre a mesma ordem: **encontrar o resultado, verificá-lo em dados que não foram usados para encontrá-lo, decidir e medir o efeito da decisão**. Cada um termina com uma frase do tipo "observamos isto, portanto decidimos aquilo, porque o efeito medido é este", com número e unidade, e também com o custo da decisão.
 
-**Reclamações em aeroportos** ([caso 01](18_estudos_de_caso/01_reclamacoes_tsa/)). Um modelo fraco para decidir pode ser útil para ordenar a fila? Treinado no 1º semestre, ele colocou 62% dos casos pagos na primeira metade da fila do 2º semestre.
+**Reclamações em aeroportos** ([caso 01](18_estudos_de_caso/01_reclamacoes_tsa/)). Um modelo fraco para decidir pode ser útil para ordenar a fila? Simulando a fila com os desfechos reais de quatro meses que o modelo não viu, ordenar por ele reduz em 25% a espera até o pagamento, com teto de 20 dias para quem espera mais.
 
-**Energia doméstica** ([caso 02](18_estudos_de_caso/02_energia_domestica/)). Onde está o consumo, e que tamanho de mudança os dados conseguiriam detectar? Sem ninguém mudar nada, o consumo noturno varia até 19%.
+**Energia doméstica** ([caso 02](18_estudos_de_caso/02_energia_domestica/)). Onde cortar, numa casa com tarifa única? Medindo cada madrugada contra o nível de verão, a carga extra noturna custou 229 kWh, US$ 48, 5,3% da conta do último ano.
 
-**Vendas em supermercado** ([caso 03](18_estudos_de_caso/03_vendas_supermercado/)). O "pico das 19h" se repete de um mês para o outro? Não: a recomendação honesta é não mexer na escala com três meses de dados.
+**Vendas em supermercado** ([caso 03](18_estudos_de_caso/03_vendas_supermercado/)). O "pico das 19h" não se repete de um mês para o outro, e é justamente a demanda sem padrão que indica a política de estoque certa: em semanas que ela não viu, as semanas com falta de produto caem de 48% para 7%.
 
-**Bicicletas compartilhadas** ([caso 04](18_estudos_de_caso/04_mobilidade_bicicletas/)). Os horários de pico são estáveis o bastante para organizar a operação? Sim: em todos os 24 meses, as horas de pico concentraram de 50% a 55% do uso.
+**Bicicletas compartilhadas** ([caso 04](18_estudos_de_caso/04_mobilidade_bicicletas/)). Quando fazer a manutenção e quantas pessoas escalar? A janela 3h–5h atinge 0,8% dos aluguéis do ano, e dimensionar a equipe pela previsão quase reduz à metade os dias de equipe insuficiente.
 
-**Desempenho escolar** ([caso 05](18_estudos_de_caso/05_educacao_desempenho/)). Uma regra simples, criada com uma turma, alcança os alunos em risco de outra? Sim: 84% dos reprovados da turma de matemática.
+**Desempenho escolar** ([caso 05](18_estudos_de_caso/05_educacao_desempenho/)). A quem oferecer reforço com vagas limitadas? Uma regra simples, criada com uma turma, leva o apoio a 109 dos 130 alunos que reprovariam em outra; uma lista sorteada do mesmo tamanho alcançaria 56.
 
-**Varejo on-line** ([caso 06](18_estudos_de_caso/06_varejo_online/)). Os clientes que mais cancelam continuam cancelando? Não; e metade do valor cancelado no ano eram dois erros de digitação corrigidos em minutos.
+**Varejo on-line** ([caso 06](18_estudos_de_caso/06_varejo_online/)). Quem cancela vai embora? Não: para de comprar menos. A quem ligar, então? Uma lista com 10% dos clientes, ordenada pela perda esperada, contém 55% da receita em risco do trimestre seguinte.
 
-**Votações na Wikipédia** ([caso 07](18_estudos_de_caso/07_votacoes_wikipedia/)). O que a estrutura de uma rede permite concluir sobre pessoas, e o que não permite?
+**Votações na Wikipédia** ([caso 07](18_estudos_de_caso/07_votacoes_wikipedia/)). O que a estrutura de uma rede permite fazer sem julgar pessoas? Sugerir a cada usuário eleições para acompanhar acerta 2,6 vezes mais que a página por popularidade, sem fechar os grupos em si mesmos.
 
 ## A pergunta final
 
-No [projeto final](19_projeto_final/), você escolherá um problema e construirá uma análise capaz de sustentar uma decisão: o que foi observado, como foi verificado, que ação decorre disso e que indicador, com que referência medida, permitirá avaliar o resultado.
+No [projeto final](19_projeto_final/), você escolherá um problema e construirá uma análise capaz de sustentar uma decisão: o que foi observado, como foi verificado, que ação decorre disso, qual o efeito medido dessa ação e que indicador permitirá acompanhá-la.
 
 ## O livro
 

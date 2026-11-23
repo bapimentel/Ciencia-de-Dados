@@ -1,18 +1,19 @@
 # Estudo de caso 7 · Votações para administrador na Wikipédia
 
-> **Aplicação adicional — não integra o livro.** Aplica a unidade [17 · Redes sociais](../../17_redes_sociais/) a uma rede real grande. Técnicas usadas: grafo dirigido, distribuições de grau, centralidades, detecção de comunidades, estabilidade de um algoritmo, comparação com um modelo nulo (acaso).
+> **Aplicação adicional — não integra o livro.** Aplica a unidade [17 · Redes sociais](../../17_redes_sociais/) a uma rede real grande. Técnicas usadas: grafo dirigido, distribuições de grau, centralidades, detecção de comunidades, estabilidade de um algoritmo, comparação com um modelo nulo (acaso), recomendação por similaridade avaliada em votos escondidos.
 
 ## A situação
 
 Na Wikipédia em inglês, usuários votam para decidir quem se torna administrador. Uma pessoa responsável pela integridade do processo pergunta se há **padrões de votação que mereçam atenção**, por exemplo, grupos que votam sempre juntos.
 
-Esta é uma pergunta delicada: envolve pessoas, e a base tem pouca informação. O caso ensina a ir até onde os dados permitem e a **parar** ali, separando com clareza o que é descrição estrutural do que seria acusação.
+Esta é uma pergunta delicada: envolve pessoas, e a base tem pouca informação. O caso ensina a separar com clareza o que é descrição estrutural do que seria acusação, e a usar a estrutura encontrada numa decisão sobre o **processo**, com efeito medido.
 
 1. Como é a rede de votos: quem vota, quem recebe, quão concentrado?
 2. Quem é "central", e as definições de centralidade concordam?
 3. Há comunidades, e quão nítidas são?
 4. O padrão "votar quase só dentro da própria comunidade" é estável e diferente do acaso?
 5. O que é legítimo fazer com isso?
+6. Que eleições mostrar a cada usuário experiente, para que ele encontre aquelas em que tem contexto para participar?
 
 ## Os dados
 
@@ -31,6 +32,7 @@ Um arco não é amizade, não é "seguir" e não é influência: é a participa�
 | 3. Comunidades | `03_comunidades.py` (grava `dados/comunidades.csv`) | `03_comunidades.png` |
 | 4. Estabilidade e acaso | `04_estabilidade_e_acaso.py` (grava `dados/criterio_estavel.csv`) | `04_estabilidade_e_acaso.png` |
 | 5. Critério exploratório | `05_criterio_exploratorio.py` | `05_criterio_exploratorio.png` |
+| 6. Recomendar eleições | `06_recomendar_eleicoes.py` | `06_recomendar_eleicoes.png` |
 
 O script 02 aproxima a intermediação com 400 nós de origem sorteados (semente fixa); o cálculo exato levaria vários minutos. O script 04 roda o Louvain cinco vezes e faz 50 simulações.
 
@@ -138,38 +140,88 @@ A semelhança entre as partições (informação mútua normalizada) vai de 0,55
 
 **Como ler:** são eleitores, não candidatos (mediana de 0 votos recebidos), com participação um pouco menor que a dos demais ativos. Esse perfil é compatível com explicações comuns, como usuários ativos num **mesmo período** (participaram das eleições daquela época) ou numa **mesma área temática**. Sem datas e sem a direção dos votos, não há como distinguir isso de coordenação.
 
+**Conclusão do passo:** nenhuma decisão sobre usuários é tomada a partir deste padrão. O que ele mostra, e o Passo 6 aproveita, é que a participação em eleições segue grupos de interesse estáveis o bastante para prever onde cada pessoa participa.
+
+## Passo 6 · Que eleições mostrar a cada usuário?
+
+**Pergunta:** se a página de "eleições em andamento" mostrar a cada usuário experiente 10 eleições, que critério leva as pessoas às eleições em que elas de fato participam, sem concentrar a atenção em poucos candidatos nem fechar cada grupo em si mesmo?
+
+Os Passos 3 a 5 mostraram que a participação tem estrutura: usuários votam, em grande parte, nas mesmas eleições que outros usuários parecidos com eles. Essa estrutura serve para uma decisão sobre o **processo**, e não sobre pessoas: ajudar cada um a encontrar eleições em que tem contexto para opinar. Como a base não tem o sentido dos votos, o sistema sugere **onde participar**, nunca em quem votar.
+
+**Como medimos.** É a avaliação padrão de sistemas de recomendação: para cada um dos 1 691 usuários com pelo menos 10 votos, **escondemos 20% das eleições em que ele votou** (18 747 votos ao todo). Cada método vê só o restante, sugere 10 eleições, e contamos quantas das sugestões são eleições escondidas, ou seja, em que o usuário de fato votou.
+
+| Método | Como escolhe as 10 eleições |
+|---|---|
+| Popularidade | as 10 com mais votos (o que uma página simples mostraria) |
+| Eleitores parecidos | as eleições com mais eleitores em comum com as que o usuário já votou (similaridade de cosseno) |
+| Eleitores parecidos, com 3 vagas de fora | 7 sugestões pelo método anterior e 3 reservadas às melhores eleições **fora** da comunidade do usuário |
+| Sorteio | 10 eleições ao acaso |
+
+```python
+similaridade = (M.T @ M) / norma[:, None] / norma[None, :]     # eleição x eleição
+escore = similaridade[ja_votou].sum(axis=0)
+escore[ja_votou] = -np.inf
+```
+
+Também medimos dois efeitos colaterais: a **concentração** (fração das sugestões entre os 50 candidatos mais votados) e a **bolha** (fração das sugestões dentro da comunidade do próprio usuário, comparada com a fração dos seus votos reais que fica na própria comunidade, 67,1%).
+
+**O que saiu:**
+
+| Método | Sugestões em que o usuário votou | Entre os 50 mais populares | Na comunidade do usuário |
+|---|---|---|---|
+| Popularidade | 5,9% | 100% | 18,7% |
+| Eleitores parecidos | **16,5%** | 11,4% | 79,4% |
+| **Parecidos, com 3 vagas de fora** | **15,4%** | 14,0% | **60,7%** |
+| Sorteio | 0,7% | 1,8% | 19,8% |
+
+A diferença de acerto entre "eleitores parecidos" e "popularidade" é de 10,6 pontos, com intervalo de 95% de 9,5 a 11,8 pontos (reamostragem dos usuários).
+
+![Recomendar eleições](figuras/06_recomendar_eleicoes.png)
+
+**Como ler:**
+
+- Sugerir por eleitores parecidos acerta **2,8 vezes** mais que mostrar as eleições mais populares.
+- A página por popularidade concentra **toda** a atenção nos 50 candidatos mais votados; a recomendação por parecidos distribui a atenção entre muito mais candidatos.
+- Mas ela tem um efeito colateral medido: 79% das sugestões caem na comunidade do próprio usuário, mais que os 67% dos seus votos reais. Ela **fecharia** os grupos.
+- Reservar 3 das 10 vagas para eleições de fora corrige isso (60,7%, abaixo dos 67% reais) e custa pouco: o acerto cai de 16,5% para 15,4%, ainda **2,6 vezes** o da popularidade.
+
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- A rede tem estrutura de comunidades bem acima do acaso (modularidade 0,43 contra 0,13), mas porosa (Passo 3).
-- O padrão "votar quase só dentro da própria comunidade" nunca aparece com os votos embaralhados, mas o conjunto de usuários que o exibe muda muito com a semente do algoritmo: 313 aparecem em alguma rodada e 68 em todas (Passo 4).
-- Esses 68 são eleitores que nunca foram candidatos, concentrados em duas comunidades (Passo 5).
+- A participação tem estrutura de comunidades bem acima do acaso (modularidade 0,43 contra 0,13), estável na escala da rede, embora a atribuição de cada usuário mude com a semente do algoritmo (Passos 3 e 4).
+- O padrão "votar quase só na própria comunidade" descreve concentração de participação; a base não tem sentido nem data dos votos, então ele não identifica conduta de ninguém (Passos 4 e 5). Nenhuma ação sobre usuários é tomada a partir dele.
+- Essa mesma estrutura prevê em que eleições cada usuário participa, em votos que o método não viu (Passo 6).
 
-**2. O que não é legítimo.** Usar qualquer métrica desta análise para suspeitar de, nomear ou sancionar usuários. A base não registra o que seria necessário para falar de coordenação: quando cada voto foi dado e em que sentido.
+**2. Decisão.** Na página de eleições em andamento, mostrar a cada usuário experiente (≥ 10 votos) **10 eleições: 7 escolhidas por eleitores parecidos e 3 reservadas a eleições de fora da sua comunidade**. O sistema sugere onde participar; não sugere voto, não oculta nenhuma eleição (a lista completa continua acessível) e não usa dados além da participação.
 
-**3. O que é legítimo.**
-- Se houver uma revisão, **começar pelos 68 usuários estáveis**, e não pelos 130 a 223 de uma única rodada do algoritmo: a escolha não dependeria de uma semente arbitrária.
-- **Coletar os dados que faltam**: data e hora de cada voto, sentido (apoio, oposição, neutro) e resultado de cada eleição.
+**3. Efeito medido** (votos escondidos de 1 691 usuários):
 
-**4. Como a pergunta poderia ser respondida depois da coleta**, com a mesma lógica de comparação com o acaso usada no Passo 4:
-
-| Item | Definição | Referência |
+| Medida | Página atual (popularidade) | Decisão (parecidos + 3 de fora) |
 |---|---|---|
-| Métrica principal | fração das eleições em que um mesmo subconjunto de usuários vota no mesmo sentido num intervalo curto (por exemplo, uma hora) | a mesma fração com os horários embaralhados entre os votos de cada eleição |
-| Critério para investigar | fração real acima de toda a faixa obtida nas simulações embaralhadas | no Passo 4, a rede real ficou acima de 50 em 50 simulações para o padrão de comunidade |
-| Robustez | o subconjunto aparece com diferentes sementes e parâmetros | no Passo 4, só 68 de 313 usuários sobreviveram a 5 sementes |
+| Sugestões em que o usuário de fato participa | 5,9% | **15,4%** (2,6 vezes) |
+| Sugestões concentradas nos 50 candidatos mais votados | 100% | **14,0%** |
+| Sugestões na comunidade do próprio usuário | 18,7% | **60,7%**, abaixo dos 67,1% dos seus votos reais: sem efeito bolha |
+
+**4. Como acompanhar:**
+
+| Indicador | Referência medida | Ação se sair da faixa |
+|---|---|---|
+| % das sugestões em eleições em que o usuário participa | 15,4% | abaixo de 10%: recalcular as similaridades com os votos recentes |
+| % das sugestões na comunidade do próprio usuário | 60,7% (votos reais: 67,1%) | acima de 67%: aumentar as vagas de fora |
+| % das sugestões nos 50 candidatos mais votados | 14,0% | acima de 30%: a página voltou a concentrar a atenção |
+| Votos recebidos por candidato | distribuição atual (Passo 1) | se a recomendação passar a definir resultados, a regra de vagas de fora deve ser revista com a comunidade |
 
 ## Limites
 
-- Recorte até janeiro de 2008, sem datas: nada se diz sobre o processo atual da Wikipédia.
-- As comunidades ignoram a direção dos votos e dependem do algoritmo e da semente.
+- Recorte até janeiro de 2008, sem datas: a avaliação esconde votos ao acaso, não "o futuro"; num sistema em uso, a mesma medida deve ser feita com as eleições seguintes.
+- As comunidades ignoram a direção dos votos e dependem do algoritmo e da semente; a regra das 3 vagas usa a partição da semente 0.
 - Centralidade e comunidade descrevem **posição** na estrutura, nunca **intenção**.
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 05 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
 2. **Variação.** No script `04`, troque o critério para "pelo menos 50 votos e mais de 80% dentro". Quantos usuários ficam estáveis nas cinco sementes?
 3. **Pergunta aberta.** Repita o Passo 2 só para os 1 376 usuários que votaram e receberam votos. As centralidades passam a concordar mais?
 4. **Crítica.** Alguém propõe "remover o direito de voto dos 68 usuários estáveis". Escreva um parágrafo explicando, com os números dos Passos 4 e 5, por que essa decisão não se apoia nos dados.

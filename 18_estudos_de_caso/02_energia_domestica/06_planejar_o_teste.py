@@ -1,8 +1,8 @@
-# Estudo de caso 2 - Energia domestica. Passo 6: quanto uma mudanca de habito precisaria reduzir para ser
-# percebida nos dados? Antes de recomendar uma meta, medimos a variacao NATURAL do consumo noturno.
+# Estudo de caso 2 - Energia domestica. Passo 6: por que nao medir uma mudanca pelo "antes e depois"?
+# Medimos a variacao NATURAL do consumo noturno (18h-23h) entre periodos, sem nenhuma intervencao.
 # Metodo ("placebo"): em todos os periodos de 8 semanas da base, SEM nenhuma intervencao, comparamos o consumo
 # noturno com (a) as 8 semanas anteriores e (b) as mesmas 8 semanas do ano anterior. As diferencas que
-# aparecem sem intervencao mostram o tamanho minimo que uma mudanca real teria de ter para se destacar.
+# aparecem sem intervencao mostram por que comparar periodos inteiros nao mede o efeito de uma acao (ver passo 7).
 
 import os
 import numpy as np
@@ -31,16 +31,6 @@ for nome, d in [('8 semanas x 8 anteriores', dif_anterior), ('8 semanas x mesmo 
 # sozinha em 95% das comparacoes placebo (5o percentil).
 limite_ano = -dif_ano.quantile(0.05)
 print(f'\nComparando com o mesmo periodo do ano anterior, quedas de ate {limite_ano:.0%} aparecem sem intervencao em 5% dos casos.')
-
-# Cenarios aritmeticos: quanto valeria cada reducao, por ano
-dias = (horario.index.max() - horario.index.min()).days + 1
-kwh_ano = horario['Consumo_kWh'].sum() / dias * 365
-parte_noite = horario.loc[horario.index.hour >= 18, 'Consumo_kWh'].sum() / horario['Consumo_kWh'].sum()
-print(f'\nConsumo anualizado {kwh_ano:.0f} kWh (US$ {kwh_ano * tarifa:.0f}); noite = {parte_noite:.0%}')
-for reducao in [0.10, 0.20, 0.30, limite_ano]:
-    kwh = kwh_ano * parte_noite * reducao
-    marca = '  <- menor queda distinguivel do acaso' if reducao == limite_ano else ''
-    print(f'  reduzir a noite em {reducao:.0%}: {kwh:.0f} kWh/ano, US$ {kwh * tarifa:.0f}/ano, {kwh / kwh_ano:.1%} da conta{marca}')
 
 fig, (esq, dir) = plt.subplots(1, 2, figsize=(13, 4.3))
 esq.plot(noite.index, noite.values, color='#8794A3', linewidth=0.8, label='semana')

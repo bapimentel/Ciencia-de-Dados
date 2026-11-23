@@ -2,7 +2,7 @@
 
 **Pergunta inicial:** em um grupo de 34 pessoas, quem é a mais importante? A resposta muda conforme "importante" signifique ter mais contatos, estar perto de todos, ser a ponte entre dois lados ou ser apontado por quem é importante. Como escolher a definição que serve à sua pergunta?
 
-Uma **rede social** é um conjunto de atores (pessoas, páginas, contas) e das relações entre eles (amizade, mensagem, citação, voto). Matematicamente, é um **grafo**: os atores são **nós** e as relações são **arestas**. Nesta unidade construímos grafos pequenos, à mão ou clássicos, porque o objetivo é ver exatamente o que cada métrica calcula. A aplicação a uma rede real grande está no estudo de caso [07 · Votações na Wikipédia](../18_estudos_de_caso/07_votacoes_wikipedia/).
+Uma **rede social** é um conjunto de atores (pessoas, páginas, contas) e das relações entre eles (amizade, mensagem, citação, voto). Matematicamente, é um **grafo**: os atores são **nós** e as relações são **arestas**. Nesta unidade construímos grafos pequenos, à mão ou clássicos, porque o objetivo é ver exatamente o que cada métrica calcula. A aplicação a uma rede real grande está no estudo de caso [07 · Votações na Wikipédia](../18_estudos_de_caso/07_votacoes_wikipedia/): lá, a semelhança entre eleitores (quantos eleitores duas eleições têm em comum) vira um sistema que sugere a cada usuário eleições para acompanhar, com acerto medido em votos escondidos e controle do efeito bolha.
 
 | Script | O que faz | Figuras |
 |---|---|---|

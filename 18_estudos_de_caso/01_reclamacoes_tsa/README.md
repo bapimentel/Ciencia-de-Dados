@@ -42,7 +42,8 @@ Vamos responder em sete passos. Em cada um: a pergunta do passo, o que o script 
 | 4. Um modelo antecipa o desfecho? | `04_prever_desfecho.py` | `04_modelos_desfecho.png` |
 | 5. Quanto se paga | `05_analisar_valores_recebidos.py` | `05_valores_pagos.png` |
 | 6. Validar no tempo | `06_validar_no_tempo.py` | `06_validacao_no_tempo.png` |
-| Opcional | `07_shap_opcional.py` (requer `pip install shap`) | `07_shap_beeswarm.png` |
+| 7. Medir o efeito na fila | `07_simular_a_fila.py` | `07_simulacao_da_fila.png` |
+| Opcional | `08_shap_opcional.py` (requer `pip install shap`) | `07_shap_beeswarm.png` |
 
 Rode na ordem: os scripts 03 a 06 leem o arquivo gravado pelo 02.
 
@@ -215,33 +216,74 @@ prob = modelo.predict_proba(X[~treino])[:, 1]
 
 ![Validação no tempo](figuras/06_validacao_no_tempo.png)
 
-**Quem iria para o fim da fila?** Entre os 25% de casos com menor probabilidade prevista de pagamento, joias e relógios aparecem 3,1 vezes mais do que no total, eletrônicos pessoais 1,6 vez e "Outros" 1,5 vez. Esses passageiros esperariam mais.
+**Quem iria para o fim da fila?** Entre os 25% de casos com menor probabilidade prevista de pagamento, joias e relógios aparecem 3,1 vezes mais do que no total, eletrônicos pessoais 1,6 vez e "Outros" 1,5 vez. Esses passageiros esperariam mais. O Passo 7 mede quanto.
+
+## Passo 7 · Quantos dias a ordenação economiza, e quanto custa a quem espera mais?
+
+**Pergunta:** colocar o modelo para ordenar a fila muda o tempo até o pagamento? Em quanto?
+
+O Passo 6 mostrou **onde** os casos pagos ficam na fila. Para transformar isso em **dias**, construímos um modelo da fila e o rodamos com as reclamações de julho a outubro de 2015 (1 700 casos, que o modelo de previsão não viu):
+
+- cada reclamação entra na fila no dia em que foi recebida (em média, 13,9 por dia);
+- a equipe analisa um número fixo de reclamações por dia;
+- **política atual:** ordem de chegada;
+- **política proposta:** maior probabilidade de pagamento primeiro, com um **teto**: quem completa 30 dias de espera passa à frente de todos.
+
+```python
+aguardando.sort(key=lambda i: (dia - fila.at[i, 'dia'] < teto, -fila.at[i, 'prob']))
+atendidos, aguardando = aguardando[:capacidade], aguardando[capacidade:]
+```
+
+A ordem de análise não muda **se** um caso é pago (essa decisão continua com o analista); muda **quando**. Por isso o efeito pode ser medido simulando a fila com os desfechos reais.
+
+A base não informa quantas reclamações a equipe analisa por dia. Em vez de supor um número, rodamos a simulação para quatro capacidades, de 12 a 15 por dia (abaixo, igual e acima da média de chegadas):
+
+| Capacidade | Espera dos casos pagos: atual → modelo | Espera ponderada pelo valor pago | Espera dos negados | Maior espera |
+|---|---|---|---|---|
+| 12/dia | 13,4 → 10,1 dias (**−25%**) | 13,1 → 8,2 (**−38%**) | 13,5 → 16,1 (+19%) | 22 → 32 dias |
+| 13/dia | 8,6 → 6,1 dias (**−30%**) | 8,6 → 5,1 (**−40%**) | 8,6 → 10,6 (+23%) | 13 → 30 dias |
+| 14/dia | 4,7 → 3,4 dias (**−29%**) | 4,8 → 3,0 (**−37%**) | 4,7 → 5,7 (+23%) | 8 → 30 dias |
+| 15/dia | 2,1 → 1,6 dias (**−24%**) | 2,3 → 1,5 (**−34%**) | 2,0 → 2,5 (+20%) | 5 → 30 dias |
+
+![Simulação da fila](figuras/07_simulacao_da_fila.png)
+
+**Como ler:** em qualquer capacidade, ordenar pelo modelo reduz a espera dos casos pagos entre 24% e 30%, e a espera ponderada pelo valor entre 34% e 40%: os casos de valor alto (computadores, eletrônicos) têm chance alta de pagamento e sobem na fila. No cenário de 13 análises por dia, os 745 casos pagos somam US$ 129 600; o "dinheiro parado" (US$ × dias até o pagamento) cai de 1,11 milhão para 0,67 milhão de US$·dia (**−40%**).
+
+O custo é real e também está medido: os casos que terminam negados esperam cerca de 20% mais, e a maior espera sobe até o teto. Sem teto, um caso chegaria a esperar 119 dias. O teto controla esse custo:
+
+| Teto (capacidade 13/dia) | Espera dos pagos | Espera dos negados | Maior espera |
+|---|---|---|---|
+| 14 dias | −17% | +13% | 18 dias |
+| 20 dias | −25% | +20% | 21 dias |
+| 30 dias | −30% | +23% | 30 dias |
 
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
-**1. Achado.** A taxa de negativa varia fortemente com o local, o tipo e a categoria do item (Passo 3), não com a companhia aérea. Um modelo com essas informações prevê o desfecho só um pouco melhor que o acaso (AUC 0,66) e erraria 37% das negativas que fizesse (Passo 4). Mas, aplicado a seis meses que não viu, ordenar a fila por ele colocou 62% dos casos pagos na primeira metade da fila, contra 50% na ordem de chegada, em todos os meses (Passo 6).
+**1. Achado.** A taxa de negativa varia com local, tipo e categoria do item, não com a companhia (Passo 3). Treinado no 1º semestre, o modelo pôs 62% dos casos pagos na primeira metade da fila do 2º semestre, entre 58% e 70% em cada mês (Passo 6).
 
-**2. Ação.** Usar o modelo **apenas para ordenar** a fila de análise, com casos de maior probabilidade de pagamento primeiro. A decisão de negar, aprovar ou fazer acordo continua com o analista. Como o ganho é modesto, a ação só compensa se reordenar a fila tiver custo baixo.
+**2. Decisão.** Ordenar a fila de análise pela probabilidade de pagamento prevista pelo modelo, com **teto de 20 dias de espera**. A decisão de pagar, negar ou fazer acordo continua com o analista; o modelo só define a ordem.
 
-**3. Proteção para quem vai para o fim da fila.** Joias, relógios e eletrônicos ficariam desproporcionalmente no fim. Para que ninguém espere indefinidamente, a ordenação deve vir junto com um **prazo máximo de espera**, e casos que o atingem sobem para o topo.
+**3. Efeito medido** (simulação da fila com os desfechos reais de julho a outubro de 2015, capacidade de 13 análises por dia):
+- espera média até o pagamento: **−25%** (de 8,6 para 6,5 dias);
+- espera dos casos negados: **+20%**; maior espera: 21 dias, contra 13 na ordem de chegada.
 
-**4. Como acompanhar, com referências medidas aqui:**
+Com teto de 30 dias, o ganho para os casos pagos chega a −30%, mas a maior espera vai a 30 dias. Escolhemos 20 dias porque preserva a maior parte do ganho (−25% contra −30%) e limita a espera máxima a 8 dias a mais que hoje. O teto é a escolha ética do processo: quem quiser priorizar quem espera mais pode reduzi-lo, e a tabela mostra exatamente quanto ganho se perde.
 
-| Indicador | Valor medido no teste (jul–dez/2015) | Sinal de alerta |
+**4. Como acompanhar depois de implantar.** A base atual não registra a data da decisão; a implantação precisa registrá-la. Com ela, os mesmos indicadores da simulação passam a ser medidos todo mês:
+
+| Indicador | Referência medida na simulação (13/dia, teto 20) | Ação se sair da faixa |
 |---|---|---|
-| % dos casos pagos na 1ª metade da fila, por mês | 62% no semestre; entre 58% e 70% por mês | mês abaixo de 58% (menor valor observado): revisar ou retreinar |
-| AUC do modelo em cada trimestre | 0,66 (validação cruzada: 0,65 ± 0,03) | abaixo de 0,62 (média da validação menos um desvio-padrão) |
-| Taxa de negativa geral | 50% a 58% por mês em 2015 | fora dessa faixa: o perfil das reclamações mudou e o modelo precisa ser reavaliado |
-
-**5. O que não podemos afirmar.** A base não registra **quando** cada reclamação foi decidida. Logo, não sabemos quanto tempo cada caso esperou nem podemos estimar, com estes dados, quantos dias a ordenação economizaria. Para isso, seria preciso registrar a data de decisão e comparar períodos com e sem ordenação.
+| Espera média dos casos pagos | 25% menor que a da ordem de chegada | se a redução cair abaixo de 15%, retreinar o modelo |
+| Maior espera | até 21 dias | acima do teto: revisar a regra de teto |
+| % dos casos pagos na 1ª metade da fila | 58% a 70% por mês (Passo 6) | abaixo de 58%: retreinar |
 
 ## Limites
 
 - Recorte: um ano, cinco companhias, só casos com desfecho. Os casos de fim de ano estão sub-representados e são os decididos mais rápido (Passo 1).
-- Sem valor pedido nem evidências: duas reclamações iguais nas colunas podem ser muito diferentes.
-- Todas as associações são observacionais. "Joias são mais negadas" não diz **por que** são negadas.
+- A capacidade diária da equipe é um parâmetro da simulação; por isso o efeito é apresentado para quatro capacidades. A redução relativa da espera dos casos pagos ficou entre 24% e 30% em todas.
+- Todas as associações são observacionais. "Joias são mais negadas" não diz **por que** são negadas; o modelo é usado só para ordenar, nunca para decidir.
 
 ## Atividades
 

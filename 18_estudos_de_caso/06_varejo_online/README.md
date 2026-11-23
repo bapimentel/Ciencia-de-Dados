@@ -1,6 +1,6 @@
 # Estudo de caso 6 · Varejo on-line: cancelamentos
 
-> **Aplicação adicional — não integra o livro.** Relaciona-se com as unidades de pré-processamento (06), visualização (05) e agrupamento (08). Técnicas usadas: preparação de uma base grande, agregação por fatura e por cliente, concentração (curva de Pareto), segmentação RFM com k-means, validação de um achado em outro período, investigação de casos extremos.
+> **Aplicação adicional — não integra o livro.** Relaciona-se com as unidades de pré-processamento (06), visualização (05) e agrupamento (08). Técnicas usadas: preparação de uma base grande, agregação por fatura e por cliente, concentração (curva de Pareto), segmentação RFM com k-means, validação de um achado em outro período, investigação de casos extremos, modelo de perda esperada avaliado no tempo.
 
 ## A situação
 
@@ -10,8 +10,9 @@ Um varejista on-line do Reino Unido, que vende presentes e utilidades para muito
 2. Que tipos de clientes existem, e quais cancelam mais?
 3. Vale a pena criar uma ação dirigida aos clientes que mais cancelam?
 4. O que, de fato, explica o valor cancelado?
+5. Quem cancela vai embora? E, com uma equipe comercial limitada, a quem ligar para reter receita?
 
-Este caso mostra duas armadilhas comuns: uma concentração que parece forte num período e **não se repete** no seguinte, e um indicador mensal **dominado por dois registros**.
+Este caso mostra duas armadilhas comuns, uma concentração que parece forte num período e **não se repete** no seguinte e um indicador mensal **dominado por dois registros**, e termina com decisões cujo efeito é medido em períodos que os modelos não viram.
 
 ## Os dados
 
@@ -39,6 +40,7 @@ Este caso mostra duas armadilhas comuns: uma concentração que parece forte num
 | 4. Segmentos de clientes | `04_segmentos_de_clientes.py` (grava `dados/segmentos.csv`) | `04_segmentos.png` |
 | 5. A concentração se repete? | `05_a_concentracao_se_repete.py` | `05_a_concentracao_se_repete.png` |
 | 6. O que é o valor cancelado | `06_regra_de_conferencia.py` | `06_correcoes_e_regra.png` |
+| 7. Quem cancela vai embora? Lista de retenção | `07_lista_de_retencao.py` | `07_lista_de_retencao.png` |
 
 ---
 
@@ -183,40 +185,86 @@ Em um ano inteiro, a regra teria segurado **apenas duas linhas** para conferênc
 
 Sem as duas linhas, a taxa de valor cancelado fica entre **1,2% e 6,5%** ao mês, com mediana de **1,7%**. Os picos de 13,6% e 28,3% eram, cada um, um único erro de digitação.
 
+## Passo 7 · Quem cancela vai embora? E a quem a equipe comercial deve ligar?
+
+**Pergunta:** os cancelamentos sinalizam clientes prestes a sair? Se a equipe comercial pode ligar para uma parte dos clientes a cada trimestre, que critério coloca na lista a maior parte da receita dos clientes que vão parar de comprar?
+
+Montamos os dados **no tempo**, sem olhar o futuro:
+
+- **treino:** o que se sabia em 1º/06/2011 (2 716 clientes); alvo = não comprar de junho a agosto;
+- **teste:** o que se sabia em 1º/09/2011 (3 314 clientes); alvo = não comprar de setembro a novembro, período que o modelo não viu.
+
+Para cada cliente: dias desde a última compra, tempo de relacionamento, número de compras, valor total, receita dos últimos 90 dias e se cancelou algo. Um modelo de regressão logística estima a probabilidade de o cliente parar de comprar no trimestre (AUC de 0,742 no período de teste), e a **perda esperada** combina as duas coisas que importam para a empresa:
+
+```python
+perda_esperada = probabilidade_de_parar * receita_ultimos_90_dias
+lista = teste.iloc[np.argsort(-perda_esperada)[:k]]
+```
+
+**(a) Cancelamento não é sinal de saída.** Nos dois períodos, quem cancelou algo parou de comprar **menos**:
+
+| Período | Pararam: cancelaram algo | Pararam: nunca cancelaram |
+|---|---|---|
+| Jun–ago | 36% | 57% |
+| Set–nov | 28% | 51% |
+
+Faz sentido com o Passo 6: quem cancela é, em geral, cliente ativo que corrige pedidos.
+
+**(b) Listas de retenção.** No teste, os 1 448 clientes que pararam de comprar tinham gerado **£ 297 651** nos 90 dias anteriores: é a receita em risco. Quanto dela cada critério coloca na lista?
+
+| Tamanho da lista | Perda esperada (modelo × receita) | Maior receita recente | Maior probabilidade de parar | Sorteio |
+|---|---|---|---|---|
+| 5% (166 clientes) | **39%** | 27% | 0% | 5% |
+| 10% (331 clientes) | **55%** (£ 162 680) | 40% (£ 119 117) | 0% | 10% (£ 29 040) |
+| 20% (663 clientes) | **75%** | 57% | 0% | 20% |
+
+![Lista de retenção](figuras/07_lista_de_retencao.png)
+
+**Como ler:**
+
+- Ordenar só pela probabilidade de parar enche a lista de clientes que já tinham ido embora e não compravam havia meses: receita em risco coberta, praticamente zero.
+- Ordenar só pela receita põe na lista grandes clientes que continuariam comprando de qualquer forma.
+- A perda esperada combina os dois e, com **10% dos clientes**, alcança **55%** da receita em risco: **5,6 vezes** o que uma lista sorteada alcança e £ 43 563 a mais que a lista dos maiores clientes.
+
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- Cancelamentos são 14,8% das faturas, mas 4,7% do valor: em geral, estornos de um item (Passo 3).
-- A concentração em "50 clientes" não se repete de um semestre para o outro: no 2º semestre, esses clientes cancelam na mesma proporção que os demais (5,1% × 5,6%) (Passo 5).
-- 61% do valor cancelado são estornos exatos feitos, em mediana, 24 minutos depois da venda. Duas linhas de mais de 70 mil unidades, corrigidas em menos de 20 minutos, respondem sozinhas por metade do valor cancelado do ano (Passo 6).
+- 61% do valor cancelado são estornos exatos feitos, em mediana, 24 minutos depois da venda; duas linhas gigantes respondem por metade do valor cancelado do ano (Passo 6).
+- Os "clientes que mais cancelam" mudam de um semestre para o outro (Passo 5), e quem cancela para de comprar **menos** que os demais (Passo 7).
+- A perda esperada do modelo concentra a receita em risco numa lista curta, em um trimestre que o modelo não viu (Passo 7).
 
-**2. Ações.**
-- **Não criar ações dirigidas aos "clientes que mais cancelam".** O Passo 5 mostrou que esse grupo muda de um período para o outro.
-- **Bloquear para conferência linhas de pedido com 5 000 unidades ou mais.** O limite foi escolhido num semestre e funcionou no outro; no ano inteiro, isso significaria conferir duas linhas, que eram justamente os dois maiores erros.
-- **Corrigir o indicador de cancelamento** acompanhado pela diretoria: reportar a taxa de valor cancelado **sem** estornos exatos feitos no mesmo dia (ou, no mínimo, sem as linhas bloqueadas), para que um erro de digitação não pareça uma crise.
+**2. Decisões e efeitos medidos.**
 
-**3. Como acompanhar, com referências medidas aqui:**
+| Decisão | Efeito medido |
+|---|---|
+| **Lista trimestral de retenção** com os 10% de clientes de maior perda esperada (probabilidade de parar × receita dos últimos 90 dias), para contato da equipe comercial | a lista contém **55% da receita em risco** do trimestre seguinte (£ 162 680 de £ 297 651, set–nov/2011), contra 10% de uma lista sorteada e 40% da lista dos maiores clientes |
+| **Bloquear para conferência** toda linha de pedido com 5 000 unidades ou mais (limite = 10 × o percentil 99,9 do semestre anterior) | no 2º semestre, que o limite não viu, a regra seguraria **1 linha**: justamente o erro de 80 995 unidades, **55% do valor cancelado do semestre** (£ 168 470); nenhum alarme falso |
+| **Não tratar cancelamento como sinal de risco** nem restringir clientes que cancelam | quem cancelou parou de comprar 28% das vezes, contra 51% dos demais (set–nov/2011) |
+| **Reportar o indicador de cancelamento sem as linhas bloqueadas** | a taxa mensal deixa de oscilar entre 1,2% e 28,3% e passa a ficar entre 1,2% e 6,5%: os picos de janeiro e dezembro eram, cada um, um erro de digitação |
 
-| Indicador | Referência medida | Sinal de alerta |
+**3. Como acompanhar:**
+
+| Indicador | Referência medida | Ação se sair da faixa |
 |---|---|---|
-| Valor cancelado / vendido por mês, sem linhas ≥ 5 000 unidades | 1,2% a 6,5% (mediana 1,7%) | acima de 6,5%: investigar as faturas do mês, começando pelas maiores |
-| Linhas bloqueadas pela regra | 2 em 12 meses | mais de 2 por mês: o limite está baixo para o volume atual e deve ser recalculado (10 × o percentil 99,9 do semestre anterior) |
-| Parte do valor cancelado em estornos exatos no mesmo dia | 61% | queda forte: os cancelamentos passaram a ser outra coisa (devoluções, desistências) e merecem nova análise |
+| % da receita em risco do trimestre que estava na lista de retenção | 55% (set–nov/2011) | abaixo de 40% (o que a lista dos maiores clientes já alcança): retreinar o modelo |
+| Linhas bloqueadas pela regra | 2 em 12 meses | mais de 2 por mês: recalcular o limite com o semestre anterior |
+| Valor cancelado / vendido por mês, sem linhas bloqueadas | 1,2% a 6,5% (mediana 1,7%) | acima de 6,5%: investigar as maiores faturas do mês |
 
-**4. O que não podemos afirmar.** Sem o motivo do cancelamento, não sabemos se os 39% restantes são desistências, devoluções ou trocas. Registrar o motivo em cada estorno é o passo que tornaria possível uma análise de desistência.
+A lista mede **onde está a receita em risco**. Para medir quanto o contato da equipe recupera, metade da lista de cada trimestre pode ser sorteada para receber o contato e a outra metade não: a diferença de receita entre as duas metades é o efeito do contato, medido sem viés.
 
 ## Limites
 
 - Um ano de um único varejista; 25% das linhas não têm cliente e ficam fora das análises por cliente.
 - "Valor" é receita bruta, não lucro: não há custo nem margem.
-- A identificação de "estorno exato" exige cliente identificado; estornos de visitantes não foram pareados.
+- O trimestre de teste (set–nov) antecede o Natal; a lista deve ser reavaliada em outros trimestres à medida que os dados chegam.
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 07 e confira os números deste texto.
 2. **Variação.** No script `05`, troque 50 por 200 clientes. A conclusão muda?
 3. **Pergunta aberta.** A Alemanha tem 23% das faturas canceladas, contra 15% no Reino Unido (Passo 3). Repita o Passo 5 para países: a diferença se mantém nos dois semestres?
 4. **Crítica.** Um analista propõe acompanhar "número de faturas canceladas" em vez de "valor cancelado", por ser mais estável. Que vantagem e que desvantagem você vê? Use os números do Passo 3.
 5. **Investigação.** Liste os estornos exatos com mais de 1 000 libras que **não** são as duas linhas gigantes. Eles têm algo em comum (produto, cliente, horário)?
+6. **Variação.** No script `07`, troque a receita dos últimos 90 dias pela receita dos últimos 180 dias na perda esperada. A cobertura da lista de 10% melhora?

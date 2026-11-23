@@ -35,6 +35,7 @@ Principais colunas: `school`, `sex`, `age`, `address` (urbano/rural), `Medu`/`Fe
 | 3. Prever o risco | `03_prever_risco.py` (grava `dados/probabilidades_validacao.csv`) | `03_risco.png` |
 | 4. Lista de acompanhamento | `04_lista_de_acompanhamento.py` | `04_lista_de_acompanhamento.png` |
 | 5. Validar em outra turma | `05_validar_em_outra_turma.py` | `05_validacao_externa.png` |
+| 6. Efeito da seleção | `06_efeito_da_selecao.py` | `06_efeito_da_selecao.png` |
 
 ---
 
@@ -164,29 +165,52 @@ Quem a regra deixa de fora em matemática? Os 21 reprovados fora da lista tirara
 
 **Conclusão do passo:** a regra mantém cobertura entre 82% e 96% em todas as combinações de turma e escola, inclusive na que não foi usada para criá-la. O tamanho da lista acompanha a taxa de reprovação de cada grupo (19% numa escola com 8% de reprovação, 47% noutra com 30%).
 
+## Passo 6 · Qual o efeito de escolher os alunos pela regra, e não por outro critério?
+
+**Pergunta:** com vagas limitadas, a quem o acompanhamento chega quando a escolha é feita pela regra, comparada com os critérios usados na prática?
+
+A decisão da escola é **a quem oferecer** o acompanhamento. O efeito dessa decisão se mede pelo número de alunos que de fato reprovariam e que recebem apoio, e pelo esforço gasto com quem não precisava. Comparamos, na turma de matemática (395 alunos, 130 reprovados, não usada para criar a regra), seis critérios:
+
+| Critério | Alunos na lista | Reprovados alcançados | Cobertura | Alunos acompanhados por reprovado alcançado |
+|---|---|---|---|---|
+| **Regra: reprovou antes ou G1 < 10** | 171 | **109** | **84%** | 1,57 |
+| Modelo logístico (mesmos 171 alunos) | 171 | 109 | 84% | 1,57 |
+| Só G1 < 10 | 142 | 104 | 80% | 1,37 |
+| Só reprovou antes | 83 | 52 | 40% | 1,60 |
+| Mais de 10 faltas | 66 | 30 | 23% | 2,20 |
+| Lista sorteada (171 alunos, média de 2 000 sorteios) | 171 | 56 | 43% | 3,04 |
+
+![Efeito da seleção](figuras/06_efeito_da_selecao.png)
+
+**Como ler:**
+
+- Com o mesmo número de vagas, a regra leva o acompanhamento a **109** dos 130 alunos que reprovariam; uma lista sorteada levaria a **56**. São **53 alunos a mais** recebendo apoio, sem aumentar as vagas.
+- O critério mais intuitivo, "muitas faltas", alcançaria só **30** (23%), confirmando o Passo 2: faltas são um sinal fraco nesta base.
+- O modelo estatístico alcança exatamente o mesmo que a regra. A regra é preferível porque qualquer professor a aplica e a explica.
+- "Só G1 < 10" é mais econômica (142 alunos, 104 reprovados). Acrescentar "reprovou antes" custa 29 vagas a mais e alcança 5 reprovados a mais, que tinham nota de 1º período boa mas histórico de reprovação.
+
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- Reprovação anterior é a característica mais associada à nota final (delta de Cliff 0,71); faltas só pesam acima de 10 (Passo 2).
-- Após o 1º período, a regra "reprovou antes **ou** G1 < 10" alcança 94% dos reprovados com 29% dos alunos em português (Passo 4).
-- Aplicada sem ajuste à turma de matemática, alcança 84%, o mesmo que um modelo estatístico, e entre 82% e 96% em cada escola (Passo 5).
+- Reprovação anterior e a nota do 1º período são os sinais mais fortes de reprovação; faltas pesam pouco (Passos 2 e 3).
+- A regra "reprovou antes **ou** G1 < 10", criada com a turma de português, alcançou entre 82% e 96% dos reprovados em todas as combinações de turma e escola, inclusive na turma que não foi usada para criá-la (Passo 5).
 
-**2. Ação.** Após o 1º período, convidar para acompanhamento os alunos que já reprovaram ou tiveram G1 abaixo de 10, usando a **regra**, e não o modelo: ela alcança o mesmo, é verificável por qualquer pessoa e pode ser explicada ao aluno. Prever de **20% a 45%** dos alunos na lista, conforme a taxa de reprovação histórica da turma (foi essa a faixa observada nos seis grupos).
+**2. Decisão.** Logo após o 1º período, oferecer o acompanhamento (reforço e contato com a família) aos alunos que **já reprovaram ou tiveram G1 abaixo de 10**. A lista é revisada pela coordenação, que pode incluir alunos por julgamento próprio, e não é divulgada.
 
-**3. Cuidados.**
-- A lista é um convite ao apoio, revisado por pessoas; não pode ser divulgada nem usada para selecionar, punir ou separar alunos.
-- Quem tem G1 = 10 ou 11 fica de fora e responde pela maioria dos reprovados não alcançados em matemática. Professores devem poder incluir esses alunos por julgamento próprio.
-- Nada aqui mostra que acompanhar **causa** aprovação. O Passo 2 mostrou o contrário de propósito: quem recebe apoio tem nota menor, porque o apoio vai a quem precisa.
+**3. Efeito medido** (turma de matemática, que a regra não viu):
+- **109 dos 130** alunos que reprovariam (84%) recebem acompanhamento, com 171 vagas (43% da turma);
+- uma lista do mesmo tamanho sorteada alcançaria 56, e o critério "mais de 10 faltas", 30: a regra leva o apoio a **53 alunos a mais** que o sorteio e a **79 a mais** que o critério de faltas;
+- a cada 1,57 aluno acompanhado, um é aluno que reprovaria (contra 3,04 no sorteio): o esforço da equipe vai, em sua maior parte, para quem precisa.
 
-**4. Como acompanhar, com referências medidas aqui:**
+**4. Como acompanhar, todo ano:**
 
-| Indicador | Referência medida | Sinal de alerta |
+| Indicador | Referência medida | Ação se sair da faixa |
 |---|---|---|
-| Cobertura: % dos reprovados do ano que estavam na lista | 82% a 96% nos seis grupos | abaixo de 80%: a regra precisa ser revista para aquela turma |
-| Tamanho da lista | 19% a 47% dos alunos | acima de 50%: a lista perde o foco e a capacidade de atendimento se esgota |
-| Taxa de reprovação entre os alunos da lista | 50% a 76% (precisão da lista, sem nenhum acompanhamento) | é a referência para medir o efeito do acompanhamento: se, com acompanhamento, a reprovação na lista cair abaixo dessa faixa, há indício de efeito; para atribuir a queda ao acompanhamento, seria preciso comparar com alunos de mesmo perfil não acompanhados |
+| Cobertura: % dos reprovados do ano que estavam na lista | 82% a 96% nos seis grupos (84% em matemática) | abaixo de 80%: revisar o corte de G1 para aquela turma |
+| Tamanho da lista | 19% a 47% dos alunos | acima de 50%: a capacidade de atendimento se esgota; priorizar G1 < 10 (80% de cobertura com 36% da turma) |
+| Alunos acompanhados por reprovado alcançado | 1,37 a 1,57 | acima de 2: a regra perdeu precisão para aquela turma |
 
 ## Limites e ética
 
@@ -196,7 +220,7 @@ Quem a regra deixa de fora em matemática? Os 21 reprovados fora da lista tirara
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 05 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
 2. **Ajuste com cuidado.** No script `05`, troque o corte para G1 < 11. A cobertura em matemática sobe? Por que essa mudança precisaria ser validada num terceiro conjunto de dados antes de ser adotada?
 3. **Início do ano.** Construa uma regra que use só o que se sabe no início do ano (sem G1). Qual a melhor cobertura que você consegue com 30% dos alunos? Valide em matemática.
 4. **Crítica.** Um diretor propõe usar o modelo do Passo 3 com todas as variáveis, inclusive endereço e profissão dos pais, porque a AUC é maior. Escreva um parágrafo com dois argumentos contra, um técnico (use o Passo 5) e um ético.

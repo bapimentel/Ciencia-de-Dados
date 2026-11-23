@@ -27,22 +27,36 @@ A escolha é livre, desde que a base permita encontrar padrões e apoiar uma dec
 
 ## Do resultado à recomendação
 
-A parte que mais distingue um bom projeto é a passagem da análise para a recomendação. Os estudos de caso da unidade [18](../18_estudos_de_caso/) seguem sempre a mesma ordem, e o projeto deve segui-la também:
+A parte que mais distingue um bom projeto é a passagem da análise para a decisão. Os estudos de caso da unidade [18](../18_estudos_de_caso/) seguem sempre a mesma ordem, e o projeto deve segui-la também:
 
 1. **Encontrar o resultado.** Um padrão medido, com números, teste estatístico e tamanho do efeito quando houver comparação de grupos.
 2. **Verificar o resultado** em dados que não foram usados para encontrá-lo: outro período, outro grupo, outra divisão dos dados, outra semente do algoritmo, ou contra o acaso.
-3. **Só então recomendar** uma ação que decorra diretamente do resultado verificado.
-4. **Definir como acompanhar**, usando como referência valores **medidos nos próprios dados** (por exemplo, a faixa em que o indicador variou sem nenhuma intervenção).
+3. **Decidir** uma ação concreta que decorra diretamente do resultado verificado.
+4. **Medir o efeito da decisão**, com um modelo ou uma simulação aplicados a dados que não foram usados para construí-la: quantos dias de espera a menos, quantas faltas de estoque a menos, quanto da receita em risco a ação alcança. Meça também o **custo** (quem espera mais, quanto estoque a mais, quantas vagas a mais).
+5. **Definir como acompanhar**, usando como referência os valores medidos no passo anterior.
 
-O erro mais comum é inverter essa ordem: propor uma ação e prometer que ela "deve reduzir X em 20%". Uma meta não é um resultado. Se a análise não encontrou nada que sustente uma ação, a recomendação correta é dizer isso e dizer que dados faltam, como no estudo de caso do [supermercado](../18_estudos_de_caso/03_vendas_supermercado/).
+Duas armadilhas a evitar:
+
+- **Prometer em vez de medir:** "a ação deve reduzir X em 20%" é uma meta, não um resultado. O efeito tem de sair de um cálculo sobre dados reais.
+- **Ficar em cima do muro:** recomendar uma ação e, no mesmo parágrafo, dizer que os dados não a sustentam. Se um padrão não se confirmou, ele não sustenta a decisão; procure a decisão que o padrão confirmado sustenta. No estudo de caso do [supermercado](../18_estudos_de_caso/03_vendas_supermercado/), o padrão horário caiu na verificação, e foi a ausência de padrão que indicou a política de estoque, com efeito medido.
+
+Formas de medir o efeito, todas usadas nos estudos de caso:
+
+| Forma de medir | Exemplo |
+|---|---|
+| Simular o processo com os desfechos reais de um período que o modelo não viu | [TSA](../18_estudos_de_caso/01_reclamacoes_tsa/): espera até o pagamento −25% |
+| Avaliar uma política por origem móvel (cada período só vê o passado) | [supermercado](../18_estudos_de_caso/03_vendas_supermercado/): semanas com falta 48% → 7% |
+| Aplicar a regra a outro grupo, sem ajuste | [educação](../18_estudos_de_caso/05_educacao_desempenho/): 109 de 130 alunos alcançados, contra 56 de um sorteio |
+| Treinar num período e medir no seguinte | [varejo](../18_estudos_de_caso/06_varejo_online/): 55% da receita em risco numa lista de 10% dos clientes |
+| Esconder parte das observações e medir o acerto nelas | [Wikipédia](../18_estudos_de_caso/07_votacoes_wikipedia/): 15,4% de acerto contra 5,9% |
+| Medir cada unidade contra uma referência construída nos dados | [energia](../18_estudos_de_caso/02_energia_domestica/): 229 kWh acima da referência de verão |
 
 Formato sugerido para cada um dos três achados:
 
-> **Achado:** nos dados, [padrão], medido por [número, teste, intervalo].
-> **Verificação:** o padrão [se repetiu / não se repetiu] em [outro período, outro grupo...], com [número].
-> **Ação:** por isso, recomendamos [ação prática que decorre do achado].
-> **Acompanhamento:** o indicador [métrica principal] variou entre [a] e [b] no período analisado; a ação será considerada eficaz se o indicador ficar [acima/abaixo] dessa faixa por [período]. Acompanharemos também [métrica auxiliar], para verificar [efeito colateral].
-> **Limite:** a base não permite afirmar [o que não se sabe].
+> **Observamos** [padrão], medido por [número, teste, intervalo], e **verificamos** que ele [se repetiu] em [outro período, outro grupo...].
+> **Portanto decidimos** [ação concreta].
+> **Porque**, medido em [dados não usados na construção, com que modelo ou simulação], a ação produz [efeito, com número e unidade], ao custo de [custo medido].
+> **Acompanhamento:** [indicador], com referência [valor medido]; se sair de [faixa], [o que fazer].
 
 Toda afirmação do tipo "o grupo A tem desempenho significativamente menor" precisa de um teste estatístico que a sustente.
 
@@ -78,8 +92,8 @@ Um PDF de **até 2 páginas**, entregue pela turma virtual cerca de uma semana d
 Um arquivo compactado com o documento em PDF, o código, a apresentação e arquivos adicionais.
 
 - **Apresentação (5,0 pontos)**, até 20 minutos:
-  - **5 minutos de *pitch*:** problema → oportunidade → evidências → decisão → como o impacto será medido;
-  - **15 minutos técnicos:** base → preparação → métodos → métricas → resultados → verificação → limitações → justificativa da decisão.
+  - **5 minutos de *pitch*:** problema → oportunidade → evidências → decisão → efeito medido;
+  - **15 minutos técnicos:** base → preparação → métodos → métricas → resultados → verificação → medição do efeito da decisão → limitações.
 - **Documento técnico (3,0 pontos).**
 
 Critérios da apresentação: clareza do problema; domínio da base; metodologia; qualidade das análises e das visualizações; interpretação dos resultados; relação entre achados, métricas e decisão; clareza na justificativa da decisão (que ação e que indicador mostrará seu efeito); organização e comunicação.
@@ -99,7 +113,8 @@ Avaliada pela qualidade, relevância e utilidade: painel interativo, aplicação
 | Visualizar | Um gráfico por pergunta, título que afirma o achado, escala fiel. | [05](../05_visualizacao/), [manual visual](../materiais/manual_visual.md) |
 | Modelar, se ajudar | Linha de base primeiro; separação honesta (estratificada ou no tempo); métrica adequada ao custo do erro; validação cruzada. | [07](../07_aprendizagem_de_maquina/) a [16](../16_recomendacao_de_modelos/) |
 | Verificar | O achado se repete em outro período, outro grupo, outra semente? É diferente do acaso? | Passo de verificação de cada estudo de caso |
-| Recomendar | Achado verificado → ação → indicador com referência medida → limites. | Seção "Recomendação" de cada estudo de caso |
+| Medir o efeito | Simulação, origem móvel, outro grupo ou observações escondidas: quanto a decisão muda, e a que custo. | Último passo de cada estudo de caso |
+| Recomendar | Achado verificado → decisão → efeito medido → acompanhamento. | Seção "Recomendação" de cada estudo de caso |
 | Comunicar | *Pitch* com uma ideia central; apresentação técnica que mostra como se chegou lá. | [05](../05_visualizacao/) (contar uma história com dados) |
 
 ## Lista de verificação antes de entregar
@@ -110,7 +125,7 @@ Avaliada pela qualidade, relevância e utilidade: painel interativo, aplicação
 - [ ] Todo modelo foi comparado com uma linha de base e avaliado em dados que não viu (nada do teste, do futuro ou do alvo vaza para o treino).
 - [ ] A métrica escolhida reflete o custo dos erros do problema.
 - [ ] Cada achado usado numa recomendação foi verificado em dados que não serviram para encontrá-lo.
-- [ ] Cada recomendação decorre de um achado; nenhuma meta aparece como se fosse resultado.
+- [ ] Cada decisão decorre de um achado verificado e tem efeito medido (com número e unidade) em dados não usados para construí-la, junto com o custo medido.
 - [ ] Os indicadores de acompanhamento têm uma referência medida nos dados (faixa de variação, valor no período de teste).
 - [ ] Cada gráfico responde a uma pergunta, tem título informativo, unidades e escala fiel.
 - [ ] As limitações estão escritas, inclusive o que a base não mede e o que seria preciso coletar.
@@ -118,4 +133,4 @@ Avaliada pela qualidade, relevância e utilidade: painel interativo, aplicação
 
 ## Exemplos
 
-Os sete [estudos de caso](../18_estudos_de_caso/) foram escritos no formato que o projeto pede. Em três deles ([supermercado](../18_estudos_de_caso/03_vendas_supermercado/), [varejo on-line](../18_estudos_de_caso/06_varejo_online/) e [Wikipédia](../18_estudos_de_caso/07_votacoes_wikipedia/)), a verificação mudou a recomendação que a análise inicial parecia sugerir. Saber mostrar isso também é resultado.
+Os sete [estudos de caso](../18_estudos_de_caso/) foram escritos no formato que o projeto pede: cada um termina com decisões e efeitos medidos. Em três deles ([supermercado](../18_estudos_de_caso/03_vendas_supermercado/), [varejo on-line](../18_estudos_de_caso/06_varejo_online/) e [Wikipédia](../18_estudos_de_caso/07_votacoes_wikipedia/)), a verificação derrubou a ação que a análise inicial parecia sugerir, e a decisão final veio do que a verificação mostrou.

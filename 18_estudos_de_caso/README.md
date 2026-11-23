@@ -1,17 +1,22 @@
 # 18 · Estudos de caso
 
-**Pergunta inicial:** depois de descrever, visualizar, testar e modelar, o que você recomendaria, e como saberia se deu certo?
+**Pergunta inicial:** depois de descrever, visualizar, testar e modelar, que decisão você tomaria, e qual é o efeito dela, em números?
 
-Cada estudo de caso começa com uma decisão que alguém precisa tomar e segue, passo a passo, até uma recomendação. Em todos eles a ordem é a mesma: **primeiro encontrar o resultado, depois recomendar**. Uma recomendação só aparece quando há um achado medido que a sustenta, e esse achado é **verificado em dados que não foram usados para encontrá-lo** (outro período, outra turma, outra semente do algoritmo) antes de virar ação.
+Cada estudo de caso começa com uma decisão que alguém precisa tomar e termina com uma recomendação no formato:
+
+> **Observamos** [achado medido] → **portanto decidimos** [ação concreta] → **porque**, medido em dados que não foram usados para construir a decisão, **ela produz** [efeito, com número e unidade].
+
+O efeito nunca é uma expectativa ("deve reduzir…"). Ele é medido: por um modelo avaliado em outro período, por uma simulação que usa os desfechos reais, por validação em outra turma, ou em observações escondidas do método. Cada estudo também mede o **custo** da decisão (quem espera mais, quanto estoque a mais, quantas vagas a mais) e diz como acompanhar o efeito depois de implantada.
 
 ## Como cada estudo está organizado
 
 1. **A situação** e as perguntas.
-2. **Os dados**: origem, colunas e, principalmente, o que a base **não** tem.
+2. **Os dados**: origem, colunas e o que a base **não** tem.
 3. **Passos numerados**, cada um com a pergunta do passo, o trecho de código principal, o que saiu (números e figura) e como ler.
-4. **Um passo de verificação**: o achado se repete em outro período, outra turma, outra semente, ou contra o acaso?
-5. **Recomendação, a partir do que foi encontrado**: achados com números → ação → como acompanhar, com referências **medidas nos próprios dados** → o que não podemos afirmar.
-6. **Limites** e **atividades**.
+4. **Verificação** do achado em dados que não foram usados para encontrá-lo (outro período, outra turma, outra semente, contra o acaso).
+5. **Medição do efeito da decisão**, com o modelo ou a simulação que a mede.
+6. **Recomendação**: achados → decisão → efeito medido → como acompanhar, com referências medidas nos próprios dados.
+7. **Limites** e **atividades**.
 
 Os scripts de cada estudo são numerados e rodam na ordem; alguns gravam arquivos em `dados/` usados pelos seguintes.
 
@@ -21,24 +26,24 @@ Os scripts de cada estudo são numerados e rodam na ordem; alguns gravam arquivo
 
 Correspondem aos capítulos de aplicação de *Ciência de Dados: da teoria à prática*.
 
-| Estudo | Capítulo | Decisão em jogo | O que a verificação mostrou |
+| Estudo | Capítulo | Decisão | Efeito medido |
 |---|---|---|---|
-| [01 · Reclamações por perdas (TSA)](01_reclamacoes_tsa/) | 11 | Em que ordem analisar reclamações | Treinado no 1º semestre, o modelo pôs 62% dos casos pagos na 1ª metade da fila do 2º semestre (58% a 70% por mês) |
-| [02 · Energia doméstica](02_energia_domestica/) | 12 | Que hábito mudar e como saber se funcionou | O perfil horário se repete entre os anos (correlação 0,91); sem intervenção, o consumo noturno varia até 19%, então só uma redução maior que isso é detectável |
-| [03 · Vendas em supermercado](03_vendas_supermercado/) | 13 | Escala por horário, preços | O "pico das 19h" não se repete entre meses (correlação de −0,12 a 0,27): a recomendação é não agir e coletar mais dados |
+| [01 · Reclamações por perdas (TSA)](01_reclamacoes_tsa/) | 11 | Ordenar a fila de análise pela probabilidade de pagamento, com teto de 20 dias de espera | Simulação da fila com os desfechos reais de jul–out/2015: espera até o pagamento **−25%** (8,6 → 6,5 dias); casos negados esperam +20% |
+| [02 · Energia doméstica](02_energia_domestica/) | 12 | Desligar as cargas extras da madrugada (0h–5h) e avisar quando a madrugada passar do nível de verão | Consumo acima da referência de verão no ano mais recente: **229 kWh = US$ 48 = 5,3% da conta** |
+| [03 · Vendas em supermercado](03_vendas_supermercado/) | 13 | Repor cada linha de produto até média + 1,28 desvio-padrão das semanas anteriores | 42 linhas-semana não vistas: semanas com falta **48% → 7%**, unidades em falta **−97%**, com +38% de estoque |
 
 ### Aplicações adicionais — não integram o livro
 
 Usam bases públicas com origem, licença e data de acesso registradas em cada README.
 
-| Estudo | Unidades relacionadas | Decisão em jogo | O que a verificação mostrou |
+| Estudo | Unidades relacionadas | Decisão | Efeito medido |
 |---|---|---|---|
-| [04 · Bicicletas compartilhadas](04_mobilidade_bicicletas/) | 04, 11, 15 | Janelas de manutenção e de reforço | Horas de pico entre 50% e 55% do uso em todos os 24 meses; previsão melhor que a linha de base em 3 de 4 trimestres |
-| [05 · Educação](05_educacao_desempenho/) | 04, 07, 11 | Lista de acompanhamento preventivo | Regra criada com a turma de português alcança 84% dos reprovados na turma de matemática |
-| [06 · Varejo on-line](06_varejo_online/) | 05, 06, 08 | O que fazer com os cancelamentos | Os "50 maiores canceladores" de um semestre não se repetem no outro; metade do valor cancelado são dois erros de digitação corrigidos em minutos |
-| [07 · Votações na Wikipédia](07_votacoes_wikipedia/) | 17 | Por onde começar uma revisão | O padrão é muito diferente do acaso, mas só 68 de 313 usuários aparecem em todas as sementes do algoritmo |
+| [04 · Bicicletas compartilhadas](04_mobilidade_bicicletas/) | 04, 11, 15 | Manutenção às 3h–5h; equipe diária dimensionada pela previsão | Manutenção afeta **0,8%** dos aluguéis de 2012; dias com equipe insuficiente **32 → 17 (−47%)** |
+| [05 · Educação](05_educacao_desempenho/) | 04, 07, 11 | Acompanhar quem já reprovou ou teve G1 < 10 | Na turma de validação, **109 de 130** alunos que reprovariam recebem apoio, contra 56 com uma lista sorteada do mesmo tamanho |
+| [06 · Varejo on-line](06_varejo_online/) | 05, 06, 08 | Lista trimestral de retenção pela perda esperada; bloqueio de linhas de 5 000 unidades ou mais | A lista de 10% dos clientes contém **55% da receita em risco** do trimestre seguinte (sorteio: 10%); o bloqueio teria evitado 55% do valor cancelado do 2º semestre, sem alarme falso |
+| [07 · Votações na Wikipédia](07_votacoes_wikipedia/) | 17 | Sugerir a cada usuário 10 eleições por eleitores parecidos, com 3 vagas de fora da sua comunidade | Em votos escondidos, as sugestões acertam **15,4%** contra 5,9% da página por popularidade, sem efeito bolha (60,7% na própria comunidade, contra 67,1% dos votos reais) |
 
-Repare que, em três estudos (03, 06 e 07), a verificação **mudou** a recomendação que a análise inicial parecia sugerir. Isso não é falha: é exatamente para isso que a verificação serve.
+Em três estudos (03, 06 e 07), a verificação derrubou a ação que a análise inicial parecia sugerir (escala por horário, foco nos "clientes que mais cancelam", suspeita sobre usuários). A decisão final veio do que a verificação mostrou.
 
 ## Como executar
 
@@ -54,6 +59,6 @@ e assim por diante, na ordem numérica de cada estudo. Para rodar todos sem abri
 python scripts/executar_todos.py 18_estudos_de_caso
 ```
 
-Os números dos READMEs foram calculados por estes scripts em novembro de 2026, com as versões de `requirements-basico.txt`. Algoritmos com etapa aleatória (florestas, Louvain, k-means) usam semente fixa; com outras versões das bibliotecas, pequenas diferenças podem aparecer.
+Os números dos READMEs foram calculados por estes scripts em novembro de 2026, com as versões de `requirements-basico.txt`. Algoritmos com etapa aleatória (florestas, Louvain, k-means, sorteios) usam semente fixa; com outras versões das bibliotecas, pequenas diferenças podem aparecer.
 
 Próxima etapa: [19 · Projeto final](../19_projeto_final/)

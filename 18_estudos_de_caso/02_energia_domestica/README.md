@@ -38,7 +38,8 @@ A última pergunta é a mais importante e a mais esquecida. Uma recomendação s
 | 3. Procurar padrões | `03_procurar_padroes.py` | `03_perfil_horario.png`, `03_consumo_por_mes.png` |
 | 4. Estabilidade e estações | `04_estabilidade_e_estacoes.py` | `04_estabilidade_e_estacoes.png` |
 | 5. Prever o consumo | `05_prever_consumo.py` | `05_previsao_60_dias.png` |
-| 6. Planejar o teste de uma mudança | `06_planejar_o_teste.py` | `06_variacao_natural.png` |
+| 6. Variação natural do consumo | `06_planejar_o_teste.py` | `06_variacao_natural.png` |
+| 7. Medir o efeito da ação | `07_efeito_da_acao.py` | `07_efeito_da_acao.png` |
 
 ---
 
@@ -162,16 +163,16 @@ No teste, o consumo médio foi de 8,0 kWh/dia com desvio-padrão de 2,8. Todos o
 
 **Conclusão do passo:** os dados servem para descrever padrões, mas não para prever o consumo de um dia específico com precisão.
 
-## Passo 6 · Se a família mudar um hábito, os dados vão mostrar?
+## Passo 6 · Por que não medir uma mudança pelo "antes e depois"?
 
-**Pergunta:** que redução no consumo noturno seria necessária para que ela se distinguisse da variação natural?
+**Pergunta:** se a família mudar um hábito, basta comparar o consumo antes e depois?
 
-Este é o passo que transforma uma ideia em uma recomendação testável. Usamos um **teste placebo**: em todos os períodos de 8 semanas da base, **sem nenhuma intervenção**, comparamos o consumo noturno com:
+Usamos um **teste placebo**: em todos os períodos de 8 semanas da base, **sem nenhuma intervenção**, comparamos o consumo noturno (18h–23h) com:
 
 - (a) as 8 semanas imediatamente anteriores;
 - (b) as mesmas 8 semanas do ano anterior.
 
-As diferenças que aparecem sem ninguém mudar nada mostram o "ruído" contra o qual uma mudança real teria de se destacar.
+As diferenças que aparecem sem ninguém mudar nada mostram o "ruído" de cada forma de comparar.
 
 ```python
 media8 = noite_semanal.rolling(8).mean()
@@ -188,53 +189,72 @@ dif_ano = media8 / media8.shift(52) - 1         # 8 semanas x mesmo período do 
 
 ![Variação natural](figuras/06_variacao_natural.png)
 
+**Conclusão do passo:** comparações de períodos inteiros misturam a mudança de hábito com a estação e o acaso (até 55% de diferença sem ninguém mudar nada). Para medir o efeito de uma ação, precisamos de uma referência **noite a noite**, que não dependa da estação. É o que o Passo 7 constrói.
+
+## Passo 7 · Quanto vale cortar a carga extra da madrugada?
+
+**Pergunta:** entre 0h e 5h, quanto a casa consome além da carga que nunca desliga, e quanto isso custa?
+
+De madrugada quase ninguém usa aparelhos. O que se consome ali é a **carga de base** (geladeira, aparelhos em espera) e, em algumas noites, uma **carga extra**: aquecimento ligado, um aparelho esquecido. O verão serve de modelo para a madrugada sem carga extra, porque não há aquecimento.
+
+```python
+madrugada = horario[horario.index.hour <= 5].resample('D').sum()
+referencia = madrugada.loc['2018-06-01':'2018-08-31', 'Consumo_kWh'].quantile(0.9)
+excesso = (madrugada.loc['2017-10-22':'2018-10-21', 'Consumo_kWh'] - referencia).clip(lower=0)
+```
+
+A referência é o **percentil 90** das madrugadas do verão de 2018: **1,92 kWh** por madrugada (0,32 kWh por hora). Usar o percentil 90, e não a mediana (1,12 kWh), é uma escolha conservadora: só conta como extra o consumo acima de 9 em cada 10 madrugadas de verão. O verão de 2017 não serve de referência porque tem madrugadas com carga extra (percentil 90 de 5,11 kWh).
+
+**O que saiu, no ano mais recente (22/10/2017 a 21/10/2018):**
+
+| Medida | Valor |
+|---|---|
+| Madrugadas acima da referência | 60 de 365 |
+| Consumo acima da referência | **229 kWh** |
+| Custo (tarifa do ano: US$ 0,210/kWh) | **US$ 48**, ou **5,3%** da conta do ano (US$ 902) |
+| Parte do excesso entre novembro e março | 69% |
+| Parte do excesso nas 10 piores madrugadas | 49% |
+| Madrugadas de inverno (dez–fev) já no nível de verão | **76%** (68 de 90) |
+| O mesmo cálculo no ano anterior | 84 madrugadas acima, 424 kWh |
+
+![Efeito da ação](figuras/07_efeito_da_acao.png)
+
 **Como ler:**
 
-1. Comparar com as semanas anteriores **não serve**: a estação muda no meio do caminho, e diferenças de 50% aparecem sozinhas.
-2. Comparar com o mesmo período do ano anterior é bem melhor, mas ainda assim **quedas de até 19% acontecem sem intervenção** em 5% das comparações.
-3. Portanto, uma mudança de hábito que reduza o consumo noturno em 10% **não seria distinguível do acaso** com estes dados. Só uma redução acima de cerca de 20% se destacaria.
-
-Quanto valem essas reduções (aritmética, com a tarifa de US$ 0,202/kWh e consumo anualizado de 4 273 kWh, US$ 865/ano):
-
-| Redução no consumo noturno | kWh/ano | US$/ano | % da conta |
-|---|---|---|---|
-| 10% | 158 | 32 | 3,7% |
-| 20% | 316 | 64 | 7,4% |
-| 30% | 474 | 96 | 11,1% |
+- O excesso é **episódico**: metade dele está em 10 madrugadas. Não é a casa inteira consumindo mais; são noites em que algo ficou ligado.
+- Ele é **evitável nesta casa**: três de cada quatro madrugadas do inverno de 2017–18 ficaram no nível de verão. A carga extra não é necessária para atravessar o inverno.
+- O valor é medido noite a noite, com a mesma régua para cada madrugada. Por isso não depende de comparar estações ou anos (o problema do Passo 6).
 
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- A tarifa é constante (US$ 0,202/kWh): só reduzir kWh reduz a conta (Passo 2).
-- A noite (18h–23h) concentra 37% do consumo, e isso se repetiu nos dois anos (35,7% e 38,3%; perfis com correlação de 0,91) (Passos 3 e 4).
-- A noite também concentra 40% do aumento de inverno (Passo 4).
-- Com estes dados, uma redução noturna só é distinguível do acaso se passar de cerca de 20% (Passo 6).
+- A tarifa é única (US$ 0,20/kWh em todas as horas): deslocar consumo de horário não muda a conta. O efeito medido de timers ou baterias para "fugir do horário de pico" é **zero** (Passo 2).
+- Em 60 madrugadas do ano mais recente, a casa consumiu acima do nível de verão; metade desse excesso está em 10 noites, e 76% das madrugadas de inverno já ficam abaixo da referência (Passo 7).
 
-**2. Ação.** Concentrar a mudança de hábito na faixa das 18h às 23h, especialmente no inverno, com uma meta de **pelo menos 20%** de redução nessa faixa. Uma meta menor pode até ser alcançada, mas a família não conseguiria saber, pelos dados, se ela funcionou. A base não diz qual aparelho é responsável: a escolha da mudança (aquecimento, cozinha, lavanderia) precisa de informação que só a família tem.
+**2. Decisão.** Eliminar a carga extra da madrugada: programar o aquecimento e as tomadas dos aparelhos que podem ficar ligados (aquecedores portáteis, desumidificador, carregadores) para desligar entre 0h e 5h, e receber um **aviso pela manhã** sempre que a madrugada passar de 1,92 kWh.
 
-**3. Como verificar, com referências medidas aqui:**
+**3. Efeito medido.** No ano mais recente, o consumo de madrugada acima da referência foi de **229 kWh = US$ 48 = 5,3% da conta**. É esse o valor que a ação elimina se as madrugadas ficarem no nível de verão. No ano anterior, o mesmo cálculo dá 424 kWh, o que mostra que o ganho é maior em invernos com mais noites de carga extra.
 
-| Item | Definição | Referência medida |
+**4. Como acompanhar.** Como a referência é definida noite a noite, o efeito é verificado diretamente, sem esperar um ano:
+
+| Indicador | Referência medida | Meta da ação |
 |---|---|---|
-| Métrica principal | consumo noturno médio das 8 semanas da mudança | comparar com as mesmas 8 semanas do ano anterior |
-| Critério de sucesso | queda maior que 19% | 5% das comparações sem intervenção caem até 19% |
-| Métrica auxiliar | consumo total diário | para verificar se o consumo apenas mudou de horário (o que não reduziria a conta) |
-| Comparação a evitar | 8 semanas antes × 8 semanas depois | diferenças de até −55% aparecem sem intervenção |
-
-**4. O que não podemos afirmar.** Mesmo uma queda de 20% pode ter outra causa, como um inverno mais ameno ou uma viagem. Registrar a temperatura externa e os dias com a casa vazia reduziria essa dúvida e tornaria detectáveis mudanças menores.
+| Madrugadas acima de 1,92 kWh por mês | de 0 a 13 por mês no ano mais recente (60 no ano; 13 em março) | zero; cada aviso indica um aparelho a desligar |
+| kWh de madrugada acima da referência | 229 kWh/ano (até 47 kWh/mês, em dezembro) | zero |
+| Consumo total do dia | para conferir se a carga não foi apenas transferida para outro horário | sem aumento nas outras faixas |
 
 ## Limites
 
 - Uma única residência, dois anos. Nada aqui se generaliza para outras casas.
-- As comparações placebo usam janelas que se sobrepõem; são 45 comparações anuais, mas não 45 informações independentes. O limite de 19% é uma ordem de grandeza, não um número exato.
-- Seis dias com menos de 2 kWh ficaram na base e puxam médias para baixo.
+- A referência usa um verão; se a casa ganhar um aparelho de carga contínua (por exemplo, um aquário), a referência precisa ser recalculada.
+- O efeito em dinheiro supõe a tarifa do ano mais recente (US$ 0,210/kWh).
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 07 e confira os números deste texto.
 2. **Variação.** No script `06`, troque a janela de 8 para 16 semanas. O limite de detecção diminui? Por quê?
 3. **Previsão.** No script `05`, mude o horizonte para 14 e para 120 dias. Qual método resiste melhor?
 4. **Pergunta aberta.** No Passo 3, os fins de semana consomem mais durante o dia. Repita o Passo 4 só com fins de semana: o excesso do inverno se distribui da mesma forma?
-5. **Crítica.** Um vizinho diz: "troquei as lâmpadas em março e meu consumo caiu 30% em abril". Usando o Passo 6, explique por que essa comparação não prova nada e proponha uma melhor.
+5. **Crítica.** Um vizinho diz: "troquei as lâmpadas em março e meu consumo caiu 30% em abril". Usando o Passo 6, explique por que essa comparação não prova nada, e use a ideia do Passo 7 para propor uma régua melhor.`n6. **Variação.** No script `07`, troque a referência pelo percentil 75 e pela mediana do verão. Quanto muda o efeito medido? Qual escolha você defenderia, e por quê?

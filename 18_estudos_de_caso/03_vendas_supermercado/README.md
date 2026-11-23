@@ -1,6 +1,6 @@
 # Estudo de caso 3 · Vendas em supermercado
 
-> Estudo de caso do capítulo 13 do livro *Ciência de Dados: da teoria à prática*. Técnicas usadas: verificação do significado das colunas, comparação de grupos (Kruskal-Wallis), decomposição de séries, verificação de estabilidade de um padrão, agrupamento hierárquico, crítica de um experimento com modelo, estimativa do volume de dados necessário.
+> Estudo de caso do capítulo 13 do livro *Ciência de Dados: da teoria à prática*. Técnicas usadas: verificação do significado das colunas, comparação de grupos (Kruskal-Wallis), decomposição de séries, verificação de estabilidade de um padrão, agrupamento hierárquico, crítica de um experimento com modelo, política de estoque (modelo do jornaleiro) avaliada por origem móvel, avaliação fora da amostra de uma escala de trabalho.
 
 ## A situação
 
@@ -10,8 +10,9 @@ Uma rede de supermercados com três filiais em Mianmar entrega à equipe de dado
 2. Há dias ou horários de maior movimento, para organizar caixas e reposição?
 3. Os clientes formam perfis diferentes?
 4. Aumentar preços aumentaria o faturamento?
+5. Com quanto estoque cada linha de produto deve começar a semana?
 
-Este caso ensina uma lição que aparece em todo projeto real: **um padrão encontrado no total precisa ser conferido em partes dos dados antes de virar decisão**. E, quando os dados não sustentam uma decisão, a recomendação correta é dizer isso e dizer o que falta.
+Este caso ensina uma lição que aparece em todo projeto real: **um padrão encontrado no total precisa ser conferido em partes dos dados antes de virar decisão**. Aqui, a conferência derruba o padrão horário, e é justamente a **ausência** de padrão que indica a decisão certa de estoque, cujo efeito é medido em semanas que o modelo não viu.
 
 ## Os dados
 
@@ -42,6 +43,8 @@ Este caso ensina uma lição que aparece em todo projeto real: **um padrão enco
 | 4. Perfis de vendas | `04_perfis_de_vendas.py` (grava `dados/perfis.csv`) | `04_dendrograma_perfis.png` |
 | 5. O que o preço explica | `05_o_que_o_preco_explica.py` | `05_preco_x_quantidade.png` |
 | 6. Quanto dado seria preciso | `06_quanto_dado_seria_preciso.py` | `06_quanto_dado_seria_preciso.png` |
+| 7. Reposição de estoque | `07_reposicao_de_estoque.py` | `07_reposicao_de_estoque.png` |
+| 8. Escala de caixas | `08_escala_de_caixas.py` | `08_escala_de_caixas.png` |
 
 ---
 
@@ -197,38 +200,102 @@ A concordância cresce devagar. A fórmula de Spearman-Brown, usada para estimar
 
 A projeção supõe que exista um padrão estável e que os dias sejam independentes; ela dá uma **ordem de grandeza** para planejar a coleta, não um número exato.
 
+## Passo 7 · Com quanto estoque cada linha deve começar a semana?
+
+**Pergunta:** se as vendas não têm padrão de dia ou de hora, como decidir quanto repor de cada linha de produto?
+
+Os Passos 1 a 3 mostraram que a demanda semanal de cada linha **oscila em torno de uma média**, sem tendência nem padrão que se repita. Essa é exatamente a situação do problema clássico de estoque conhecido como **modelo do jornaleiro** (*newsvendor*): a melhor quantidade para começar o período é
+
+$$\text{estoque-alvo} = \text{média} + z \times \text{desvio-padrão}$$
+
+da demanda das semanas anteriores, com $z$ escolhido pelo **nível de serviço** desejado ($z = 1{,}28$ para que, em 90% das semanas, não falte produto).
+
+Comparamos quatro políticas por **origem móvel**: para cada semana, da 5ª à 11ª, a política só vê as semanas anteriores e é comparada com a demanda real daquela semana. São 7 semanas × 6 linhas = **42 linhas-semana** que nenhuma política viu.
+
+```python
+for i in range(4, len(semanal)):
+    alvo = semanal.iloc[:i].mean() + 1.282 * semanal.iloc[:i].std()
+    demanda = semanal.iloc[i]
+    falta += (demanda - alvo).clip(lower=0).sum()
+```
+
+**O que saiu:**
+
+| Política | Linhas-semana com falta | Unidades em falta | Unidades que sobraram | Estoque médio por linha |
+|---|---|---|---|---|
+| Repor o que vendeu na semana anterior | 20/42 (**48%**) | 423 | 502 | 74,1 |
+| Média das semanas anteriores | 17/42 (40%) | 336 | 489 | 75,8 |
+| Média + 0,67 dp (75% de serviço) | 12/42 (29%) | 111 | 841 | 89,6 |
+| **Média + 1,28 dp (90% de serviço)** | **3/42 (7%)** | **12** | 1 263 | **102,0** |
+
+![Reposição de estoque](figuras/07_reposicao_de_estoque.png)
+
+**Como ler:**
+
+- "Repor o que vendeu na semana anterior", a regra mais intuitiva, é a **pior**: ela persegue a oscilação da semana passada, que (Passo 3) não se repete.
+- A política de 90% de serviço deixou faltar produto em **3 de 42** linhas-semana (7%), muito perto dos 10% que ela promete. O modelo cumpriu, em semanas que não viu, o que foi construído para fazer.
+- O custo também está medido: o estoque médio no início da semana sobe de 74 para 102 unidades por linha (+38%).
+
+## Passo 8 · Distribuir os caixas pelo perfil horário, ou por igual?
+
+**Pergunta:** uma escala de caixas montada pelo perfil horário reduziria a fila?
+
+Montamos duas escalas com os cupons de janeiro e fevereiro, com o mesmo total de horas de caixa, e as aplicamos a **março** (345 cupons, 30 dias):
+
+- **por perfil:** horas de caixa proporcionais à participação de cada hora em jan–fev;
+- **uniforme:** as mesmas horas divididas igualmente pelas 11 horas de funcionamento.
+
+Medimos, em cada dia e hora de março, os cupons que chegaram acima da capacidade da hora (fila):
+
+| Capacidade total | Cupons acima da capacidade: por perfil | Uniforme |
+|---|---|---|
+| igual à demanda média | 135 | 132 |
+| +20% de folga | 110 | 112 |
+| +50% de folga | 80 | 82 |
+
+![Escala de caixas](figuras/08_escala_de_caixas.png)
+
+**Conclusão do passo:** montar a escala pelo perfil horário **não reduz a fila** de março: as duas escalas ficam a menos de 3% uma da outra em todas as folgas. É a confirmação, em dados novos, do que o Passo 3 indicou: o perfil horário destes três meses não prevê o mês seguinte.
+
 ---
 
 ## Recomendação, a partir do que foi encontrado
 
 **1. Achados.**
-- Linhas de produto e filiais não diferem em preço, quantidade, avaliação ou total (Kruskal-Wallis, p de 0,13 a 0,85) (Passo 1).
-- O "pico das 19h" e a vantagem de terça e sábado aparecem no total, mas **não se repetem** entre meses nem entre filiais; metade dos dias mal prevê a outra metade (correlação mediana de 0,30) (Passo 3).
-- Os perfis de cupons não formam grupos naturais (silhueta ≤ 0,14) (Passo 4).
-- A base não informa como a quantidade reagiria a um preço diferente (Passo 5).
+- Linhas de produto e filiais não diferem em preço, quantidade, avaliação ou total (Passo 1).
+- O "pico das 19h" e a vantagem de terça e sábado não se repetem entre meses nem entre filiais (Passo 3); uma escala por perfil não reduziu a fila de março (Passo 8).
+- A demanda semanal de cada linha oscila em torno de uma média estável: é o caso em que a política de estoque do jornaleiro se aplica (Passo 7).
 
-**2. O que fazer agora.** Com estes três meses, **não reorganizar** escalas por hora ou por dia da semana, **não alterar** preços e **não priorizar** linhas de produto. Qualquer dessas mudanças se apoiaria em diferenças que se mostraram ruído. Manter a escala distribuída de forma uniforme é a escolha coerente com o Passo 3, onde o movimento por hora não difere de forma consistente.
+**2. Decisão principal.** Repor cada linha de produto, no início da semana, até **média + 1,28 desvio-padrão** das vendas das semanas anteriores, recalculando a cada semana.
 
-**3. O que coletar para poder decidir.**
+**3. Efeito medido** (origem móvel, 42 linhas-semana que a política não viu), em comparação com a prática de repor o que vendeu na semana anterior:
+- linhas-semana com falta de produto: **48% → 7%**;
+- unidades em falta: **423 → 12 (−97%)**;
+- custo: estoque médio no início da semana **+38%** (74 → 102 unidades por linha).
 
-| Decisão desejada | O que falta | Referência medida aqui |
+Se o custo de manter estoque pesar mais que o de faltar produto, a política de 75% de serviço é a alternativa medida: falta em 29% das linhas-semana, com 21% a mais de estoque.
+
+**4. Decisão sobre a escala de caixas.** Manter as horas de caixa distribuídas por igual entre as horas de funcionamento. **Efeito medido:** a escala por perfil, que daria mais trabalho de planejar, deixaria a mesma fila em março (diferença menor que 3% em todas as folgas).
+
+**5. Preços.** O experimento de "+10% no preço" (Passo 5) mede uma fórmula, não o comportamento dos clientes; nenhuma decisão de preço é tomada com esta base.
+
+**6. Como acompanhar:**
+
+| Indicador | Referência medida | Ação se sair da faixa |
 |---|---|---|
-| Escala por hora | pelo menos um ano de cupons | Spearman-Brown: ~377 dias por amostra para concordância de 0,8 |
-| Política de preços | mesmo produto com preços diferentes (teste em lojas ou semanas) | correlação preço × quantidade = 0,01 entre produtos diferentes |
-| Ações por cliente | identificação do cliente nos cupons | a base só identifica cupons |
-| Decisões sobre lucro | custo real por produto | a "margem" é uma constante |
-
-**4. Critério para agir no futuro.** Adotar uma escala por hora quando o perfil horário de um período se repetir no período seguinte com correlação de pelo menos 0,8, conferido como no Passo 3. Com três meses, essa correlação foi de 0,30.
+| % das linhas-semana com falta de produto | 7% no teste (meta da política: 10%) | acima de 15% por quatro semanas seguidas: recalcular média e desvio só com as semanas recentes |
+| Estoque médio no início da semana | 102 unidades por linha | se subir sem queda das faltas, a demanda mudou de patamar |
+| Fila por hora (cupons acima da capacidade) | 132 cupons em março com escala uniforme | se uma hora acumular fila em três meses seguidos, revisar a escala daquela hora |
 
 ## Limites
 
-- Três meses e mil cupons; um único produto por cupom.
-- A base é pública e foi publicada para exercícios; pode não refletir a operação de um supermercado real em todos os detalhes.
-- A conclusão "não agir" vale para estes dados. Ela não diz que não existe padrão por hora; diz que três meses não bastam para encontrá-lo.
+- Três meses e mil cupons; um único produto por cupom. A base é pública e foi publicada para exercícios; as quantidades são as da amostra, não as de um supermercado inteiro.
+- A política de estoque supõe que a demanda continue oscilando em torno da mesma média; o indicador de faltas existe para detectar quando isso deixar de valer.
+- Os custos de faltar e de sobrar não estão na base; por isso a escolha entre 75% e 90% de serviço é apresentada com os dois efeitos medidos.
 
 ## Atividades
 
-1. **Reprodução.** Rode os scripts 01 a 06 e confira os números deste texto.
+1. **Reprodução.** Rode os scripts 01 a 08 e confira os números deste texto.
 2. **Variação.** No script `04`, inclua `Total` entre as variáveis do agrupamento. Os perfis mudam? Por que isso era esperado?
 3. **Validação.** Repita o Passo 3 para a forma de pagamento: a proporção de pagamentos em dinheiro por hora se repete entre os meses?
 4. **Crítica.** Um gerente lê o gráfico do Passo 2 e diz: "está claro, o pico é às 19h". Escreva, em cinco linhas, o que você responderia usando os números do Passo 3.
