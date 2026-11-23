@@ -1,0 +1,7 @@
+# Dependencias extras, usadas apenas nos complementos avancados dos estudos de caso.
+# Instale depois do requirements-basico.txt:  pip install -r requirements-aplicacoes.txt
+-r requirements-basico.txt
+seaborn>=0.13        # usado so para comparar com as figuras originais do livro
+# shap>=0.46         # opcional: explicacoes SHAP do caso 01 (reclamacoes); comentado porque e pesado
+# python-louvain     # opcional: versao original de comunidades_karate.py; a aula usa networkx
+# node2vec           # opcional: idem (K-means sobre embeddings no script original)

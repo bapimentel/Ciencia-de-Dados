@@ -1,0 +1,56 @@
+# Estilo unico das figuras e animacoes deste repositorio.
+# Uso em um script:  plt.style.use('caminho/para/figuras/estilo.mplstyle')
+# As regras estao explicadas em materiais/manual_visual.md.
+
+# Fundo branco e area de trabalho limpa
+figure.facecolor : white
+axes.facecolor   : white
+savefig.facecolor: white
+
+# Tipografia sem serifa, legivel em tela e no GitHub
+font.family      : sans-serif
+font.sans-serif  : DejaVu Sans, Arial, Helvetica
+font.size        : 11
+axes.titlesize   : 13
+axes.titleweight : bold
+axes.titlelocation : left
+axes.labelsize   : 11
+xtick.labelsize  : 10
+ytick.labelsize  : 10
+legend.fontsize  : 10
+
+# Texto principal em azul-marinho escuro
+text.color       : 20324A
+axes.labelcolor  : 20324A
+axes.titlecolor  : 20324A
+xtick.color      : 20324A
+ytick.color      : 20324A
+axes.edgecolor   : 8794A3
+
+# Menos molduras: so os eixos de baixo e da esquerda
+axes.spines.top    : False
+axes.spines.right  : False
+axes.linewidth     : 0.8
+
+# Grade discreta, so na horizontal
+axes.grid        : True
+axes.grid.axis   : y
+grid.color       : E6EBF0
+grid.linewidth   : 0.8
+axes.axisbelow   : True
+
+# Paleta: observado (azul), comparacao (verde-petroleo), destaque (ambar),
+# risco (vermelho queimado), neutro (cinza)
+axes.prop_cycle  : cycler('color', ['2F648F', '168A8A', 'D69A35', 'BD5B58', '8794A3'])
+lines.linewidth  : 2.0
+lines.markersize : 6
+patch.edgecolor  : white
+
+# Legenda sem caixa pesada
+legend.frameon   : False
+
+# Tamanho padrao 16:9 e exportacao nitida
+figure.figsize   : 8, 4.5
+figure.dpi       : 100
+savefig.dpi      : 150
+savefig.bbox     : tight

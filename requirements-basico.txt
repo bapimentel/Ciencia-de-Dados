@@ -1,0 +1,11 @@
+# Ambiente basico da trilha (unidades 00 a 09 e estudos de caso sem extras).
+# Testado em 2026-11 com Python 3.13 e as versoes abaixo (versoes proximas tambem funcionam).
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.10
+scipy>=1.13
+scikit-learn>=1.5
+statsmodels>=0.14
+networkx>=3.3
+openpyxl>=3.1
+pillow>=10.0

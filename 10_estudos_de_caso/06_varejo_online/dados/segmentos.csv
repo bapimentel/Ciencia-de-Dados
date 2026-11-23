@@ -1,0 +1,4335 @@
+cliente,segmento,nome do segmento
+12346,0,recorrentes de valor médio
+12347,1,recorrentes de alto valor
+12348,0,recorrentes de valor médio
+12349,2,recentes de baixo valor
+12350,3,"compra única, antiga"
+12352,0,recorrentes de valor médio
+12353,3,"compra única, antiga"
+12354,3,"compra única, antiga"
+12355,3,"compra única, antiga"
+12356,0,recorrentes de valor médio
+12357,0,recorrentes de valor médio
+12358,2,recentes de baixo valor
+12359,0,recorrentes de valor médio
+12360,0,recorrentes de valor médio
+12361,3,"compra única, antiga"
+12362,1,recorrentes de alto valor
+12363,3,"compra única, antiga"
+12364,2,recentes de baixo valor
+12365,3,"compra única, antiga"
+12367,2,recentes de baixo valor
+12370,0,recorrentes de valor médio
+12371,0,recorrentes de valor médio
+12372,0,recorrentes de valor médio
+12373,3,"compra única, antiga"
+12374,2,recentes de baixo valor
+12375,2,recentes de baixo valor
+12377,0,recorrentes de valor médio
+12378,0,recorrentes de valor médio
+12379,0,recorrentes de valor médio
+12380,0,recorrentes de valor médio
+12381,2,recentes de baixo valor
+12383,0,recorrentes de valor médio
+12384,2,recentes de baixo valor
+12386,3,"compra única, antiga"
+12388,1,recorrentes de alto valor
+12390,3,"compra única, antiga"
+12391,2,recentes de baixo valor
+12393,0,recorrentes de valor médio
+12394,0,recorrentes de valor médio
+12395,1,recorrentes de alto valor
+12397,0,recorrentes de valor médio
+12398,0,recorrentes de valor médio
+12399,0,recorrentes de valor médio
+12401,3,"compra única, antiga"
+12402,3,"compra única, antiga"
+12403,3,"compra única, antiga"
+12405,3,"compra única, antiga"
+12406,0,recorrentes de valor médio
+12407,0,recorrentes de valor médio
+12408,0,recorrentes de valor médio
+12409,0,recorrentes de valor médio
+12410,3,"compra única, antiga"
+12412,0,recorrentes de valor médio
+12413,0,recorrentes de valor médio
+12414,3,"compra única, antiga"
+12415,1,recorrentes de alto valor
+12417,1,recorrentes de alto valor
+12418,3,"compra única, antiga"
+12420,3,"compra única, antiga"
+12421,2,recentes de baixo valor
+12422,0,recorrentes de valor médio
+12423,1,recorrentes de alto valor
+12424,0,recorrentes de valor médio
+12425,3,"compra única, antiga"
+12426,3,"compra única, antiga"
+12427,2,recentes de baixo valor
+12428,1,recorrentes de alto valor
+12429,1,recorrentes de alto valor
+12430,3,"compra única, antiga"
+12431,1,recorrentes de alto valor
+12432,0,recorrentes de valor médio
+12433,1,recorrentes de alto valor
+12434,0,recorrentes de valor médio
+12435,0,recorrentes de valor médio
+12436,3,"compra única, antiga"
+12437,1,recorrentes de alto valor
+12438,0,recorrentes de valor médio
+12441,3,"compra única, antiga"
+12442,2,recentes de baixo valor
+12444,0,recorrentes de valor médio
+12445,2,recentes de baixo valor
+12446,3,"compra única, antiga"
+12447,3,"compra única, antiga"
+12448,3,"compra única, antiga"
+12449,0,recorrentes de valor médio
+12450,3,"compra única, antiga"
+12451,1,recorrentes de alto valor
+12452,2,recentes de baixo valor
+12453,3,"compra única, antiga"
+12454,0,recorrentes de valor médio
+12455,0,recorrentes de valor médio
+12456,0,recorrentes de valor médio
+12457,0,recorrentes de valor médio
+12458,0,recorrentes de valor médio
+12461,3,"compra única, antiga"
+12462,2,recentes de baixo valor
+12463,0,recorrentes de valor médio
+12464,1,recorrentes de alto valor
+12465,2,recentes de baixo valor
+12468,3,"compra única, antiga"
+12471,1,recorrentes de alto valor
+12472,1,recorrentes de alto valor
+12473,0,recorrentes de valor médio
+12474,1,recorrentes de alto valor
+12475,3,"compra única, antiga"
+12476,1,recorrentes de alto valor
+12477,1,recorrentes de alto valor
+12478,2,recentes de baixo valor
+12479,2,recentes de baixo valor
+12480,0,recorrentes de valor médio
+12481,1,recorrentes de alto valor
+12483,1,recorrentes de alto valor
+12484,0,recorrentes de valor médio
+12488,2,recentes de baixo valor
+12489,3,"compra única, antiga"
+12490,1,recorrentes de alto valor
+12491,2,recentes de baixo valor
+12492,3,"compra única, antiga"
+12493,3,"compra única, antiga"
+12494,0,recorrentes de valor médio
+12497,3,"compra única, antiga"
+12498,2,recentes de baixo valor
+12500,1,recorrentes de alto valor
+12501,3,"compra única, antiga"
+12502,0,recorrentes de valor médio
+12504,2,recentes de baixo valor
+12506,3,"compra única, antiga"
+12507,0,recorrentes de valor médio
+12508,2,recentes de baixo valor
+12509,3,"compra única, antiga"
+12510,3,"compra única, antiga"
+12512,3,"compra única, antiga"
+12513,3,"compra única, antiga"
+12514,3,"compra única, antiga"
+12515,3,"compra única, antiga"
+12516,0,recorrentes de valor médio
+12517,0,recorrentes de valor médio
+12518,1,recorrentes de alto valor
+12519,3,"compra única, antiga"
+12520,0,recorrentes de valor médio
+12521,3,"compra única, antiga"
+12522,2,recentes de baixo valor
+12523,1,recorrentes de alto valor
+12524,1,recorrentes de alto valor
+12526,2,recentes de baixo valor
+12527,3,"compra única, antiga"
+12528,1,recorrentes de alto valor
+12530,0,recorrentes de valor médio
+12531,2,recentes de baixo valor
+12532,2,recentes de baixo valor
+12534,3,"compra única, antiga"
+12535,0,recorrentes de valor médio
+12536,0,recorrentes de valor médio
+12538,2,recentes de baixo valor
+12539,0,recorrentes de valor médio
+12540,1,recorrentes de alto valor
+12541,0,recorrentes de valor médio
+12544,2,recentes de baixo valor
+12545,0,recorrentes de valor médio
+12546,0,recorrentes de valor médio
+12547,3,"compra única, antiga"
+12548,3,"compra única, antiga"
+12550,3,"compra única, antiga"
+12551,3,"compra única, antiga"
+12552,2,recentes de baixo valor
+12553,1,recorrentes de alto valor
+12556,0,recorrentes de valor médio
+12557,1,recorrentes de alto valor
+12558,2,recentes de baixo valor
+12559,3,"compra única, antiga"
+12560,2,recentes de baixo valor
+12561,3,"compra única, antiga"
+12562,1,recorrentes de alto valor
+12564,3,"compra única, antiga"
+12565,3,"compra única, antiga"
+12566,3,"compra única, antiga"
+12567,1,recorrentes de alto valor
+12569,1,recorrentes de alto valor
+12571,2,recentes de baixo valor
+12572,2,recentes de baixo valor
+12573,3,"compra única, antiga"
+12574,3,"compra única, antiga"
+12576,0,recorrentes de valor médio
+12577,0,recorrentes de valor médio
+12578,0,recorrentes de valor médio
+12579,3,"compra única, antiga"
+12580,3,"compra única, antiga"
+12581,3,"compra única, antiga"
+12582,3,"compra única, antiga"
+12583,1,recorrentes de alto valor
+12584,1,recorrentes de alto valor
+12585,0,recorrentes de valor médio
+12586,2,recentes de baixo valor
+12587,2,recentes de baixo valor
+12588,3,"compra única, antiga"
+12589,2,recentes de baixo valor
+12590,0,recorrentes de valor médio
+12591,3,"compra única, antiga"
+12592,3,"compra única, antiga"
+12593,3,"compra única, antiga"
+12594,1,recorrentes de alto valor
+12596,2,recentes de baixo valor
+12597,0,recorrentes de valor médio
+12598,1,recorrentes de alto valor
+12599,0,recorrentes de valor médio
+12600,1,recorrentes de alto valor
+12601,0,recorrentes de valor médio
+12602,3,"compra única, antiga"
+12603,2,recentes de baixo valor
+12604,3,"compra única, antiga"
+12607,0,recorrentes de valor médio
+12609,0,recorrentes de valor médio
+12610,0,recorrentes de valor médio
+12611,0,recorrentes de valor médio
+12612,3,"compra única, antiga"
+12613,0,recorrentes de valor médio
+12614,3,"compra única, antiga"
+12615,1,recorrentes de alto valor
+12616,3,"compra única, antiga"
+12617,2,recentes de baixo valor
+12618,2,recentes de baixo valor
+12619,1,recorrentes de alto valor
+12620,0,recorrentes de valor médio
+12621,1,recorrentes de alto valor
+12622,3,"compra única, antiga"
+12623,3,"compra única, antiga"
+12624,3,"compra única, antiga"
+12625,0,recorrentes de valor médio
+12626,1,recorrentes de alto valor
+12627,1,recorrentes de alto valor
+12628,2,recentes de baixo valor
+12630,2,recentes de baixo valor
+12631,3,"compra única, antiga"
+12633,0,recorrentes de valor médio
+12635,0,recorrentes de valor médio
+12637,0,recorrentes de valor médio
+12638,2,recentes de baixo valor
+12639,3,"compra única, antiga"
+12640,0,recorrentes de valor médio
+12641,3,"compra única, antiga"
+12642,0,recorrentes de valor médio
+12643,0,recorrentes de valor médio
+12644,3,"compra única, antiga"
+12645,0,recorrentes de valor médio
+12646,2,recentes de baixo valor
+12647,1,recorrentes de alto valor
+12648,3,"compra única, antiga"
+12649,0,recorrentes de valor médio
+12650,2,recentes de baixo valor
+12651,3,"compra única, antiga"
+12652,3,"compra única, antiga"
+12653,0,recorrentes de valor médio
+12654,2,recentes de baixo valor
+12656,1,recorrentes de alto valor
+12657,0,recorrentes de valor médio
+12658,2,recentes de baixo valor
+12659,3,"compra única, antiga"
+12660,2,recentes de baixo valor
+12662,1,recorrentes de alto valor
+12664,1,recorrentes de alto valor
+12665,3,"compra única, antiga"
+12667,3,"compra única, antiga"
+12668,0,recorrentes de valor médio
+12669,0,recorrentes de valor médio
+12670,1,recorrentes de alto valor
+12672,3,"compra única, antiga"
+12673,2,recentes de baixo valor
+12674,0,recorrentes de valor médio
+12676,0,recorrentes de valor médio
+12678,1,recorrentes de alto valor
+12679,0,recorrentes de valor médio
+12680,2,recentes de baixo valor
+12681,1,recorrentes de alto valor
+12682,1,recorrentes de alto valor
+12683,1,recorrentes de alto valor
+12684,1,recorrentes de alto valor
+12685,0,recorrentes de valor médio
+12686,3,"compra única, antiga"
+12688,0,recorrentes de valor médio
+12689,0,recorrentes de valor médio
+12690,3,"compra única, antiga"
+12691,0,recorrentes de valor médio
+12693,0,recorrentes de valor médio
+12694,0,recorrentes de valor médio
+12695,2,recentes de baixo valor
+12697,0,recorrentes de valor médio
+12700,1,recorrentes de alto valor
+12701,0,recorrentes de valor médio
+12702,2,recentes de baixo valor
+12703,3,"compra única, antiga"
+12704,1,recorrentes de alto valor
+12705,1,recorrentes de alto valor
+12707,3,"compra única, antiga"
+12708,1,recorrentes de alto valor
+12709,1,recorrentes de alto valor
+12710,0,recorrentes de valor médio
+12712,1,recorrentes de alto valor
+12713,2,recentes de baixo valor
+12714,1,recorrentes de alto valor
+12715,3,"compra única, antiga"
+12716,2,recentes de baixo valor
+12717,3,"compra única, antiga"
+12718,3,"compra única, antiga"
+12719,2,recentes de baixo valor
+12720,1,recorrentes de alto valor
+12721,0,recorrentes de valor médio
+12722,0,recorrentes de valor médio
+12723,2,recentes de baixo valor
+12724,2,recentes de baixo valor
+12725,3,"compra única, antiga"
+12726,0,recorrentes de valor médio
+12727,1,recorrentes de alto valor
+12728,0,recorrentes de valor médio
+12729,3,"compra única, antiga"
+12731,1,recorrentes de alto valor
+12732,3,"compra única, antiga"
+12733,3,"compra única, antiga"
+12734,3,"compra única, antiga"
+12735,3,"compra única, antiga"
+12736,3,"compra única, antiga"
+12738,3,"compra única, antiga"
+12739,3,"compra única, antiga"
+12740,3,"compra única, antiga"
+12743,3,"compra única, antiga"
+12744,0,recorrentes de valor médio
+12747,1,recorrentes de alto valor
+12748,1,recorrentes de alto valor
+12749,1,recorrentes de alto valor
+12750,3,"compra única, antiga"
+12752,0,recorrentes de valor médio
+12753,1,recorrentes de alto valor
+12754,0,recorrentes de valor médio
+12755,0,recorrentes de valor médio
+12756,3,"compra única, antiga"
+12757,1,recorrentes de alto valor
+12758,0,recorrentes de valor médio
+12759,0,recorrentes de valor médio
+12762,2,recentes de baixo valor
+12763,3,"compra única, antiga"
+12764,3,"compra única, antiga"
+12766,1,recorrentes de alto valor
+12769,3,"compra única, antiga"
+12770,3,"compra única, antiga"
+12772,3,"compra única, antiga"
+12775,0,recorrentes de valor médio
+12778,0,recorrentes de valor médio
+12779,1,recorrentes de alto valor
+12781,0,recorrentes de valor médio
+12782,1,recorrentes de alto valor
+12783,2,recentes de baixo valor
+12784,2,recentes de baixo valor
+12785,3,"compra única, antiga"
+12787,2,recentes de baixo valor
+12789,3,"compra única, antiga"
+12790,3,"compra única, antiga"
+12791,3,"compra única, antiga"
+12792,3,"compra única, antiga"
+12793,3,"compra única, antiga"
+12794,0,recorrentes de valor médio
+12795,2,recentes de baixo valor
+12797,3,"compra única, antiga"
+12798,1,recorrentes de alto valor
+12802,3,"compra única, antiga"
+12808,2,recentes de baixo valor
+12809,3,"compra única, antiga"
+12811,3,"compra única, antiga"
+12812,3,"compra única, antiga"
+12814,3,"compra única, antiga"
+12815,3,"compra única, antiga"
+12816,3,"compra única, antiga"
+12817,3,"compra única, antiga"
+12818,3,"compra única, antiga"
+12820,2,recentes de baixo valor
+12821,3,"compra única, antiga"
+12822,0,recorrentes de valor médio
+12823,0,recorrentes de valor médio
+12824,3,"compra única, antiga"
+12826,1,recorrentes de alto valor
+12827,2,recentes de baixo valor
+12828,1,recorrentes de alto valor
+12829,3,"compra única, antiga"
+12830,0,recorrentes de valor médio
+12831,3,"compra única, antiga"
+12832,2,recentes de baixo valor
+12833,3,"compra única, antiga"
+12834,3,"compra única, antiga"
+12836,0,recorrentes de valor médio
+12837,3,"compra única, antiga"
+12838,2,recentes de baixo valor
+12839,1,recorrentes de alto valor
+12840,0,recorrentes de valor médio
+12841,1,recorrentes de alto valor
+12842,0,recorrentes de valor médio
+12843,0,recorrentes de valor médio
+12844,2,recentes de baixo valor
+12845,3,"compra única, antiga"
+12847,2,recentes de baixo valor
+12849,0,recorrentes de valor médio
+12851,3,"compra única, antiga"
+12852,3,"compra única, antiga"
+12853,0,recorrentes de valor médio
+12854,0,recorrentes de valor médio
+12855,3,"compra única, antiga"
+12856,1,recorrentes de alto valor
+12857,3,"compra única, antiga"
+12863,3,"compra única, antiga"
+12864,3,"compra única, antiga"
+12865,0,recorrentes de valor médio
+12866,3,"compra única, antiga"
+12867,1,recorrentes de alto valor
+12868,0,recorrentes de valor médio
+12871,3,"compra única, antiga"
+12872,3,"compra única, antiga"
+12873,3,"compra única, antiga"
+12875,3,"compra única, antiga"
+12876,0,recorrentes de valor médio
+12877,1,recorrentes de alto valor
+12878,3,"compra única, antiga"
+12879,0,recorrentes de valor médio
+12881,3,"compra única, antiga"
+12882,2,recentes de baixo valor
+12883,0,recorrentes de valor médio
+12884,3,"compra única, antiga"
+12885,0,recorrentes de valor médio
+12886,0,recorrentes de valor médio
+12888,3,"compra única, antiga"
+12890,2,recentes de baixo valor
+12891,3,"compra única, antiga"
+12893,2,recentes de baixo valor
+12895,2,recentes de baixo valor
+12897,3,"compra única, antiga"
+12901,1,recorrentes de alto valor
+12902,3,"compra única, antiga"
+12904,2,recentes de baixo valor
+12906,1,recorrentes de alto valor
+12908,3,"compra única, antiga"
+12909,0,recorrentes de valor médio
+12910,1,recorrentes de alto valor
+12912,1,recorrentes de alto valor
+12913,1,recorrentes de alto valor
+12915,3,"compra única, antiga"
+12916,0,recorrentes de valor médio
+12917,3,"compra única, antiga"
+12919,1,recorrentes de alto valor
+12920,2,recentes de baixo valor
+12921,1,recorrentes de alto valor
+12922,3,"compra única, antiga"
+12923,3,"compra única, antiga"
+12924,0,recorrentes de valor médio
+12925,2,recentes de baixo valor
+12928,0,recorrentes de valor médio
+12929,3,"compra única, antiga"
+12930,3,"compra única, antiga"
+12931,1,recorrentes de alto valor
+12933,2,recentes de baixo valor
+12935,1,recorrentes de alto valor
+12936,0,recorrentes de valor médio
+12937,0,recorrentes de valor médio
+12938,2,recentes de baixo valor
+12939,1,recorrentes de alto valor
+12940,0,recorrentes de valor médio
+12942,0,recorrentes de valor médio
+12944,2,recentes de baixo valor
+12945,3,"compra única, antiga"
+12947,0,recorrentes de valor médio
+12948,1,recorrentes de alto valor
+12949,1,recorrentes de alto valor
+12950,2,recentes de baixo valor
+12951,1,recorrentes de alto valor
+12952,2,recentes de baixo valor
+12953,2,recentes de baixo valor
+12955,1,recorrentes de alto valor
+12956,3,"compra única, antiga"
+12957,1,recorrentes de alto valor
+12962,2,recentes de baixo valor
+12963,1,recorrentes de alto valor
+12965,3,"compra única, antiga"
+12966,2,recentes de baixo valor
+12967,0,recorrentes de valor médio
+12968,3,"compra única, antiga"
+12970,2,recentes de baixo valor
+12971,1,recorrentes de alto valor
+12974,3,"compra única, antiga"
+12976,3,"compra única, antiga"
+12977,3,"compra única, antiga"
+12980,0,recorrentes de valor médio
+12981,2,recentes de baixo valor
+12982,3,"compra única, antiga"
+12984,2,recentes de baixo valor
+12985,2,recentes de baixo valor
+12987,3,"compra única, antiga"
+12988,3,"compra única, antiga"
+12989,1,recorrentes de alto valor
+12990,2,recentes de baixo valor
+12991,2,recentes de baixo valor
+12993,2,recentes de baixo valor
+12994,2,recentes de baixo valor
+12995,3,"compra única, antiga"
+12997,0,recorrentes de valor médio
+12999,3,"compra única, antiga"
+13000,0,recorrentes de valor médio
+13001,1,recorrentes de alto valor
+13002,3,"compra única, antiga"
+13003,3,"compra única, antiga"
+13004,1,recorrentes de alto valor
+13005,3,"compra única, antiga"
+13006,3,"compra única, antiga"
+13008,3,"compra única, antiga"
+13011,3,"compra única, antiga"
+13012,1,recorrentes de alto valor
+13013,1,recorrentes de alto valor
+13014,1,recorrentes de alto valor
+13015,0,recorrentes de valor médio
+13016,0,recorrentes de valor médio
+13017,2,recentes de baixo valor
+13018,1,recorrentes de alto valor
+13021,1,recorrentes de alto valor
+13023,0,recorrentes de valor médio
+13026,1,recorrentes de alto valor
+13027,0,recorrentes de valor médio
+13028,2,recentes de baixo valor
+13029,0,recorrentes de valor médio
+13030,2,recentes de baixo valor
+13032,0,recorrentes de valor médio
+13033,3,"compra única, antiga"
+13034,0,recorrentes de valor médio
+13035,0,recorrentes de valor médio
+13037,0,recorrentes de valor médio
+13038,0,recorrentes de valor médio
+13040,2,recentes de baixo valor
+13043,3,"compra única, antiga"
+13044,3,"compra única, antiga"
+13045,3,"compra única, antiga"
+13046,2,recentes de baixo valor
+13047,0,recorrentes de valor médio
+13048,0,recorrentes de valor médio
+13049,0,recorrentes de valor médio
+13050,1,recorrentes de alto valor
+13052,3,"compra única, antiga"
+13055,0,recorrentes de valor médio
+13058,2,recentes de baixo valor
+13059,3,"compra única, antiga"
+13060,3,"compra única, antiga"
+13061,3,"compra única, antiga"
+13062,3,"compra única, antiga"
+13064,0,recorrentes de valor médio
+13065,3,"compra única, antiga"
+13066,2,recentes de baixo valor
+13067,3,"compra única, antiga"
+13068,2,recentes de baixo valor
+13069,1,recorrentes de alto valor
+13070,3,"compra única, antiga"
+13072,3,"compra única, antiga"
+13075,3,"compra única, antiga"
+13077,2,recentes de baixo valor
+13078,1,recorrentes de alto valor
+13079,2,recentes de baixo valor
+13080,3,"compra única, antiga"
+13081,1,recorrentes de alto valor
+13082,0,recorrentes de valor médio
+13083,2,recentes de baixo valor
+13085,3,"compra única, antiga"
+13089,1,recorrentes de alto valor
+13090,1,recorrentes de alto valor
+13091,2,recentes de baixo valor
+13092,0,recorrentes de valor médio
+13093,0,recorrentes de valor médio
+13094,1,recorrentes de alto valor
+13095,3,"compra única, antiga"
+13097,1,recorrentes de alto valor
+13098,1,recorrentes de alto valor
+13099,3,"compra única, antiga"
+13101,3,"compra única, antiga"
+13102,1,recorrentes de alto valor
+13103,3,"compra única, antiga"
+13104,1,recorrentes de alto valor
+13106,3,"compra única, antiga"
+13107,0,recorrentes de valor médio
+13108,3,"compra única, antiga"
+13109,0,recorrentes de valor médio
+13110,0,recorrentes de valor médio
+13113,1,recorrentes de alto valor
+13115,0,recorrentes de valor médio
+13116,3,"compra única, antiga"
+13117,0,recorrentes de valor médio
+13118,0,recorrentes de valor médio
+13120,3,"compra única, antiga"
+13121,3,"compra única, antiga"
+13122,0,recorrentes de valor médio
+13124,0,recorrentes de valor médio
+13126,1,recorrentes de alto valor
+13127,3,"compra única, antiga"
+13130,3,"compra única, antiga"
+13131,0,recorrentes de valor médio
+13132,3,"compra única, antiga"
+13133,3,"compra única, antiga"
+13134,0,recorrentes de valor médio
+13135,0,recorrentes de valor médio
+13136,0,recorrentes de valor médio
+13137,1,recorrentes de alto valor
+13138,0,recorrentes de valor médio
+13139,1,recorrentes de alto valor
+13140,3,"compra única, antiga"
+13141,0,recorrentes de valor médio
+13142,2,recentes de baixo valor
+13144,3,"compra única, antiga"
+13145,0,recorrentes de valor médio
+13146,2,recentes de baixo valor
+13147,2,recentes de baixo valor
+13148,1,recorrentes de alto valor
+13149,0,recorrentes de valor médio
+13151,3,"compra única, antiga"
+13153,2,recentes de baixo valor
+13155,0,recorrentes de valor médio
+13157,0,recorrentes de valor médio
+13158,0,recorrentes de valor médio
+13159,0,recorrentes de valor médio
+13160,2,recentes de baixo valor
+13161,3,"compra única, antiga"
+13162,0,recorrentes de valor médio
+13165,0,recorrentes de valor médio
+13166,3,"compra única, antiga"
+13167,0,recorrentes de valor médio
+13168,0,recorrentes de valor médio
+13169,0,recorrentes de valor médio
+13170,2,recentes de baixo valor
+13171,2,recentes de baixo valor
+13173,2,recentes de baixo valor
+13174,0,recorrentes de valor médio
+13176,3,"compra única, antiga"
+13177,3,"compra única, antiga"
+13178,1,recorrentes de alto valor
+13182,3,"compra única, antiga"
+13183,1,recorrentes de alto valor
+13184,1,recorrentes de alto valor
+13185,3,"compra única, antiga"
+13186,0,recorrentes de valor médio
+13187,3,"compra única, antiga"
+13188,2,recentes de baixo valor
+13189,2,recentes de baixo valor
+13192,0,recorrentes de valor médio
+13193,3,"compra única, antiga"
+13194,3,"compra única, antiga"
+13196,0,recorrentes de valor médio
+13198,1,recorrentes de alto valor
+13199,1,recorrentes de alto valor
+13200,0,recorrentes de valor médio
+13203,2,recentes de baixo valor
+13207,2,recentes de baixo valor
+13208,0,recorrentes de valor médio
+13209,1,recorrentes de alto valor
+13210,3,"compra única, antiga"
+13211,2,recentes de baixo valor
+13212,2,recentes de baixo valor
+13213,0,recorrentes de valor médio
+13216,3,"compra única, antiga"
+13217,0,recorrentes de valor médio
+13218,3,"compra única, antiga"
+13220,0,recorrentes de valor médio
+13221,3,"compra única, antiga"
+13223,3,"compra única, antiga"
+13224,0,recorrentes de valor médio
+13225,1,recorrentes de alto valor
+13226,3,"compra única, antiga"
+13227,3,"compra única, antiga"
+13228,3,"compra única, antiga"
+13229,3,"compra única, antiga"
+13230,1,recorrentes de alto valor
+13232,1,recorrentes de alto valor
+13233,3,"compra única, antiga"
+13235,3,"compra única, antiga"
+13236,2,recentes de baixo valor
+13238,2,recentes de baixo valor
+13239,3,"compra única, antiga"
+13240,0,recorrentes de valor médio
+13242,3,"compra única, antiga"
+13243,3,"compra única, antiga"
+13244,3,"compra única, antiga"
+13245,3,"compra única, antiga"
+13246,0,recorrentes de valor médio
+13247,2,recentes de baixo valor
+13248,3,"compra única, antiga"
+13249,0,recorrentes de valor médio
+13253,0,recorrentes de valor médio
+13255,2,recentes de baixo valor
+13258,2,recentes de baixo valor
+13259,3,"compra única, antiga"
+13260,3,"compra única, antiga"
+13261,3,"compra única, antiga"
+13262,3,"compra única, antiga"
+13263,1,recorrentes de alto valor
+13265,0,recorrentes de valor médio
+13266,1,recorrentes de alto valor
+13267,1,recorrentes de alto valor
+13268,1,recorrentes de alto valor
+13269,1,recorrentes de alto valor
+13270,3,"compra única, antiga"
+13271,2,recentes de baixo valor
+13272,2,recentes de baixo valor
+13273,3,"compra única, antiga"
+13276,0,recorrentes de valor médio
+13277,2,recentes de baixo valor
+13278,2,recentes de baixo valor
+13279,3,"compra única, antiga"
+13280,0,recorrentes de valor médio
+13282,0,recorrentes de valor médio
+13283,3,"compra única, antiga"
+13284,3,"compra única, antiga"
+13285,0,recorrentes de valor médio
+13291,3,"compra única, antiga"
+13292,2,recentes de baixo valor
+13294,3,"compra única, antiga"
+13295,3,"compra única, antiga"
+13296,3,"compra única, antiga"
+13297,0,recorrentes de valor médio
+13298,2,recentes de baixo valor
+13299,3,"compra única, antiga"
+13300,3,"compra única, antiga"
+13301,0,recorrentes de valor médio
+13302,3,"compra única, antiga"
+13304,3,"compra única, antiga"
+13305,1,recorrentes de alto valor
+13307,3,"compra única, antiga"
+13308,0,recorrentes de valor médio
+13309,1,recorrentes de alto valor
+13310,0,recorrentes de valor médio
+13311,2,recentes de baixo valor
+13313,0,recorrentes de valor médio
+13314,2,recentes de baixo valor
+13316,0,recorrentes de valor médio
+13317,0,recorrentes de valor médio
+13318,2,recentes de baixo valor
+13319,1,recorrentes de alto valor
+13320,0,recorrentes de valor médio
+13321,3,"compra única, antiga"
+13322,2,recentes de baixo valor
+13323,2,recentes de baixo valor
+13324,1,recorrentes de alto valor
+13325,3,"compra única, antiga"
+13327,0,recorrentes de valor médio
+13328,3,"compra única, antiga"
+13329,2,recentes de baixo valor
+13330,0,recorrentes de valor médio
+13332,2,recentes de baixo valor
+13334,0,recorrentes de valor médio
+13336,3,"compra única, antiga"
+13338,3,"compra única, antiga"
+13339,3,"compra única, antiga"
+13340,1,recorrentes de alto valor
+13341,3,"compra única, antiga"
+13343,3,"compra única, antiga"
+13344,0,recorrentes de valor médio
+13345,3,"compra única, antiga"
+13347,3,"compra única, antiga"
+13348,3,"compra única, antiga"
+13349,2,recentes de baixo valor
+13350,2,recentes de baixo valor
+13351,3,"compra única, antiga"
+13352,3,"compra única, antiga"
+13354,3,"compra única, antiga"
+13355,3,"compra única, antiga"
+13356,3,"compra única, antiga"
+13357,3,"compra única, antiga"
+13358,3,"compra única, antiga"
+13359,3,"compra única, antiga"
+13362,1,recorrentes de alto valor
+13363,2,recentes de baixo valor
+13364,3,"compra única, antiga"
+13365,0,recorrentes de valor médio
+13366,3,"compra única, antiga"
+13368,3,"compra única, antiga"
+13369,3,"compra única, antiga"
+13370,3,"compra única, antiga"
+13372,3,"compra única, antiga"
+13373,0,recorrentes de valor médio
+13375,3,"compra única, antiga"
+13376,0,recorrentes de valor médio
+13379,2,recentes de baixo valor
+13381,0,recorrentes de valor médio
+13382,3,"compra única, antiga"
+13384,1,recorrentes de alto valor
+13385,3,"compra única, antiga"
+13388,3,"compra única, antiga"
+13389,2,recentes de baixo valor
+13390,3,"compra única, antiga"
+13391,3,"compra única, antiga"
+13394,1,recorrentes de alto valor
+13395,3,"compra única, antiga"
+13396,0,recorrentes de valor médio
+13397,0,recorrentes de valor médio
+13398,3,"compra única, antiga"
+13402,3,"compra única, antiga"
+13403,2,recentes de baixo valor
+13404,2,recentes de baixo valor
+13405,3,"compra única, antiga"
+13408,1,recorrentes de alto valor
+13410,0,recorrentes de valor médio
+13411,3,"compra única, antiga"
+13414,0,recorrentes de valor médio
+13416,0,recorrentes de valor médio
+13417,2,recentes de baixo valor
+13418,1,recorrentes de alto valor
+13419,3,"compra única, antiga"
+13420,3,"compra única, antiga"
+13421,0,recorrentes de valor médio
+13422,0,recorrentes de valor médio
+13425,0,recorrentes de valor médio
+13426,1,recorrentes de alto valor
+13427,2,recentes de baixo valor
+13428,2,recentes de baixo valor
+13429,2,recentes de baixo valor
+13430,2,recentes de baixo valor
+13431,0,recorrentes de valor médio
+13434,3,"compra única, antiga"
+13435,1,recorrentes de alto valor
+13436,2,recentes de baixo valor
+13437,1,recorrentes de alto valor
+13439,3,"compra única, antiga"
+13441,3,"compra única, antiga"
+13447,0,recorrentes de valor médio
+13448,1,recorrentes de alto valor
+13449,2,recentes de baixo valor
+13450,0,recorrentes de valor médio
+13451,0,recorrentes de valor médio
+13452,3,"compra única, antiga"
+13453,3,"compra única, antiga"
+13455,2,recentes de baixo valor
+13456,0,recorrentes de valor médio
+13458,1,recorrentes de alto valor
+13460,2,recentes de baixo valor
+13461,0,recorrentes de valor médio
+13462,3,"compra única, antiga"
+13464,3,"compra única, antiga"
+13466,3,"compra única, antiga"
+13467,2,recentes de baixo valor
+13468,1,recorrentes de alto valor
+13470,3,"compra única, antiga"
+13471,1,recorrentes de alto valor
+13473,3,"compra única, antiga"
+13474,3,"compra única, antiga"
+13475,0,recorrentes de valor médio
+13476,0,recorrentes de valor médio
+13477,0,recorrentes de valor médio
+13479,3,"compra única, antiga"
+13481,0,recorrentes de valor médio
+13482,3,"compra única, antiga"
+13483,3,"compra única, antiga"
+13484,3,"compra única, antiga"
+13485,3,"compra única, antiga"
+13486,0,recorrentes de valor médio
+13487,0,recorrentes de valor médio
+13488,1,recorrentes de alto valor
+13489,0,recorrentes de valor médio
+13491,0,recorrentes de valor médio
+13492,0,recorrentes de valor médio
+13493,3,"compra única, antiga"
+13494,3,"compra única, antiga"
+13495,1,recorrentes de alto valor
+13496,2,recentes de baixo valor
+13497,3,"compra única, antiga"
+13499,0,recorrentes de valor médio
+13500,0,recorrentes de valor médio
+13501,3,"compra única, antiga"
+13502,2,recentes de baixo valor
+13503,3,"compra única, antiga"
+13504,3,"compra única, antiga"
+13505,0,recorrentes de valor médio
+13506,3,"compra única, antiga"
+13507,1,recorrentes de alto valor
+13508,3,"compra única, antiga"
+13509,0,recorrentes de valor médio
+13510,1,recorrentes de alto valor
+13512,3,"compra única, antiga"
+13513,3,"compra única, antiga"
+13514,3,"compra única, antiga"
+13515,0,recorrentes de valor médio
+13516,0,recorrentes de valor médio
+13517,0,recorrentes de valor médio
+13518,3,"compra única, antiga"
+13519,3,"compra única, antiga"
+13520,0,recorrentes de valor médio
+13521,2,recentes de baixo valor
+13522,2,recentes de baixo valor
+13523,0,recorrentes de valor médio
+13524,0,recorrentes de valor médio
+13525,2,recentes de baixo valor
+13527,0,recorrentes de valor médio
+13529,3,"compra única, antiga"
+13531,3,"compra única, antiga"
+13532,2,recentes de baixo valor
+13533,3,"compra única, antiga"
+13534,1,recorrentes de alto valor
+13536,1,recorrentes de alto valor
+13538,0,recorrentes de valor médio
+13539,0,recorrentes de valor médio
+13544,2,recentes de baixo valor
+13546,2,recentes de baixo valor
+13548,3,"compra única, antiga"
+13549,0,recorrentes de valor médio
+13551,3,"compra única, antiga"
+13552,1,recorrentes de alto valor
+13555,0,recorrentes de valor médio
+13557,2,recentes de baixo valor
+13558,2,recentes de baixo valor
+13560,2,recentes de baixo valor
+13561,3,"compra única, antiga"
+13562,0,recorrentes de valor médio
+13563,0,recorrentes de valor médio
+13564,3,"compra única, antiga"
+13565,2,recentes de baixo valor
+13566,0,recorrentes de valor médio
+13568,3,"compra única, antiga"
+13569,2,recentes de baixo valor
+13570,3,"compra única, antiga"
+13571,1,recorrentes de alto valor
+13572,3,"compra única, antiga"
+13573,3,"compra única, antiga"
+13575,0,recorrentes de valor médio
+13576,1,recorrentes de alto valor
+13577,0,recorrentes de valor médio
+13579,2,recentes de baixo valor
+13581,3,"compra única, antiga"
+13583,3,"compra única, antiga"
+13584,3,"compra única, antiga"
+13587,3,"compra única, antiga"
+13588,1,recorrentes de alto valor
+13589,2,recentes de baixo valor
+13590,1,recorrentes de alto valor
+13591,0,recorrentes de valor médio
+13592,2,recentes de baixo valor
+13593,0,recorrentes de valor médio
+13594,3,"compra única, antiga"
+13596,2,recentes de baixo valor
+13598,3,"compra única, antiga"
+13599,1,recorrentes de alto valor
+13600,3,"compra única, antiga"
+13601,0,recorrentes de valor médio
+13602,3,"compra única, antiga"
+13603,2,recentes de baixo valor
+13606,2,recentes de baixo valor
+13607,2,recentes de baixo valor
+13610,1,recorrentes de alto valor
+13611,0,recorrentes de valor médio
+13614,0,recorrentes de valor médio
+13615,3,"compra única, antiga"
+13617,0,recorrentes de valor médio
+13618,3,"compra única, antiga"
+13621,3,"compra única, antiga"
+13623,0,recorrentes de valor médio
+13626,3,"compra única, antiga"
+13627,0,recorrentes de valor médio
+13629,1,recorrentes de alto valor
+13630,1,recorrentes de alto valor
+13631,0,recorrentes de valor médio
+13632,0,recorrentes de valor médio
+13634,0,recorrentes de valor médio
+13635,3,"compra única, antiga"
+13636,0,recorrentes de valor médio
+13637,0,recorrentes de valor médio
+13638,2,recentes de baixo valor
+13639,3,"compra única, antiga"
+13642,3,"compra única, antiga"
+13643,2,recentes de baixo valor
+13644,0,recorrentes de valor médio
+13645,3,"compra única, antiga"
+13647,0,recorrentes de valor médio
+13649,3,"compra única, antiga"
+13650,0,recorrentes de valor médio
+13651,3,"compra única, antiga"
+13652,0,recorrentes de valor médio
+13654,0,recorrentes de valor médio
+13655,0,recorrentes de valor médio
+13656,3,"compra única, antiga"
+13657,2,recentes de baixo valor
+13658,1,recorrentes de alto valor
+13659,0,recorrentes de valor médio
+13662,0,recorrentes de valor médio
+13663,3,"compra única, antiga"
+13666,3,"compra única, antiga"
+13667,3,"compra única, antiga"
+13668,1,recorrentes de alto valor
+13669,3,"compra única, antiga"
+13670,3,"compra única, antiga"
+13672,3,"compra única, antiga"
+13673,2,recentes de baixo valor
+13675,3,"compra única, antiga"
+13678,3,"compra única, antiga"
+13680,1,recorrentes de alto valor
+13681,0,recorrentes de valor médio
+13682,3,"compra única, antiga"
+13684,3,"compra única, antiga"
+13685,1,recorrentes de alto valor
+13686,3,"compra única, antiga"
+13689,3,"compra única, antiga"
+13690,3,"compra única, antiga"
+13692,0,recorrentes de valor médio
+13694,1,recorrentes de alto valor
+13695,1,recorrentes de alto valor
+13697,3,"compra única, antiga"
+13699,3,"compra única, antiga"
+13700,1,recorrentes de alto valor
+13703,3,"compra única, antiga"
+13704,1,recorrentes de alto valor
+13705,2,recentes de baixo valor
+13706,3,"compra única, antiga"
+13707,3,"compra única, antiga"
+13708,3,"compra única, antiga"
+13709,1,recorrentes de alto valor
+13710,2,recentes de baixo valor
+13711,3,"compra única, antiga"
+13712,3,"compra única, antiga"
+13715,0,recorrentes de valor médio
+13716,3,"compra única, antiga"
+13717,0,recorrentes de valor médio
+13718,3,"compra única, antiga"
+13719,0,recorrentes de valor médio
+13720,0,recorrentes de valor médio
+13721,2,recentes de baixo valor
+13722,0,recorrentes de valor médio
+13723,3,"compra única, antiga"
+13725,0,recorrentes de valor médio
+13726,0,recorrentes de valor médio
+13727,2,recentes de baixo valor
+13728,0,recorrentes de valor médio
+13730,3,"compra única, antiga"
+13731,3,"compra única, antiga"
+13732,2,recentes de baixo valor
+13735,0,recorrentes de valor médio
+13736,2,recentes de baixo valor
+13737,3,"compra única, antiga"
+13739,2,recentes de baixo valor
+13740,3,"compra única, antiga"
+13741,0,recorrentes de valor médio
+13742,1,recorrentes de alto valor
+13743,1,recorrentes de alto valor
+13744,0,recorrentes de valor médio
+13745,3,"compra única, antiga"
+13747,3,"compra única, antiga"
+13748,0,recorrentes de valor médio
+13750,0,recorrentes de valor médio
+13751,3,"compra única, antiga"
+13752,0,recorrentes de valor médio
+13753,3,"compra única, antiga"
+13754,3,"compra única, antiga"
+13755,1,recorrentes de alto valor
+13756,1,recorrentes de alto valor
+13758,1,recorrentes de alto valor
+13759,2,recentes de baixo valor
+13760,3,"compra única, antiga"
+13761,0,recorrentes de valor médio
+13762,3,"compra única, antiga"
+13763,0,recorrentes de valor médio
+13764,0,recorrentes de valor médio
+13767,1,recorrentes de alto valor
+13769,1,recorrentes de alto valor
+13771,0,recorrentes de valor médio
+13772,0,recorrentes de valor médio
+13774,3,"compra única, antiga"
+13777,1,recorrentes de alto valor
+13778,3,"compra única, antiga"
+13780,2,recentes de baixo valor
+13781,3,"compra única, antiga"
+13782,0,recorrentes de valor médio
+13784,1,recorrentes de alto valor
+13786,3,"compra única, antiga"
+13787,3,"compra única, antiga"
+13790,2,recentes de baixo valor
+13791,0,recorrentes de valor médio
+13792,3,"compra única, antiga"
+13798,1,recorrentes de alto valor
+13799,3,"compra única, antiga"
+13800,3,"compra única, antiga"
+13801,3,"compra única, antiga"
+13802,0,recorrentes de valor médio
+13803,3,"compra única, antiga"
+13804,0,recorrentes de valor médio
+13805,0,recorrentes de valor médio
+13806,3,"compra única, antiga"
+13807,3,"compra única, antiga"
+13808,1,recorrentes de alto valor
+13809,3,"compra única, antiga"
+13810,2,recentes de baixo valor
+13811,3,"compra única, antiga"
+13812,0,recorrentes de valor médio
+13813,0,recorrentes de valor médio
+13814,0,recorrentes de valor médio
+13815,0,recorrentes de valor médio
+13816,2,recentes de baixo valor
+13817,2,recentes de baixo valor
+13819,0,recorrentes de valor médio
+13821,3,"compra única, antiga"
+13822,2,recentes de baixo valor
+13823,2,recentes de baixo valor
+13824,0,recorrentes de valor médio
+13826,3,"compra única, antiga"
+13827,0,recorrentes de valor médio
+13828,2,recentes de baixo valor
+13831,1,recorrentes de alto valor
+13832,2,recentes de baixo valor
+13833,3,"compra única, antiga"
+13835,0,recorrentes de valor médio
+13837,3,"compra única, antiga"
+13838,2,recentes de baixo valor
+13841,3,"compra única, antiga"
+13842,0,recorrentes de valor médio
+13844,2,recentes de baixo valor
+13845,3,"compra única, antiga"
+13846,0,recorrentes de valor médio
+13848,0,recorrentes de valor médio
+13849,0,recorrentes de valor médio
+13850,3,"compra única, antiga"
+13851,0,recorrentes de valor médio
+13853,0,recorrentes de valor médio
+13854,1,recorrentes de alto valor
+13856,3,"compra única, antiga"
+13858,3,"compra única, antiga"
+13859,3,"compra única, antiga"
+13860,1,recorrentes de alto valor
+13862,1,recorrentes de alto valor
+13863,3,"compra única, antiga"
+13865,0,recorrentes de valor médio
+13866,3,"compra única, antiga"
+13867,0,recorrentes de valor médio
+13868,2,recentes de baixo valor
+13869,0,recorrentes de valor médio
+13870,1,recorrentes de alto valor
+13871,1,recorrentes de alto valor
+13873,3,"compra única, antiga"
+13874,3,"compra única, antiga"
+13875,0,recorrentes de valor médio
+13876,3,"compra única, antiga"
+13877,3,"compra única, antiga"
+13878,0,recorrentes de valor médio
+13880,1,recorrentes de alto valor
+13881,1,recorrentes de alto valor
+13882,1,recorrentes de alto valor
+13883,1,recorrentes de alto valor
+13884,2,recentes de baixo valor
+13885,3,"compra única, antiga"
+13886,3,"compra única, antiga"
+13887,3,"compra única, antiga"
+13888,3,"compra única, antiga"
+13889,3,"compra única, antiga"
+13890,1,recorrentes de alto valor
+13892,0,recorrentes de valor médio
+13893,3,"compra única, antiga"
+13894,2,recentes de baixo valor
+13895,0,recorrentes de valor médio
+13897,3,"compra única, antiga"
+13898,3,"compra única, antiga"
+13899,2,recentes de baixo valor
+13900,0,recorrentes de valor médio
+13901,0,recorrentes de valor médio
+13904,2,recentes de baixo valor
+13908,0,recorrentes de valor médio
+13911,0,recorrentes de valor médio
+13914,2,recentes de baixo valor
+13917,3,"compra única, antiga"
+13918,0,recorrentes de valor médio
+13919,3,"compra única, antiga"
+13922,3,"compra única, antiga"
+13923,3,"compra única, antiga"
+13924,1,recorrentes de alto valor
+13925,0,recorrentes de valor médio
+13926,2,recentes de baixo valor
+13927,3,"compra única, antiga"
+13928,2,recentes de baixo valor
+13929,3,"compra única, antiga"
+13930,3,"compra única, antiga"
+13931,0,recorrentes de valor médio
+13932,3,"compra única, antiga"
+13933,3,"compra única, antiga"
+13934,3,"compra única, antiga"
+13936,3,"compra única, antiga"
+13937,3,"compra única, antiga"
+13938,3,"compra única, antiga"
+13939,2,recentes de baixo valor
+13940,0,recorrentes de valor médio
+13941,1,recorrentes de alto valor
+13946,0,recorrentes de valor médio
+13947,3,"compra única, antiga"
+13948,3,"compra única, antiga"
+13949,1,recorrentes de alto valor
+13950,2,recentes de baixo valor
+13951,0,recorrentes de valor médio
+13952,0,recorrentes de valor médio
+13953,1,recorrentes de alto valor
+13954,2,recentes de baixo valor
+13955,3,"compra única, antiga"
+13956,2,recentes de baixo valor
+13959,0,recorrentes de valor médio
+13960,2,recentes de baixo valor
+13962,2,recentes de baixo valor
+13963,0,recorrentes de valor médio
+13967,3,"compra única, antiga"
+13969,1,recorrentes de alto valor
+13971,1,recorrentes de alto valor
+13972,3,"compra única, antiga"
+13973,3,"compra única, antiga"
+13974,3,"compra única, antiga"
+13975,0,recorrentes de valor médio
+13976,3,"compra única, antiga"
+13978,2,recentes de baixo valor
+13979,3,"compra única, antiga"
+13980,3,"compra única, antiga"
+13982,0,recorrentes de valor médio
+13983,1,recorrentes de alto valor
+13984,0,recorrentes de valor médio
+13985,1,recorrentes de alto valor
+13986,2,recentes de baixo valor
+13988,1,recorrentes de alto valor
+13989,0,recorrentes de valor médio
+13990,3,"compra única, antiga"
+13991,0,recorrentes de valor médio
+13992,3,"compra única, antiga"
+13993,1,recorrentes de alto valor
+13994,1,recorrentes de alto valor
+13995,0,recorrentes de valor médio
+13999,1,recorrentes de alto valor
+14000,3,"compra única, antiga"
+14001,0,recorrentes de valor médio
+14002,3,"compra única, antiga"
+14004,0,recorrentes de valor médio
+14005,1,recorrentes de alto valor
+14006,0,recorrentes de valor médio
+14009,3,"compra única, antiga"
+14012,3,"compra única, antiga"
+14013,3,"compra única, antiga"
+14014,3,"compra única, antiga"
+14015,3,"compra única, antiga"
+14016,0,recorrentes de valor médio
+14019,0,recorrentes de valor médio
+14020,2,recentes de baixo valor
+14021,0,recorrentes de valor médio
+14022,3,"compra única, antiga"
+14023,2,recentes de baixo valor
+14024,3,"compra única, antiga"
+14027,3,"compra única, antiga"
+14029,3,"compra única, antiga"
+14030,1,recorrentes de alto valor
+14031,1,recorrentes de alto valor
+14032,1,recorrentes de alto valor
+14034,2,recentes de baixo valor
+14035,0,recorrentes de valor médio
+14036,3,"compra única, antiga"
+14037,3,"compra única, antiga"
+14038,0,recorrentes de valor médio
+14039,2,recentes de baixo valor
+14040,1,recorrentes de alto valor
+14041,3,"compra única, antiga"
+14044,0,recorrentes de valor médio
+14045,0,recorrentes de valor médio
+14046,3,"compra única, antiga"
+14047,0,recorrentes de valor médio
+14048,3,"compra única, antiga"
+14049,0,recorrentes de valor médio
+14050,2,recentes de baixo valor
+14051,1,recorrentes de alto valor
+14052,2,recentes de baixo valor
+14053,3,"compra única, antiga"
+14054,3,"compra única, antiga"
+14055,3,"compra única, antiga"
+14056,1,recorrentes de alto valor
+14057,1,recorrentes de alto valor
+14059,3,"compra única, antiga"
+14060,1,recorrentes de alto valor
+14062,1,recorrentes de alto valor
+14064,0,recorrentes de valor médio
+14066,3,"compra única, antiga"
+14067,3,"compra única, antiga"
+14068,3,"compra única, antiga"
+14071,1,recorrentes de alto valor
+14073,2,recentes de baixo valor
+14075,2,recentes de baixo valor
+14076,3,"compra única, antiga"
+14077,0,recorrentes de valor médio
+14078,0,recorrentes de valor médio
+14079,3,"compra única, antiga"
+14080,3,"compra única, antiga"
+14081,3,"compra única, antiga"
+14082,3,"compra única, antiga"
+14083,1,recorrentes de alto valor
+14085,1,recorrentes de alto valor
+14087,2,recentes de baixo valor
+14088,1,recorrentes de alto valor
+14089,3,"compra única, antiga"
+14090,3,"compra única, antiga"
+14092,1,recorrentes de alto valor
+14093,2,recentes de baixo valor
+14096,1,recorrentes de alto valor
+14098,3,"compra única, antiga"
+14099,1,recorrentes de alto valor
+14100,3,"compra única, antiga"
+14101,0,recorrentes de valor médio
+14102,1,recorrentes de alto valor
+14104,3,"compra única, antiga"
+14105,3,"compra única, antiga"
+14107,0,recorrentes de valor médio
+14108,2,recentes de baixo valor
+14109,3,"compra única, antiga"
+14110,1,recorrentes de alto valor
+14111,2,recentes de baixo valor
+14112,1,recorrentes de alto valor
+14113,1,recorrentes de alto valor
+14114,3,"compra única, antiga"
+14116,0,recorrentes de valor médio
+14117,3,"compra única, antiga"
+14121,1,recorrentes de alto valor
+14124,3,"compra única, antiga"
+14125,0,recorrentes de valor médio
+14126,2,recentes de baixo valor
+14127,0,recorrentes de valor médio
+14128,0,recorrentes de valor médio
+14129,1,recorrentes de alto valor
+14130,3,"compra única, antiga"
+14132,1,recorrentes de alto valor
+14133,0,recorrentes de valor médio
+14135,1,recorrentes de alto valor
+14138,2,recentes de baixo valor
+14139,3,"compra única, antiga"
+14140,2,recentes de baixo valor
+14141,2,recentes de baixo valor
+14142,3,"compra única, antiga"
+14143,3,"compra única, antiga"
+14145,0,recorrentes de valor médio
+14146,1,recorrentes de alto valor
+14147,3,"compra única, antiga"
+14148,3,"compra única, antiga"
+14149,3,"compra única, antiga"
+14150,2,recentes de baixo valor
+14152,3,"compra única, antiga"
+14154,0,recorrentes de valor médio
+14155,3,"compra única, antiga"
+14156,1,recorrentes de alto valor
+14157,2,recentes de baixo valor
+14158,2,recentes de baixo valor
+14159,1,recorrentes de alto valor
+14161,0,recorrentes de valor médio
+14162,3,"compra única, antiga"
+14163,0,recorrentes de valor médio
+14164,0,recorrentes de valor médio
+14165,3,"compra única, antiga"
+14167,0,recorrentes de valor médio
+14171,3,"compra única, antiga"
+14173,2,recentes de baixo valor
+14174,2,recentes de baixo valor
+14175,0,recorrentes de valor médio
+14176,3,"compra única, antiga"
+14177,0,recorrentes de valor médio
+14178,1,recorrentes de alto valor
+14179,0,recorrentes de valor médio
+14180,1,recorrentes de alto valor
+14184,3,"compra única, antiga"
+14185,3,"compra única, antiga"
+14188,0,recorrentes de valor médio
+14189,1,recorrentes de alto valor
+14191,1,recorrentes de alto valor
+14193,0,recorrentes de valor médio
+14194,1,recorrentes de alto valor
+14195,3,"compra única, antiga"
+14196,3,"compra única, antiga"
+14198,2,recentes de baixo valor
+14199,3,"compra única, antiga"
+14201,0,recorrentes de valor médio
+14204,2,recentes de baixo valor
+14205,2,recentes de baixo valor
+14206,3,"compra única, antiga"
+14208,3,"compra única, antiga"
+14209,1,recorrentes de alto valor
+14210,0,recorrentes de valor médio
+14211,0,recorrentes de valor médio
+14212,3,"compra única, antiga"
+14214,0,recorrentes de valor médio
+14215,1,recorrentes de alto valor
+14216,1,recorrentes de alto valor
+14217,1,recorrentes de alto valor
+14218,3,"compra única, antiga"
+14219,2,recentes de baixo valor
+14220,3,"compra única, antiga"
+14221,1,recorrentes de alto valor
+14222,3,"compra única, antiga"
+14223,0,recorrentes de valor médio
+14224,0,recorrentes de valor médio
+14226,0,recorrentes de valor médio
+14227,1,recorrentes de alto valor
+14229,0,recorrentes de valor médio
+14231,0,recorrentes de valor médio
+14232,0,recorrentes de valor médio
+14233,0,recorrentes de valor médio
+14234,0,recorrentes de valor médio
+14235,0,recorrentes de valor médio
+14236,3,"compra única, antiga"
+14237,3,"compra única, antiga"
+14238,3,"compra única, antiga"
+14239,1,recorrentes de alto valor
+14240,2,recentes de baixo valor
+14241,3,"compra única, antiga"
+14242,3,"compra única, antiga"
+14243,1,recorrentes de alto valor
+14245,0,recorrentes de valor médio
+14246,0,recorrentes de valor médio
+14247,3,"compra única, antiga"
+14248,3,"compra única, antiga"
+14250,2,recentes de baixo valor
+14251,1,recorrentes de alto valor
+14256,3,"compra única, antiga"
+14257,0,recorrentes de valor médio
+14258,1,recorrentes de alto valor
+14259,3,"compra única, antiga"
+14261,0,recorrentes de valor médio
+14262,1,recorrentes de alto valor
+14264,3,"compra única, antiga"
+14265,3,"compra única, antiga"
+14267,0,recorrentes de valor médio
+14270,3,"compra única, antiga"
+14271,3,"compra única, antiga"
+14272,3,"compra única, antiga"
+14273,0,recorrentes de valor médio
+14276,0,recorrentes de valor médio
+14277,0,recorrentes de valor médio
+14280,3,"compra única, antiga"
+14282,1,recorrentes de alto valor
+14284,2,recentes de baixo valor
+14285,0,recorrentes de valor médio
+14286,0,recorrentes de valor médio
+14287,2,recentes de baixo valor
+14288,3,"compra única, antiga"
+14289,0,recorrentes de valor médio
+14290,1,recorrentes de alto valor
+14291,1,recorrentes de alto valor
+14292,1,recorrentes de alto valor
+14293,2,recentes de baixo valor
+14295,3,"compra única, antiga"
+14297,0,recorrentes de valor médio
+14298,1,recorrentes de alto valor
+14299,1,recorrentes de alto valor
+14300,2,recentes de baixo valor
+14301,3,"compra única, antiga"
+14304,3,"compra única, antiga"
+14305,0,recorrentes de valor médio
+14306,0,recorrentes de valor médio
+14307,0,recorrentes de valor médio
+14309,1,recorrentes de alto valor
+14311,3,"compra única, antiga"
+14312,0,recorrentes de valor médio
+14314,3,"compra única, antiga"
+14315,0,recorrentes de valor médio
+14317,3,"compra única, antiga"
+14320,3,"compra única, antiga"
+14321,0,recorrentes de valor médio
+14323,3,"compra única, antiga"
+14326,3,"compra única, antiga"
+14327,3,"compra única, antiga"
+14329,1,recorrentes de alto valor
+14331,3,"compra única, antiga"
+14332,0,recorrentes de valor médio
+14333,3,"compra única, antiga"
+14334,1,recorrentes de alto valor
+14335,2,recentes de baixo valor
+14336,0,recorrentes de valor médio
+14338,3,"compra única, antiga"
+14339,3,"compra única, antiga"
+14340,3,"compra única, antiga"
+14341,0,recorrentes de valor médio
+14342,0,recorrentes de valor médio
+14344,0,recorrentes de valor médio
+14345,3,"compra única, antiga"
+14346,0,recorrentes de valor médio
+14348,3,"compra única, antiga"
+14349,2,recentes de baixo valor
+14350,3,"compra única, antiga"
+14351,3,"compra única, antiga"
+14352,0,recorrentes de valor médio
+14353,3,"compra única, antiga"
+14354,2,recentes de baixo valor
+14355,3,"compra única, antiga"
+14356,0,recorrentes de valor médio
+14357,3,"compra única, antiga"
+14359,2,recentes de baixo valor
+14360,0,recorrentes de valor médio
+14362,2,recentes de baixo valor
+14364,0,recorrentes de valor médio
+14367,1,recorrentes de alto valor
+14368,3,"compra única, antiga"
+14371,3,"compra única, antiga"
+14373,3,"compra única, antiga"
+14375,3,"compra única, antiga"
+14377,3,"compra única, antiga"
+14379,2,recentes de baixo valor
+14381,3,"compra única, antiga"
+14382,2,recentes de baixo valor
+14383,0,recorrentes de valor médio
+14385,2,recentes de baixo valor
+14386,3,"compra única, antiga"
+14387,0,recorrentes de valor médio
+14388,1,recorrentes de alto valor
+14389,0,recorrentes de valor médio
+14390,1,recorrentes de alto valor
+14393,3,"compra única, antiga"
+14395,1,recorrentes de alto valor
+14396,3,"compra única, antiga"
+14397,1,recorrentes de alto valor
+14400,3,"compra única, antiga"
+14401,1,recorrentes de alto valor
+14403,0,recorrentes de valor médio
+14404,0,recorrentes de valor médio
+14406,3,"compra única, antiga"
+14407,0,recorrentes de valor médio
+14408,1,recorrentes de alto valor
+14409,0,recorrentes de valor médio
+14410,0,recorrentes de valor médio
+14411,3,"compra única, antiga"
+14412,0,recorrentes de valor médio
+14413,3,"compra única, antiga"
+14414,0,recorrentes de valor médio
+14415,1,recorrentes de alto valor
+14416,2,recentes de baixo valor
+14418,2,recentes de baixo valor
+14419,0,recorrentes de valor médio
+14420,3,"compra única, antiga"
+14421,0,recorrentes de valor médio
+14422,1,recorrentes de alto valor
+14423,3,"compra única, antiga"
+14424,2,recentes de baixo valor
+14426,1,recorrentes de alto valor
+14427,2,recentes de baixo valor
+14428,1,recorrentes de alto valor
+14431,3,"compra única, antiga"
+14432,1,recorrentes de alto valor
+14434,0,recorrentes de valor médio
+14436,3,"compra única, antiga"
+14437,3,"compra única, antiga"
+14438,3,"compra única, antiga"
+14439,3,"compra única, antiga"
+14440,1,recorrentes de alto valor
+14441,1,recorrentes de alto valor
+14442,0,recorrentes de valor médio
+14443,0,recorrentes de valor médio
+14446,2,recentes de baixo valor
+14447,0,recorrentes de valor médio
+14448,2,recentes de baixo valor
+14449,0,recorrentes de valor médio
+14450,3,"compra única, antiga"
+14451,0,recorrentes de valor médio
+14452,2,recentes de baixo valor
+14453,3,"compra única, antiga"
+14456,1,recorrentes de alto valor
+14457,3,"compra única, antiga"
+14459,0,recorrentes de valor médio
+14460,3,"compra única, antiga"
+14461,0,recorrentes de valor médio
+14462,0,recorrentes de valor médio
+14463,0,recorrentes de valor médio
+14465,0,recorrentes de valor médio
+14466,0,recorrentes de valor médio
+14467,2,recentes de baixo valor
+14470,2,recentes de baixo valor
+14472,0,recorrentes de valor médio
+14473,3,"compra única, antiga"
+14474,2,recentes de baixo valor
+14475,0,recorrentes de valor médio
+14476,3,"compra única, antiga"
+14477,0,recorrentes de valor médio
+14479,3,"compra única, antiga"
+14480,2,recentes de baixo valor
+14481,3,"compra única, antiga"
+14482,0,recorrentes de valor médio
+14483,3,"compra única, antiga"
+14484,3,"compra única, antiga"
+14485,3,"compra única, antiga"
+14487,0,recorrentes de valor médio
+14488,3,"compra única, antiga"
+14489,3,"compra única, antiga"
+14491,3,"compra única, antiga"
+14493,1,recorrentes de alto valor
+14494,2,recentes de baixo valor
+14495,3,"compra única, antiga"
+14496,3,"compra única, antiga"
+14497,3,"compra única, antiga"
+14498,0,recorrentes de valor médio
+14499,0,recorrentes de valor médio
+14500,3,"compra única, antiga"
+14501,3,"compra única, antiga"
+14502,1,recorrentes de alto valor
+14503,1,recorrentes de alto valor
+14504,0,recorrentes de valor médio
+14505,1,recorrentes de alto valor
+14506,0,recorrentes de valor médio
+14507,0,recorrentes de valor médio
+14508,2,recentes de baixo valor
+14511,0,recorrentes de valor médio
+14512,3,"compra única, antiga"
+14513,3,"compra única, antiga"
+14514,0,recorrentes de valor médio
+14515,0,recorrentes de valor médio
+14517,2,recentes de baixo valor
+14518,3,"compra única, antiga"
+14520,2,recentes de baixo valor
+14522,0,recorrentes de valor médio
+14523,3,"compra única, antiga"
+14524,0,recorrentes de valor médio
+14525,1,recorrentes de alto valor
+14527,1,recorrentes de alto valor
+14528,2,recentes de baixo valor
+14529,0,recorrentes de valor médio
+14530,0,recorrentes de valor médio
+14532,0,recorrentes de valor médio
+14533,0,recorrentes de valor médio
+14534,1,recorrentes de alto valor
+14535,0,recorrentes de valor médio
+14536,3,"compra única, antiga"
+14537,3,"compra única, antiga"
+14538,3,"compra única, antiga"
+14539,2,recentes de baixo valor
+14540,2,recentes de baixo valor
+14541,0,recorrentes de valor médio
+14542,3,"compra única, antiga"
+14543,1,recorrentes de alto valor
+14544,0,recorrentes de valor médio
+14546,1,recorrentes de alto valor
+14547,1,recorrentes de alto valor
+14548,3,"compra única, antiga"
+14549,3,"compra única, antiga"
+14550,2,recentes de baixo valor
+14551,2,recentes de baixo valor
+14552,3,"compra única, antiga"
+14553,0,recorrentes de valor médio
+14554,0,recorrentes de valor médio
+14555,3,"compra única, antiga"
+14557,3,"compra única, antiga"
+14560,1,recorrentes de alto valor
+14561,0,recorrentes de valor médio
+14562,1,recorrentes de alto valor
+14565,0,recorrentes de valor médio
+14566,3,"compra única, antiga"
+14567,0,recorrentes de valor médio
+14569,2,recentes de baixo valor
+14570,3,"compra única, antiga"
+14572,1,recorrentes de alto valor
+14573,0,recorrentes de valor médio
+14576,3,"compra única, antiga"
+14577,2,recentes de baixo valor
+14578,2,recentes de baixo valor
+14581,2,recentes de baixo valor
+14582,3,"compra única, antiga"
+14583,2,recentes de baixo valor
+14584,0,recorrentes de valor médio
+14585,3,"compra única, antiga"
+14586,3,"compra única, antiga"
+14587,1,recorrentes de alto valor
+14589,3,"compra única, antiga"
+14591,0,recorrentes de valor médio
+14592,0,recorrentes de valor médio
+14593,2,recentes de baixo valor
+14594,2,recentes de baixo valor
+14595,0,recorrentes de valor médio
+14597,2,recentes de baixo valor
+14598,3,"compra única, antiga"
+14600,3,"compra única, antiga"
+14601,2,recentes de baixo valor
+14603,3,"compra única, antiga"
+14606,1,recorrentes de alto valor
+14607,1,recorrentes de alto valor
+14608,1,recorrentes de alto valor
+14609,0,recorrentes de valor médio
+14616,3,"compra única, antiga"
+14618,2,recentes de baixo valor
+14619,3,"compra única, antiga"
+14620,3,"compra única, antiga"
+14621,1,recorrentes de alto valor
+14622,3,"compra única, antiga"
+14623,0,recorrentes de valor médio
+14624,3,"compra única, antiga"
+14625,3,"compra única, antiga"
+14626,0,recorrentes de valor médio
+14628,3,"compra única, antiga"
+14629,2,recentes de baixo valor
+14631,0,recorrentes de valor médio
+14632,3,"compra única, antiga"
+14633,3,"compra única, antiga"
+14636,2,recentes de baixo valor
+14638,3,"compra única, antiga"
+14639,0,recorrentes de valor médio
+14640,0,recorrentes de valor médio
+14641,2,recentes de baixo valor
+14642,3,"compra única, antiga"
+14643,3,"compra única, antiga"
+14644,0,recorrentes de valor médio
+14645,3,"compra única, antiga"
+14646,1,recorrentes de alto valor
+14647,3,"compra única, antiga"
+14649,2,recentes de baixo valor
+14651,0,recorrentes de valor médio
+14652,3,"compra única, antiga"
+14653,1,recorrentes de alto valor
+14655,0,recorrentes de valor médio
+14656,3,"compra única, antiga"
+14657,0,recorrentes de valor médio
+14658,2,recentes de baixo valor
+14659,1,recorrentes de alto valor
+14660,3,"compra única, antiga"
+14661,2,recentes de baixo valor
+14662,0,recorrentes de valor médio
+14664,2,recentes de baixo valor
+14665,0,recorrentes de valor médio
+14666,2,recentes de baixo valor
+14667,1,recorrentes de alto valor
+14669,0,recorrentes de valor médio
+14670,3,"compra única, antiga"
+14672,3,"compra única, antiga"
+14673,1,recorrentes de alto valor
+14675,2,recentes de baixo valor
+14676,0,recorrentes de valor médio
+14680,1,recorrentes de alto valor
+14681,0,recorrentes de valor médio
+14682,3,"compra única, antiga"
+14684,0,recorrentes de valor médio
+14687,3,"compra única, antiga"
+14688,1,recorrentes de alto valor
+14689,3,"compra única, antiga"
+14690,2,recentes de baixo valor
+14691,0,recorrentes de valor médio
+14692,0,recorrentes de valor médio
+14693,3,"compra única, antiga"
+14696,1,recorrentes de alto valor
+14697,3,"compra única, antiga"
+14698,1,recorrentes de alto valor
+14699,3,"compra única, antiga"
+14700,0,recorrentes de valor médio
+14701,1,recorrentes de alto valor
+14702,1,recorrentes de alto valor
+14703,2,recentes de baixo valor
+14704,0,recorrentes de valor médio
+14705,3,"compra única, antiga"
+14708,2,recentes de baixo valor
+14709,1,recorrentes de alto valor
+14710,2,recentes de baixo valor
+14711,1,recorrentes de alto valor
+14712,0,recorrentes de valor médio
+14713,1,recorrentes de alto valor
+14714,2,recentes de baixo valor
+14715,0,recorrentes de valor médio
+14716,2,recentes de baixo valor
+14719,1,recorrentes de alto valor
+14720,2,recentes de baixo valor
+14722,3,"compra única, antiga"
+14723,1,recorrentes de alto valor
+14725,2,recentes de baixo valor
+14727,3,"compra única, antiga"
+14729,3,"compra única, antiga"
+14730,1,recorrentes de alto valor
+14731,2,recentes de baixo valor
+14732,1,recorrentes de alto valor
+14733,1,recorrentes de alto valor
+14735,1,recorrentes de alto valor
+14737,2,recentes de baixo valor
+14738,0,recorrentes de valor médio
+14739,1,recorrentes de alto valor
+14740,0,recorrentes de valor médio
+14741,0,recorrentes de valor médio
+14744,0,recorrentes de valor médio
+14745,0,recorrentes de valor médio
+14747,3,"compra única, antiga"
+14748,0,recorrentes de valor médio
+14752,3,"compra única, antiga"
+14753,3,"compra única, antiga"
+14754,2,recentes de baixo valor
+14755,1,recorrentes de alto valor
+14756,2,recentes de baixo valor
+14757,3,"compra única, antiga"
+14758,0,recorrentes de valor médio
+14759,2,recentes de baixo valor
+14760,3,"compra única, antiga"
+14761,3,"compra única, antiga"
+14762,3,"compra única, antiga"
+14764,3,"compra única, antiga"
+14765,2,recentes de baixo valor
+14766,1,recorrentes de alto valor
+14768,2,recentes de baixo valor
+14769,1,recorrentes de alto valor
+14770,3,"compra única, antiga"
+14772,3,"compra única, antiga"
+14775,0,recorrentes de valor médio
+14776,1,recorrentes de alto valor
+14778,3,"compra única, antiga"
+14779,3,"compra única, antiga"
+14780,3,"compra única, antiga"
+14782,3,"compra única, antiga"
+14784,2,recentes de baixo valor
+14785,2,recentes de baixo valor
+14788,2,recentes de baixo valor
+14789,2,recentes de baixo valor
+14790,2,recentes de baixo valor
+14792,3,"compra única, antiga"
+14793,2,recentes de baixo valor
+14794,1,recorrentes de alto valor
+14795,3,"compra única, antiga"
+14796,1,recorrentes de alto valor
+14798,3,"compra única, antiga"
+14799,3,"compra única, antiga"
+14800,1,recorrentes de alto valor
+14801,3,"compra única, antiga"
+14803,0,recorrentes de valor médio
+14804,2,recentes de baixo valor
+14805,2,recentes de baixo valor
+14806,3,"compra única, antiga"
+14808,0,recorrentes de valor médio
+14810,1,recorrentes de alto valor
+14813,3,"compra única, antiga"
+14815,2,recentes de baixo valor
+14816,3,"compra única, antiga"
+14817,3,"compra única, antiga"
+14818,0,recorrentes de valor médio
+14819,3,"compra única, antiga"
+14820,2,recentes de baixo valor
+14821,3,"compra única, antiga"
+14823,3,"compra única, antiga"
+14824,2,recentes de baixo valor
+14825,1,recorrentes de alto valor
+14828,0,recorrentes de valor médio
+14829,0,recorrentes de valor médio
+14830,3,"compra única, antiga"
+14834,0,recorrentes de valor médio
+14836,2,recentes de baixo valor
+14837,0,recorrentes de valor médio
+14840,3,"compra única, antiga"
+14841,0,recorrentes de valor médio
+14842,0,recorrentes de valor médio
+14844,0,recorrentes de valor médio
+14847,3,"compra única, antiga"
+14849,1,recorrentes de alto valor
+14850,3,"compra única, antiga"
+14851,2,recentes de baixo valor
+14852,0,recorrentes de valor médio
+14853,2,recentes de baixo valor
+14854,0,recorrentes de valor médio
+14855,3,"compra única, antiga"
+14856,0,recorrentes de valor médio
+14857,0,recorrentes de valor médio
+14859,0,recorrentes de valor médio
+14860,2,recentes de baixo valor
+14861,3,"compra única, antiga"
+14862,2,recentes de baixo valor
+14863,2,recentes de baixo valor
+14865,2,recentes de baixo valor
+14866,1,recorrentes de alto valor
+14867,0,recorrentes de valor médio
+14868,1,recorrentes de alto valor
+14869,2,recentes de baixo valor
+14870,3,"compra única, antiga"
+14871,2,recentes de baixo valor
+14873,3,"compra única, antiga"
+14875,0,recorrentes de valor médio
+14878,1,recorrentes de alto valor
+14880,0,recorrentes de valor médio
+14881,2,recentes de baixo valor
+14882,2,recentes de baixo valor
+14883,0,recorrentes de valor médio
+14885,3,"compra única, antiga"
+14886,3,"compra única, antiga"
+14887,0,recorrentes de valor médio
+14888,3,"compra única, antiga"
+14889,3,"compra única, antiga"
+14890,3,"compra única, antiga"
+14891,3,"compra única, antiga"
+14893,2,recentes de baixo valor
+14894,3,"compra única, antiga"
+14895,1,recorrentes de alto valor
+14896,3,"compra única, antiga"
+14897,2,recentes de baixo valor
+14898,0,recorrentes de valor médio
+14901,1,recorrentes de alto valor
+14902,2,recentes de baixo valor
+14903,0,recorrentes de valor médio
+14904,2,recentes de baixo valor
+14905,3,"compra única, antiga"
+14907,1,recorrentes de alto valor
+14908,3,"compra única, antiga"
+14910,2,recentes de baixo valor
+14911,1,recorrentes de alto valor
+14912,2,recentes de baixo valor
+14913,0,recorrentes de valor médio
+14915,3,"compra única, antiga"
+14916,0,recorrentes de valor médio
+14918,0,recorrentes de valor médio
+14920,3,"compra única, antiga"
+14921,0,recorrentes de valor médio
+14923,3,"compra única, antiga"
+14924,3,"compra única, antiga"
+14929,2,recentes de baixo valor
+14930,0,recorrentes de valor médio
+14931,2,recentes de baixo valor
+14932,3,"compra única, antiga"
+14934,0,recorrentes de valor médio
+14935,3,"compra única, antiga"
+14936,1,recorrentes de alto valor
+14937,0,recorrentes de valor médio
+14944,1,recorrentes de alto valor
+14946,2,recentes de baixo valor
+14947,3,"compra única, antiga"
+14948,0,recorrentes de valor médio
+14950,2,recentes de baixo valor
+14951,3,"compra única, antiga"
+14952,1,recorrentes de alto valor
+14953,2,recentes de baixo valor
+14954,2,recentes de baixo valor
+14957,3,"compra única, antiga"
+14958,3,"compra única, antiga"
+14959,0,recorrentes de valor médio
+14960,2,recentes de baixo valor
+14961,1,recorrentes de alto valor
+14962,3,"compra única, antiga"
+14963,0,recorrentes de valor médio
+14964,3,"compra única, antiga"
+14965,3,"compra única, antiga"
+14966,2,recentes de baixo valor
+14967,3,"compra única, antiga"
+14968,2,recentes de baixo valor
+14970,0,recorrentes de valor médio
+14971,0,recorrentes de valor médio
+14972,3,"compra única, antiga"
+14973,0,recorrentes de valor médio
+14974,3,"compra única, antiga"
+14975,3,"compra única, antiga"
+14976,0,recorrentes de valor médio
+14978,0,recorrentes de valor médio
+14981,3,"compra única, antiga"
+14984,2,recentes de baixo valor
+14985,3,"compra única, antiga"
+14987,2,recentes de baixo valor
+14988,3,"compra única, antiga"
+14995,2,recentes de baixo valor
+14997,0,recorrentes de valor médio
+14998,3,"compra única, antiga"
+15000,3,"compra única, antiga"
+15002,0,recorrentes de valor médio
+15004,3,"compra única, antiga"
+15005,1,recorrentes de alto valor
+15006,3,"compra única, antiga"
+15007,3,"compra única, antiga"
+15009,2,recentes de baixo valor
+15010,2,recentes de baixo valor
+15012,3,"compra única, antiga"
+15014,2,recentes de baixo valor
+15016,3,"compra única, antiga"
+15017,3,"compra única, antiga"
+15018,2,recentes de baixo valor
+15019,3,"compra única, antiga"
+15021,1,recorrentes de alto valor
+15022,2,recentes de baixo valor
+15023,1,recorrentes de alto valor
+15024,1,recorrentes de alto valor
+15025,2,recentes de baixo valor
+15026,0,recorrentes de valor médio
+15027,0,recorrentes de valor médio
+15028,2,recentes de baixo valor
+15030,3,"compra única, antiga"
+15031,2,recentes de baixo valor
+15032,0,recorrentes de valor médio
+15033,1,recorrentes de alto valor
+15034,1,recorrentes de alto valor
+15035,3,"compra única, antiga"
+15036,0,recorrentes de valor médio
+15038,0,recorrentes de valor médio
+15039,1,recorrentes de alto valor
+15041,3,"compra única, antiga"
+15042,3,"compra única, antiga"
+15043,2,recentes de baixo valor
+15044,1,recorrentes de alto valor
+15045,3,"compra única, antiga"
+15046,1,recorrentes de alto valor
+15047,3,"compra única, antiga"
+15048,0,recorrentes de valor médio
+15049,3,"compra única, antiga"
+15050,0,recorrentes de valor médio
+15051,0,recorrentes de valor médio
+15052,3,"compra única, antiga"
+15053,2,recentes de baixo valor
+15054,2,recentes de baixo valor
+15057,0,recorrentes de valor médio
+15058,1,recorrentes de alto valor
+15059,0,recorrentes de valor médio
+15060,2,recentes de baixo valor
+15061,1,recorrentes de alto valor
+15062,0,recorrentes de valor médio
+15063,3,"compra única, antiga"
+15065,0,recorrentes de valor médio
+15066,3,"compra única, antiga"
+15067,0,recorrentes de valor médio
+15068,2,recentes de baixo valor
+15069,3,"compra única, antiga"
+15070,3,"compra única, antiga"
+15071,0,recorrentes de valor médio
+15073,2,recentes de baixo valor
+15074,3,"compra única, antiga"
+15075,3,"compra única, antiga"
+15076,3,"compra única, antiga"
+15078,1,recorrentes de alto valor
+15079,0,recorrentes de valor médio
+15081,0,recorrentes de valor médio
+15083,3,"compra única, antiga"
+15087,3,"compra única, antiga"
+15088,2,recentes de baixo valor
+15089,1,recorrentes de alto valor
+15090,3,"compra única, antiga"
+15091,3,"compra única, antiga"
+15092,3,"compra única, antiga"
+15093,1,recorrentes de alto valor
+15095,0,recorrentes de valor médio
+15096,3,"compra única, antiga"
+15097,2,recentes de baixo valor
+15098,0,recorrentes de valor médio
+15099,3,"compra única, antiga"
+15100,3,"compra única, antiga"
+15101,2,recentes de baixo valor
+15103,2,recentes de baixo valor
+15104,3,"compra única, antiga"
+15105,1,recorrentes de alto valor
+15106,0,recorrentes de valor médio
+15107,3,"compra única, antiga"
+15108,0,recorrentes de valor médio
+15109,3,"compra única, antiga"
+15110,0,recorrentes de valor médio
+15111,0,recorrentes de valor médio
+15113,0,recorrentes de valor médio
+15114,1,recorrentes de alto valor
+15115,2,recentes de baixo valor
+15116,0,recorrentes de valor médio
+15117,0,recorrentes de valor médio
+15118,3,"compra única, antiga"
+15119,3,"compra única, antiga"
+15120,3,"compra única, antiga"
+15121,2,recentes de baixo valor
+15122,0,recorrentes de valor médio
+15123,2,recentes de baixo valor
+15124,2,recentes de baixo valor
+15125,1,recorrentes de alto valor
+15127,3,"compra única, antiga"
+15128,0,recorrentes de valor médio
+15129,1,recorrentes de alto valor
+15130,3,"compra única, antiga"
+15132,0,recorrentes de valor médio
+15133,0,recorrentes de valor médio
+15134,1,recorrentes de alto valor
+15135,3,"compra única, antiga"
+15136,2,recentes de baixo valor
+15139,3,"compra única, antiga"
+15140,0,recorrentes de valor médio
+15142,3,"compra única, antiga"
+15143,3,"compra única, antiga"
+15144,1,recorrentes de alto valor
+15145,2,recentes de baixo valor
+15146,0,recorrentes de valor médio
+15147,3,"compra única, antiga"
+15148,2,recentes de baixo valor
+15149,3,"compra única, antiga"
+15150,1,recorrentes de alto valor
+15152,1,recorrentes de alto valor
+15153,2,recentes de baixo valor
+15154,3,"compra única, antiga"
+15156,2,recentes de baixo valor
+15157,2,recentes de baixo valor
+15158,3,"compra única, antiga"
+15159,1,recorrentes de alto valor
+15160,3,"compra única, antiga"
+15163,2,recentes de baixo valor
+15164,0,recorrentes de valor médio
+15165,3,"compra única, antiga"
+15167,3,"compra única, antiga"
+15168,2,recentes de baixo valor
+15171,3,"compra única, antiga"
+15172,1,recorrentes de alto valor
+15174,3,"compra única, antiga"
+15175,3,"compra única, antiga"
+15178,3,"compra única, antiga"
+15179,0,recorrentes de valor médio
+15180,3,"compra única, antiga"
+15181,0,recorrentes de valor médio
+15182,3,"compra única, antiga"
+15184,2,recentes de baixo valor
+15185,3,"compra única, antiga"
+15186,2,recentes de baixo valor
+15187,1,recorrentes de alto valor
+15189,1,recorrentes de alto valor
+15192,0,recorrentes de valor médio
+15193,3,"compra única, antiga"
+15194,1,recorrentes de alto valor
+15195,2,recentes de baixo valor
+15197,2,recentes de baixo valor
+15198,3,"compra única, antiga"
+15199,0,recorrentes de valor médio
+15201,0,recorrentes de valor médio
+15203,0,recorrentes de valor médio
+15204,3,"compra única, antiga"
+15205,3,"compra única, antiga"
+15206,2,recentes de baixo valor
+15208,2,recentes de baixo valor
+15210,3,"compra única, antiga"
+15211,0,recorrentes de valor médio
+15212,3,"compra única, antiga"
+15213,3,"compra única, antiga"
+15214,1,recorrentes de alto valor
+15215,0,recorrentes de valor médio
+15216,3,"compra única, antiga"
+15218,1,recorrentes de alto valor
+15219,3,"compra única, antiga"
+15220,0,recorrentes de valor médio
+15221,3,"compra única, antiga"
+15222,3,"compra única, antiga"
+15223,3,"compra única, antiga"
+15224,3,"compra única, antiga"
+15225,3,"compra única, antiga"
+15226,3,"compra única, antiga"
+15227,0,recorrentes de valor médio
+15228,0,recorrentes de valor médio
+15230,3,"compra única, antiga"
+15232,3,"compra única, antiga"
+15234,3,"compra única, antiga"
+15235,0,recorrentes de valor médio
+15236,3,"compra única, antiga"
+15237,2,recentes de baixo valor
+15238,0,recorrentes de valor médio
+15239,2,recentes de baixo valor
+15240,0,recorrentes de valor médio
+15241,0,recorrentes de valor médio
+15243,3,"compra única, antiga"
+15244,0,recorrentes de valor médio
+15245,0,recorrentes de valor médio
+15246,3,"compra única, antiga"
+15247,3,"compra única, antiga"
+15249,1,recorrentes de alto valor
+15251,1,recorrentes de alto valor
+15252,2,recentes de baixo valor
+15253,0,recorrentes de valor médio
+15254,3,"compra única, antiga"
+15255,3,"compra única, antiga"
+15256,3,"compra única, antiga"
+15257,3,"compra única, antiga"
+15258,3,"compra única, antiga"
+15260,0,recorrentes de valor médio
+15261,3,"compra única, antiga"
+15262,3,"compra única, antiga"
+15263,3,"compra única, antiga"
+15264,3,"compra única, antiga"
+15265,0,recorrentes de valor médio
+15266,3,"compra única, antiga"
+15267,0,recorrentes de valor médio
+15269,2,recentes de baixo valor
+15270,1,recorrentes de alto valor
+15271,1,recorrentes de alto valor
+15272,0,recorrentes de valor médio
+15274,2,recentes de baixo valor
+15275,2,recentes de baixo valor
+15276,3,"compra única, antiga"
+15277,3,"compra única, antiga"
+15279,3,"compra única, antiga"
+15280,3,"compra única, antiga"
+15281,0,recorrentes de valor médio
+15286,3,"compra única, antiga"
+15287,2,recentes de baixo valor
+15288,0,recorrentes de valor médio
+15289,0,recorrentes de valor médio
+15290,1,recorrentes de alto valor
+15291,1,recorrentes de alto valor
+15292,3,"compra única, antiga"
+15296,0,recorrentes de valor médio
+15297,2,recentes de baixo valor
+15298,1,recorrentes de alto valor
+15299,0,recorrentes de valor médio
+15300,3,"compra única, antiga"
+15301,1,recorrentes de alto valor
+15303,3,"compra única, antiga"
+15304,0,recorrentes de valor médio
+15306,0,recorrentes de valor médio
+15307,3,"compra única, antiga"
+15308,3,"compra única, antiga"
+15311,1,recorrentes de alto valor
+15312,0,recorrentes de valor médio
+15313,3,"compra única, antiga"
+15314,3,"compra única, antiga"
+15315,3,"compra única, antiga"
+15316,3,"compra única, antiga"
+15318,2,recentes de baixo valor
+15319,3,"compra única, antiga"
+15320,3,"compra única, antiga"
+15321,0,recorrentes de valor médio
+15322,3,"compra única, antiga"
+15325,3,"compra única, antiga"
+15326,3,"compra única, antiga"
+15327,3,"compra única, antiga"
+15329,0,recorrentes de valor médio
+15330,2,recentes de baixo valor
+15332,0,recorrentes de valor médio
+15333,3,"compra única, antiga"
+15334,3,"compra única, antiga"
+15335,3,"compra única, antiga"
+15339,3,"compra única, antiga"
+15341,0,recorrentes de valor médio
+15342,3,"compra única, antiga"
+15343,3,"compra única, antiga"
+15344,2,recentes de baixo valor
+15345,3,"compra única, antiga"
+15346,3,"compra única, antiga"
+15347,3,"compra única, antiga"
+15348,3,"compra única, antiga"
+15349,3,"compra única, antiga"
+15350,3,"compra única, antiga"
+15351,1,recorrentes de alto valor
+15353,3,"compra única, antiga"
+15355,2,recentes de baixo valor
+15356,1,recorrentes de alto valor
+15358,1,recorrentes de alto valor
+15360,2,recentes de baixo valor
+15361,3,"compra única, antiga"
+15363,3,"compra única, antiga"
+15364,0,recorrentes de valor médio
+15365,0,recorrentes de valor médio
+15366,3,"compra única, antiga"
+15367,0,recorrentes de valor médio
+15368,2,recentes de baixo valor
+15370,0,recorrentes de valor médio
+15372,0,recorrentes de valor médio
+15373,1,recorrentes de alto valor
+15374,3,"compra única, antiga"
+15376,0,recorrentes de valor médio
+15379,0,recorrentes de valor médio
+15380,1,recorrentes de alto valor
+15381,3,"compra única, antiga"
+15382,1,recorrentes de alto valor
+15384,3,"compra única, antiga"
+15385,2,recentes de baixo valor
+15386,3,"compra única, antiga"
+15388,3,"compra única, antiga"
+15389,3,"compra única, antiga"
+15392,2,recentes de baixo valor
+15393,2,recentes de baixo valor
+15394,0,recorrentes de valor médio
+15395,3,"compra única, antiga"
+15396,3,"compra única, antiga"
+15397,3,"compra única, antiga"
+15398,2,recentes de baixo valor
+15399,2,recentes de baixo valor
+15400,0,recorrentes de valor médio
+15402,3,"compra única, antiga"
+15405,3,"compra única, antiga"
+15406,2,recentes de baixo valor
+15407,0,recorrentes de valor médio
+15408,3,"compra única, antiga"
+15410,0,recorrentes de valor médio
+15411,0,recorrentes de valor médio
+15412,3,"compra única, antiga"
+15414,2,recentes de baixo valor
+15415,3,"compra única, antiga"
+15416,0,recorrentes de valor médio
+15417,3,"compra única, antiga"
+15419,2,recentes de baixo valor
+15421,0,recorrentes de valor médio
+15422,3,"compra única, antiga"
+15423,3,"compra única, antiga"
+15424,3,"compra única, antiga"
+15426,0,recorrentes de valor médio
+15427,0,recorrentes de valor médio
+15428,2,recentes de baixo valor
+15429,2,recentes de baixo valor
+15432,2,recentes de baixo valor
+15433,3,"compra única, antiga"
+15434,2,recentes de baixo valor
+15435,2,recentes de baixo valor
+15436,2,recentes de baixo valor
+15437,3,"compra única, antiga"
+15438,3,"compra única, antiga"
+15440,0,recorrentes de valor médio
+15442,3,"compra única, antiga"
+15443,1,recorrentes de alto valor
+15444,2,recentes de baixo valor
+15445,3,"compra única, antiga"
+15447,3,"compra única, antiga"
+15448,3,"compra única, antiga"
+15449,0,recorrentes de valor médio
+15450,2,recentes de baixo valor
+15452,2,recentes de baixo valor
+15453,1,recorrentes de alto valor
+15454,3,"compra única, antiga"
+15456,3,"compra única, antiga"
+15457,3,"compra única, antiga"
+15458,2,recentes de baixo valor
+15460,3,"compra única, antiga"
+15462,3,"compra única, antiga"
+15463,2,recentes de baixo valor
+15464,3,"compra única, antiga"
+15465,1,recorrentes de alto valor
+15466,3,"compra única, antiga"
+15467,2,recentes de baixo valor
+15468,2,recentes de baixo valor
+15469,2,recentes de baixo valor
+15471,2,recentes de baixo valor
+15472,3,"compra única, antiga"
+15473,1,recorrentes de alto valor
+15475,3,"compra única, antiga"
+15478,0,recorrentes de valor médio
+15480,3,"compra única, antiga"
+15482,1,recorrentes de alto valor
+15483,3,"compra única, antiga"
+15484,1,recorrentes de alto valor
+15485,0,recorrentes de valor médio
+15488,3,"compra única, antiga"
+15489,0,recorrentes de valor médio
+15491,0,recorrentes de valor médio
+15492,2,recentes de baixo valor
+15493,0,recorrentes de valor médio
+15494,2,recentes de baixo valor
+15497,2,recentes de baixo valor
+15498,1,recorrentes de alto valor
+15500,2,recentes de baixo valor
+15502,1,recorrentes de alto valor
+15503,3,"compra única, antiga"
+15504,3,"compra única, antiga"
+15505,0,recorrentes de valor médio
+15506,0,recorrentes de valor médio
+15507,3,"compra única, antiga"
+15508,0,recorrentes de valor médio
+15510,3,"compra única, antiga"
+15511,0,recorrentes de valor médio
+15512,3,"compra única, antiga"
+15513,1,recorrentes de alto valor
+15514,1,recorrentes de alto valor
+15516,3,"compra única, antiga"
+15517,3,"compra única, antiga"
+15518,0,recorrentes de valor médio
+15520,2,recentes de baixo valor
+15521,0,recorrentes de valor médio
+15522,2,recentes de baixo valor
+15523,3,"compra única, antiga"
+15524,2,recentes de baixo valor
+15525,2,recentes de baixo valor
+15526,2,recentes de baixo valor
+15527,1,recorrentes de alto valor
+15528,3,"compra única, antiga"
+15529,1,recorrentes de alto valor
+15530,0,recorrentes de valor médio
+15531,2,recentes de baixo valor
+15532,0,recorrentes de valor médio
+15533,2,recentes de baixo valor
+15535,0,recorrentes de valor médio
+15537,3,"compra única, antiga"
+15539,2,recentes de baixo valor
+15540,2,recentes de baixo valor
+15541,3,"compra única, antiga"
+15543,3,"compra única, antiga"
+15544,1,recorrentes de alto valor
+15545,3,"compra única, antiga"
+15547,1,recorrentes de alto valor
+15549,0,recorrentes de valor médio
+15550,2,recentes de baixo valor
+15551,2,recentes de baixo valor
+15552,3,"compra única, antiga"
+15553,3,"compra única, antiga"
+15554,3,"compra única, antiga"
+15555,1,recorrentes de alto valor
+15556,2,recentes de baixo valor
+15557,2,recentes de baixo valor
+15561,2,recentes de baixo valor
+15562,3,"compra única, antiga"
+15563,0,recorrentes de valor médio
+15565,3,"compra única, antiga"
+15567,2,recentes de baixo valor
+15568,2,recentes de baixo valor
+15569,0,recorrentes de valor médio
+15570,1,recorrentes de alto valor
+15571,2,recentes de baixo valor
+15572,1,recorrentes de alto valor
+15573,2,recentes de baixo valor
+15574,0,recorrentes de valor médio
+15576,2,recentes de baixo valor
+15577,3,"compra única, antiga"
+15578,3,"compra única, antiga"
+15579,3,"compra única, antiga"
+15581,0,recorrentes de valor médio
+15582,2,recentes de baixo valor
+15584,0,recorrentes de valor médio
+15585,3,"compra única, antiga"
+15587,0,recorrentes de valor médio
+15589,3,"compra única, antiga"
+15592,3,"compra única, antiga"
+15593,3,"compra única, antiga"
+15594,0,recorrentes de valor médio
+15596,0,recorrentes de valor médio
+15597,2,recentes de baixo valor
+15598,3,"compra única, antiga"
+15599,2,recentes de baixo valor
+15601,1,recorrentes de alto valor
+15602,1,recorrentes de alto valor
+15603,3,"compra única, antiga"
+15604,3,"compra única, antiga"
+15605,0,recorrentes de valor médio
+15606,0,recorrentes de valor médio
+15607,3,"compra única, antiga"
+15608,0,recorrentes de valor médio
+15609,3,"compra única, antiga"
+15610,3,"compra única, antiga"
+15611,1,recorrentes de alto valor
+15612,2,recentes de baixo valor
+15615,1,recorrentes de alto valor
+15618,0,recorrentes de valor médio
+15619,2,recentes de baixo valor
+15620,0,recorrentes de valor médio
+15621,2,recentes de baixo valor
+15622,1,recorrentes de alto valor
+15623,3,"compra única, antiga"
+15624,0,recorrentes de valor médio
+15625,0,recorrentes de valor médio
+15626,0,recorrentes de valor médio
+15628,1,recorrentes de alto valor
+15630,0,recorrentes de valor médio
+15632,1,recorrentes de alto valor
+15634,2,recentes de baixo valor
+15636,0,recorrentes de valor médio
+15637,3,"compra única, antiga"
+15639,3,"compra única, antiga"
+15640,1,recorrentes de alto valor
+15641,0,recorrentes de valor médio
+15643,3,"compra única, antiga"
+15644,0,recorrentes de valor médio
+15645,2,recentes de baixo valor
+15646,3,"compra única, antiga"
+15648,3,"compra única, antiga"
+15649,3,"compra única, antiga"
+15651,0,recorrentes de valor médio
+15652,3,"compra única, antiga"
+15653,0,recorrentes de valor médio
+15654,2,recentes de baixo valor
+15655,3,"compra única, antiga"
+15656,0,recorrentes de valor médio
+15657,2,recentes de baixo valor
+15658,0,recorrentes de valor médio
+15659,3,"compra única, antiga"
+15660,1,recorrentes de alto valor
+15661,3,"compra única, antiga"
+15663,3,"compra única, antiga"
+15664,3,"compra única, antiga"
+15665,0,recorrentes de valor médio
+15667,2,recentes de baixo valor
+15668,3,"compra única, antiga"
+15669,0,recorrentes de valor médio
+15670,3,"compra única, antiga"
+15671,1,recorrentes de alto valor
+15673,0,recorrentes de valor médio
+15674,0,recorrentes de valor médio
+15675,3,"compra única, antiga"
+15676,0,recorrentes de valor médio
+15677,3,"compra única, antiga"
+15678,3,"compra única, antiga"
+15679,0,recorrentes de valor médio
+15680,2,recentes de baixo valor
+15681,0,recorrentes de valor médio
+15683,3,"compra única, antiga"
+15687,1,recorrentes de alto valor
+15689,3,"compra única, antiga"
+15690,2,recentes de baixo valor
+15691,3,"compra única, antiga"
+15692,2,recentes de baixo valor
+15694,1,recorrentes de alto valor
+15695,3,"compra única, antiga"
+15696,0,recorrentes de valor médio
+15699,2,recentes de baixo valor
+15700,3,"compra única, antiga"
+15701,1,recorrentes de alto valor
+15703,3,"compra única, antiga"
+15704,0,recorrentes de valor médio
+15705,3,"compra única, antiga"
+15706,0,recorrentes de valor médio
+15707,0,recorrentes de valor médio
+15708,0,recorrentes de valor médio
+15709,3,"compra única, antiga"
+15712,2,recentes de baixo valor
+15713,3,"compra única, antiga"
+15714,2,recentes de baixo valor
+15716,0,recorrentes de valor médio
+15717,3,"compra única, antiga"
+15719,1,recorrentes de alto valor
+15720,2,recentes de baixo valor
+15721,2,recentes de baixo valor
+15722,0,recorrentes de valor médio
+15723,3,"compra única, antiga"
+15724,3,"compra única, antiga"
+15725,2,recentes de baixo valor
+15727,1,recorrentes de alto valor
+15729,3,"compra única, antiga"
+15730,0,recorrentes de valor médio
+15732,3,"compra única, antiga"
+15733,3,"compra única, antiga"
+15734,0,recorrentes de valor médio
+15737,1,recorrentes de alto valor
+15738,1,recorrentes de alto valor
+15739,3,"compra única, antiga"
+15740,3,"compra única, antiga"
+15743,2,recentes de baixo valor
+15744,3,"compra única, antiga"
+15745,0,recorrentes de valor médio
+15746,3,"compra única, antiga"
+15747,2,recentes de baixo valor
+15748,3,"compra única, antiga"
+15749,0,recorrentes de valor médio
+15750,1,recorrentes de alto valor
+15752,0,recorrentes de valor médio
+15753,3,"compra única, antiga"
+15754,0,recorrentes de valor médio
+15755,1,recorrentes de alto valor
+15756,0,recorrentes de valor médio
+15757,0,recorrentes de valor médio
+15758,2,recentes de baixo valor
+15759,3,"compra única, antiga"
+15762,3,"compra única, antiga"
+15763,0,recorrentes de valor médio
+15764,0,recorrentes de valor médio
+15766,3,"compra única, antiga"
+15768,0,recorrentes de valor médio
+15769,1,recorrentes de alto valor
+15773,2,recentes de baixo valor
+15774,3,"compra única, antiga"
+15775,3,"compra única, antiga"
+15776,3,"compra única, antiga"
+15777,0,recorrentes de valor médio
+15780,3,"compra única, antiga"
+15781,2,recentes de baixo valor
+15782,0,recorrentes de valor médio
+15783,2,recentes de baixo valor
+15785,0,recorrentes de valor médio
+15786,0,recorrentes de valor médio
+15787,0,recorrentes de valor médio
+15789,3,"compra única, antiga"
+15790,2,recentes de baixo valor
+15791,0,recorrentes de valor médio
+15793,2,recentes de baixo valor
+15795,3,"compra única, antiga"
+15796,1,recorrentes de alto valor
+15797,0,recorrentes de valor médio
+15799,0,recorrentes de valor médio
+15800,3,"compra única, antiga"
+15801,0,recorrentes de valor médio
+15803,3,"compra única, antiga"
+15804,1,recorrentes de alto valor
+15805,1,recorrentes de alto valor
+15806,0,recorrentes de valor médio
+15807,0,recorrentes de valor médio
+15808,0,recorrentes de valor médio
+15809,0,recorrentes de valor médio
+15810,0,recorrentes de valor médio
+15811,0,recorrentes de valor médio
+15812,0,recorrentes de valor médio
+15813,0,recorrentes de valor médio
+15814,0,recorrentes de valor médio
+15815,0,recorrentes de valor médio
+15819,0,recorrentes de valor médio
+15820,3,"compra única, antiga"
+15821,2,recentes de baixo valor
+15822,2,recentes de baixo valor
+15825,3,"compra única, antiga"
+15826,0,recorrentes de valor médio
+15827,0,recorrentes de valor médio
+15829,3,"compra única, antiga"
+15830,2,recentes de baixo valor
+15831,0,recorrentes de valor médio
+15832,3,"compra única, antiga"
+15834,0,recorrentes de valor médio
+15835,0,recorrentes de valor médio
+15836,3,"compra única, antiga"
+15837,3,"compra única, antiga"
+15838,1,recorrentes de alto valor
+15839,0,recorrentes de valor médio
+15840,3,"compra única, antiga"
+15841,0,recorrentes de valor médio
+15843,3,"compra única, antiga"
+15844,3,"compra única, antiga"
+15845,1,recorrentes de alto valor
+15847,2,recentes de baixo valor
+15850,2,recentes de baixo valor
+15852,3,"compra única, antiga"
+15853,3,"compra única, antiga"
+15854,1,recorrentes de alto valor
+15855,0,recorrentes de valor médio
+15856,1,recorrentes de alto valor
+15857,2,recentes de baixo valor
+15858,0,recorrentes de valor médio
+15860,0,recorrentes de valor médio
+15861,1,recorrentes de alto valor
+15862,2,recentes de baixo valor
+15863,2,recentes de baixo valor
+15864,0,recorrentes de valor médio
+15865,0,recorrentes de valor médio
+15866,3,"compra única, antiga"
+15867,1,recorrentes de alto valor
+15869,3,"compra única, antiga"
+15870,2,recentes de baixo valor
+15872,2,recentes de baixo valor
+15874,0,recorrentes de valor médio
+15877,2,recentes de baixo valor
+15880,3,"compra única, antiga"
+15881,0,recorrentes de valor médio
+15882,0,recorrentes de valor médio
+15883,2,recentes de baixo valor
+15885,3,"compra única, antiga"
+15886,3,"compra única, antiga"
+15888,3,"compra única, antiga"
+15889,3,"compra única, antiga"
+15891,3,"compra única, antiga"
+15894,3,"compra única, antiga"
+15895,3,"compra única, antiga"
+15897,3,"compra única, antiga"
+15898,1,recorrentes de alto valor
+15899,3,"compra única, antiga"
+15900,2,recentes de baixo valor
+15901,2,recentes de baixo valor
+15903,1,recorrentes de alto valor
+15904,2,recentes de baixo valor
+15906,0,recorrentes de valor médio
+15907,2,recentes de baixo valor
+15909,3,"compra única, antiga"
+15910,1,recorrentes de alto valor
+15912,3,"compra única, antiga"
+15916,1,recorrentes de alto valor
+15917,3,"compra única, antiga"
+15918,3,"compra única, antiga"
+15919,2,recentes de baixo valor
+15920,3,"compra única, antiga"
+15921,3,"compra única, antiga"
+15922,3,"compra única, antiga"
+15923,3,"compra única, antiga"
+15925,3,"compra única, antiga"
+15930,3,"compra única, antiga"
+15932,1,recorrentes de alto valor
+15933,0,recorrentes de valor médio
+15935,3,"compra única, antiga"
+15937,3,"compra única, antiga"
+15938,0,recorrentes de valor médio
+15939,1,recorrentes de alto valor
+15940,3,"compra única, antiga"
+15942,3,"compra única, antiga"
+15944,3,"compra única, antiga"
+15945,3,"compra única, antiga"
+15947,0,recorrentes de valor médio
+15948,2,recentes de baixo valor
+15949,2,recentes de baixo valor
+15950,0,recorrentes de valor médio
+15951,2,recentes de baixo valor
+15952,0,recorrentes de valor médio
+15953,1,recorrentes de alto valor
+15955,1,recorrentes de alto valor
+15957,2,recentes de baixo valor
+15958,3,"compra única, antiga"
+15963,2,recentes de baixo valor
+15965,0,recorrentes de valor médio
+15967,2,recentes de baixo valor
+15969,2,recentes de baixo valor
+15970,3,"compra única, antiga"
+15971,1,recorrentes de alto valor
+15973,3,"compra única, antiga"
+15974,0,recorrentes de valor médio
+15975,3,"compra única, antiga"
+15976,3,"compra única, antiga"
+15977,2,recentes de baixo valor
+15978,3,"compra única, antiga"
+15980,0,recorrentes de valor médio
+15981,1,recorrentes de alto valor
+15983,0,recorrentes de valor médio
+15984,1,recorrentes de alto valor
+15985,0,recorrentes de valor médio
+15986,2,recentes de baixo valor
+15987,1,recorrentes de alto valor
+15988,2,recentes de baixo valor
+15990,0,recorrentes de valor médio
+15992,2,recentes de baixo valor
+15993,1,recorrentes de alto valor
+15994,3,"compra única, antiga"
+15996,0,recorrentes de valor médio
+15998,0,recorrentes de valor médio
+16000,1,recorrentes de alto valor
+16003,0,recorrentes de valor médio
+16005,2,recentes de baixo valor
+16006,3,"compra única, antiga"
+16007,0,recorrentes de valor médio
+16008,2,recentes de baixo valor
+16009,0,recorrentes de valor médio
+16010,3,"compra única, antiga"
+16011,1,recorrentes de alto valor
+16012,0,recorrentes de valor médio
+16013,1,recorrentes de alto valor
+16014,0,recorrentes de valor médio
+16015,2,recentes de baixo valor
+16016,1,recorrentes de alto valor
+16017,3,"compra única, antiga"
+16018,2,recentes de baixo valor
+16019,1,recorrentes de alto valor
+16020,2,recentes de baixo valor
+16022,3,"compra única, antiga"
+16023,0,recorrentes de valor médio
+16024,2,recentes de baixo valor
+16025,2,recentes de baixo valor
+16026,3,"compra única, antiga"
+16027,0,recorrentes de valor médio
+16029,1,recorrentes de alto valor
+16030,3,"compra única, antiga"
+16031,3,"compra única, antiga"
+16033,1,recorrentes de alto valor
+16034,3,"compra única, antiga"
+16036,0,recorrentes de valor médio
+16037,0,recorrentes de valor médio
+16038,2,recentes de baixo valor
+16040,0,recorrentes de valor médio
+16041,0,recorrentes de valor médio
+16042,0,recorrentes de valor médio
+16043,0,recorrentes de valor médio
+16045,0,recorrentes de valor médio
+16048,3,"compra única, antiga"
+16049,0,recorrentes de valor médio
+16050,3,"compra única, antiga"
+16052,3,"compra única, antiga"
+16053,0,recorrentes de valor médio
+16054,3,"compra única, antiga"
+16055,3,"compra única, antiga"
+16056,2,recentes de baixo valor
+16057,1,recorrentes de alto valor
+16059,0,recorrentes de valor médio
+16062,2,recentes de baixo valor
+16063,3,"compra única, antiga"
+16065,3,"compra única, antiga"
+16066,0,recorrentes de valor médio
+16070,2,recentes de baixo valor
+16071,3,"compra única, antiga"
+16072,3,"compra única, antiga"
+16073,3,"compra única, antiga"
+16076,1,recorrentes de alto valor
+16078,3,"compra única, antiga"
+16079,0,recorrentes de valor médio
+16080,3,"compra única, antiga"
+16081,0,recorrentes de valor médio
+16083,0,recorrentes de valor médio
+16084,3,"compra única, antiga"
+16085,0,recorrentes de valor médio
+16086,0,recorrentes de valor médio
+16091,3,"compra única, antiga"
+16092,0,recorrentes de valor médio
+16093,3,"compra única, antiga"
+16094,2,recentes de baixo valor
+16096,3,"compra única, antiga"
+16097,3,"compra única, antiga"
+16098,0,recorrentes de valor médio
+16099,0,recorrentes de valor médio
+16101,0,recorrentes de valor médio
+16102,0,recorrentes de valor médio
+16103,1,recorrentes de alto valor
+16104,3,"compra única, antiga"
+16105,3,"compra única, antiga"
+16106,3,"compra única, antiga"
+16107,1,recorrentes de alto valor
+16108,3,"compra única, antiga"
+16109,3,"compra única, antiga"
+16110,0,recorrentes de valor médio
+16112,3,"compra única, antiga"
+16113,3,"compra única, antiga"
+16114,3,"compra única, antiga"
+16115,1,recorrentes de alto valor
+16116,3,"compra única, antiga"
+16117,3,"compra única, antiga"
+16119,2,recentes de baixo valor
+16120,0,recorrentes de valor médio
+16121,0,recorrentes de valor médio
+16122,0,recorrentes de valor médio
+16123,3,"compra única, antiga"
+16124,3,"compra única, antiga"
+16125,3,"compra única, antiga"
+16126,0,recorrentes de valor médio
+16127,2,recentes de baixo valor
+16128,0,recorrentes de valor médio
+16131,0,recorrentes de valor médio
+16133,1,recorrentes de alto valor
+16134,2,recentes de baixo valor
+16135,3,"compra única, antiga"
+16136,0,recorrentes de valor médio
+16139,2,recentes de baixo valor
+16140,0,recorrentes de valor médio
+16141,3,"compra única, antiga"
+16142,3,"compra única, antiga"
+16143,1,recorrentes de alto valor
+16144,3,"compra única, antiga"
+16145,1,recorrentes de alto valor
+16146,0,recorrentes de valor médio
+16147,3,"compra única, antiga"
+16148,3,"compra única, antiga"
+16149,2,recentes de baixo valor
+16150,0,recorrentes de valor médio
+16152,3,"compra única, antiga"
+16153,0,recorrentes de valor médio
+16156,1,recorrentes de alto valor
+16157,2,recentes de baixo valor
+16159,3,"compra única, antiga"
+16160,0,recorrentes de valor médio
+16161,1,recorrentes de alto valor
+16162,3,"compra única, antiga"
+16163,3,"compra única, antiga"
+16164,2,recentes de baixo valor
+16168,1,recorrentes de alto valor
+16169,0,recorrentes de valor médio
+16170,0,recorrentes de valor médio
+16171,3,"compra única, antiga"
+16172,0,recorrentes de valor médio
+16173,0,recorrentes de valor médio
+16174,0,recorrentes de valor médio
+16175,0,recorrentes de valor médio
+16177,3,"compra única, antiga"
+16178,3,"compra única, antiga"
+16179,3,"compra única, antiga"
+16180,0,recorrentes de valor médio
+16181,3,"compra única, antiga"
+16182,0,recorrentes de valor médio
+16183,3,"compra única, antiga"
+16184,0,recorrentes de valor médio
+16185,2,recentes de baixo valor
+16186,1,recorrentes de alto valor
+16187,1,recorrentes de alto valor
+16188,0,recorrentes de valor médio
+16189,2,recentes de baixo valor
+16190,3,"compra única, antiga"
+16191,1,recorrentes de alto valor
+16193,3,"compra única, antiga"
+16198,3,"compra única, antiga"
+16200,2,recentes de baixo valor
+16201,1,recorrentes de alto valor
+16202,3,"compra única, antiga"
+16203,0,recorrentes de valor médio
+16204,2,recentes de baixo valor
+16205,0,recorrentes de valor médio
+16206,0,recorrentes de valor médio
+16207,2,recentes de baixo valor
+16208,0,recorrentes de valor médio
+16209,0,recorrentes de valor médio
+16210,1,recorrentes de alto valor
+16211,3,"compra única, antiga"
+16212,2,recentes de baixo valor
+16213,3,"compra única, antiga"
+16214,0,recorrentes de valor médio
+16215,3,"compra única, antiga"
+16216,3,"compra única, antiga"
+16217,3,"compra única, antiga"
+16218,0,recorrentes de valor médio
+16221,0,recorrentes de valor médio
+16222,3,"compra única, antiga"
+16224,0,recorrentes de valor médio
+16225,0,recorrentes de valor médio
+16226,3,"compra única, antiga"
+16227,3,"compra única, antiga"
+16229,0,recorrentes de valor médio
+16230,3,"compra única, antiga"
+16232,0,recorrentes de valor médio
+16233,0,recorrentes de valor médio
+16235,0,recorrentes de valor médio
+16236,3,"compra única, antiga"
+16239,3,"compra única, antiga"
+16240,0,recorrentes de valor médio
+16241,1,recorrentes de alto valor
+16242,1,recorrentes de alto valor
+16243,2,recentes de baixo valor
+16244,0,recorrentes de valor médio
+16245,0,recorrentes de valor médio
+16247,3,"compra única, antiga"
+16248,3,"compra única, antiga"
+16249,0,recorrentes de valor médio
+16250,3,"compra única, antiga"
+16253,0,recorrentes de valor médio
+16255,1,recorrentes de alto valor
+16256,3,"compra única, antiga"
+16257,3,"compra única, antiga"
+16258,0,recorrentes de valor médio
+16260,0,recorrentes de valor médio
+16261,2,recentes de baixo valor
+16265,1,recorrentes de alto valor
+16266,0,recorrentes de valor médio
+16268,3,"compra única, antiga"
+16270,3,"compra única, antiga"
+16271,0,recorrentes de valor médio
+16272,3,"compra única, antiga"
+16274,3,"compra única, antiga"
+16275,3,"compra única, antiga"
+16276,3,"compra única, antiga"
+16278,3,"compra única, antiga"
+16279,0,recorrentes de valor médio
+16281,0,recorrentes de valor médio
+16282,3,"compra única, antiga"
+16283,1,recorrentes de alto valor
+16284,2,recentes de baixo valor
+16287,3,"compra única, antiga"
+16292,3,"compra única, antiga"
+16293,1,recorrentes de alto valor
+16295,0,recorrentes de valor médio
+16297,3,"compra única, antiga"
+16298,2,recentes de baixo valor
+16302,3,"compra única, antiga"
+16303,0,recorrentes de valor médio
+16305,3,"compra única, antiga"
+16306,0,recorrentes de valor médio
+16308,0,recorrentes de valor médio
+16309,3,"compra única, antiga"
+16311,2,recentes de baixo valor
+16313,2,recentes de baixo valor
+16315,3,"compra única, antiga"
+16316,0,recorrentes de valor médio
+16317,0,recorrentes de valor médio
+16318,2,recentes de baixo valor
+16319,3,"compra única, antiga"
+16320,0,recorrentes de valor médio
+16321,0,recorrentes de valor médio
+16322,2,recentes de baixo valor
+16323,3,"compra única, antiga"
+16324,3,"compra única, antiga"
+16325,0,recorrentes de valor médio
+16326,1,recorrentes de alto valor
+16327,1,recorrentes de alto valor
+16330,2,recentes de baixo valor
+16332,0,recorrentes de valor médio
+16333,1,recorrentes de alto valor
+16337,3,"compra única, antiga"
+16338,3,"compra única, antiga"
+16339,3,"compra única, antiga"
+16340,3,"compra única, antiga"
+16341,0,recorrentes de valor médio
+16342,0,recorrentes de valor médio
+16343,2,recentes de baixo valor
+16344,3,"compra única, antiga"
+16345,2,recentes de baixo valor
+16347,2,recentes de baixo valor
+16348,0,recorrentes de valor médio
+16349,3,"compra única, antiga"
+16350,0,recorrentes de valor médio
+16351,3,"compra única, antiga"
+16352,2,recentes de baixo valor
+16353,1,recorrentes de alto valor
+16354,3,"compra única, antiga"
+16356,3,"compra única, antiga"
+16357,0,recorrentes de valor médio
+16358,1,recorrentes de alto valor
+16359,1,recorrentes de alto valor
+16360,1,recorrentes de alto valor
+16361,2,recentes de baixo valor
+16362,0,recorrentes de valor médio
+16363,3,"compra única, antiga"
+16364,2,recentes de baixo valor
+16365,1,recorrentes de alto valor
+16366,2,recentes de baixo valor
+16367,0,recorrentes de valor médio
+16368,2,recentes de baixo valor
+16369,0,recorrentes de valor médio
+16370,0,recorrentes de valor médio
+16372,2,recentes de baixo valor
+16374,3,"compra única, antiga"
+16376,2,recentes de baixo valor
+16377,3,"compra única, antiga"
+16378,3,"compra única, antiga"
+16379,1,recorrentes de alto valor
+16380,0,recorrentes de valor médio
+16383,0,recorrentes de valor médio
+16384,3,"compra única, antiga"
+16385,0,recorrentes de valor médio
+16386,2,recentes de baixo valor
+16387,3,"compra única, antiga"
+16389,0,recorrentes de valor médio
+16392,3,"compra única, antiga"
+16393,1,recorrentes de alto valor
+16394,0,recorrentes de valor médio
+16395,0,recorrentes de valor médio
+16398,0,recorrentes de valor médio
+16399,2,recentes de baixo valor
+16400,3,"compra única, antiga"
+16401,1,recorrentes de alto valor
+16402,3,"compra única, antiga"
+16403,3,"compra única, antiga"
+16404,3,"compra única, antiga"
+16405,3,"compra única, antiga"
+16406,2,recentes de baixo valor
+16407,1,recorrentes de alto valor
+16409,0,recorrentes de valor médio
+16411,2,recentes de baixo valor
+16412,3,"compra única, antiga"
+16413,3,"compra única, antiga"
+16414,2,recentes de baixo valor
+16415,3,"compra única, antiga"
+16416,0,recorrentes de valor médio
+16418,0,recorrentes de valor médio
+16419,0,recorrentes de valor médio
+16422,1,recorrentes de alto valor
+16423,2,recentes de baixo valor
+16424,3,"compra única, antiga"
+16425,3,"compra única, antiga"
+16426,1,recorrentes de alto valor
+16427,3,"compra única, antiga"
+16429,3,"compra única, antiga"
+16430,3,"compra única, antiga"
+16431,3,"compra única, antiga"
+16432,3,"compra única, antiga"
+16433,2,recentes de baixo valor
+16434,0,recorrentes de valor médio
+16438,2,recentes de baixo valor
+16440,1,recorrentes de alto valor
+16441,3,"compra única, antiga"
+16442,2,recentes de baixo valor
+16444,0,recorrentes de valor médio
+16445,2,recentes de baixo valor
+16446,1,recorrentes de alto valor
+16447,3,"compra única, antiga"
+16448,3,"compra única, antiga"
+16449,3,"compra única, antiga"
+16450,3,"compra única, antiga"
+16451,3,"compra única, antiga"
+16454,3,"compra única, antiga"
+16455,0,recorrentes de valor médio
+16456,0,recorrentes de valor médio
+16457,3,"compra única, antiga"
+16458,1,recorrentes de alto valor
+16460,0,recorrentes de valor médio
+16461,3,"compra única, antiga"
+16462,3,"compra única, antiga"
+16463,0,recorrentes de valor médio
+16464,0,recorrentes de valor médio
+16466,0,recorrentes de valor médio
+16468,3,"compra única, antiga"
+16469,0,recorrentes de valor médio
+16470,0,recorrentes de valor médio
+16471,3,"compra única, antiga"
+16473,3,"compra única, antiga"
+16474,1,recorrentes de alto valor
+16475,0,recorrentes de valor médio
+16477,0,recorrentes de valor médio
+16478,2,recentes de baixo valor
+16479,2,recentes de baixo valor
+16480,3,"compra única, antiga"
+16482,2,recentes de baixo valor
+16483,3,"compra única, antiga"
+16484,3,"compra única, antiga"
+16485,3,"compra única, antiga"
+16488,2,recentes de baixo valor
+16491,2,recentes de baixo valor
+16493,0,recorrentes de valor médio
+16494,3,"compra única, antiga"
+16495,2,recentes de baixo valor
+16496,2,recentes de baixo valor
+16497,0,recorrentes de valor médio
+16498,3,"compra única, antiga"
+16499,3,"compra única, antiga"
+16500,2,recentes de baixo valor
+16503,0,recorrentes de valor médio
+16504,2,recentes de baixo valor
+16505,2,recentes de baixo valor
+16506,2,recentes de baixo valor
+16509,3,"compra única, antiga"
+16510,3,"compra única, antiga"
+16511,0,recorrentes de valor médio
+16513,2,recentes de baixo valor
+16515,0,recorrentes de valor médio
+16516,2,recentes de baixo valor
+16517,3,"compra única, antiga"
+16518,3,"compra única, antiga"
+16519,2,recentes de baixo valor
+16520,0,recorrentes de valor médio
+16523,1,recorrentes de alto valor
+16525,1,recorrentes de alto valor
+16526,3,"compra única, antiga"
+16527,3,"compra única, antiga"
+16528,2,recentes de baixo valor
+16529,3,"compra única, antiga"
+16531,0,recorrentes de valor médio
+16532,0,recorrentes de valor médio
+16533,0,recorrentes de valor médio
+16535,2,recentes de baixo valor
+16536,3,"compra única, antiga"
+16539,2,recentes de baixo valor
+16542,3,"compra única, antiga"
+16545,3,"compra única, antiga"
+16546,3,"compra única, antiga"
+16549,1,recorrentes de alto valor
+16550,0,recorrentes de valor médio
+16551,0,recorrentes de valor médio
+16552,3,"compra única, antiga"
+16553,0,recorrentes de valor médio
+16554,0,recorrentes de valor médio
+16555,2,recentes de baixo valor
+16556,0,recorrentes de valor médio
+16557,2,recentes de baixo valor
+16558,1,recorrentes de alto valor
+16560,2,recentes de baixo valor
+16561,2,recentes de baixo valor
+16563,0,recorrentes de valor médio
+16565,3,"compra única, antiga"
+16566,2,recentes de baixo valor
+16567,3,"compra única, antiga"
+16569,2,recentes de baixo valor
+16570,1,recorrentes de alto valor
+16571,0,recorrentes de valor médio
+16572,0,recorrentes de valor médio
+16573,3,"compra única, antiga"
+16574,3,"compra única, antiga"
+16581,3,"compra única, antiga"
+16582,3,"compra única, antiga"
+16583,3,"compra única, antiga"
+16584,0,recorrentes de valor médio
+16586,3,"compra única, antiga"
+16587,3,"compra única, antiga"
+16589,0,recorrentes de valor médio
+16591,3,"compra única, antiga"
+16592,1,recorrentes de alto valor
+16593,2,recentes de baixo valor
+16594,3,"compra única, antiga"
+16595,3,"compra única, antiga"
+16596,2,recentes de baixo valor
+16597,2,recentes de baixo valor
+16598,3,"compra única, antiga"
+16600,1,recorrentes de alto valor
+16601,3,"compra única, antiga"
+16602,2,recentes de baixo valor
+16603,3,"compra única, antiga"
+16607,1,recorrentes de alto valor
+16609,1,recorrentes de alto valor
+16610,3,"compra única, antiga"
+16611,3,"compra única, antiga"
+16612,0,recorrentes de valor médio
+16613,3,"compra única, antiga"
+16614,3,"compra única, antiga"
+16616,2,recentes de baixo valor
+16617,3,"compra única, antiga"
+16618,0,recorrentes de valor médio
+16619,3,"compra única, antiga"
+16620,2,recentes de baixo valor
+16621,0,recorrentes de valor médio
+16623,3,"compra única, antiga"
+16624,0,recorrentes de valor médio
+16625,3,"compra única, antiga"
+16626,1,recorrentes de alto valor
+16627,3,"compra única, antiga"
+16628,0,recorrentes de valor médio
+16629,3,"compra única, antiga"
+16633,1,recorrentes de alto valor
+16634,3,"compra única, antiga"
+16637,0,recorrentes de valor médio
+16638,1,recorrentes de alto valor
+16639,0,recorrentes de valor médio
+16641,3,"compra única, antiga"
+16642,2,recentes de baixo valor
+16643,3,"compra única, antiga"
+16644,3,"compra única, antiga"
+16647,3,"compra única, antiga"
+16648,3,"compra única, antiga"
+16650,3,"compra única, antiga"
+16652,0,recorrentes de valor médio
+16653,2,recentes de baixo valor
+16654,0,recorrentes de valor médio
+16655,1,recorrentes de alto valor
+16656,1,recorrentes de alto valor
+16657,2,recentes de baixo valor
+16658,3,"compra única, antiga"
+16659,3,"compra única, antiga"
+16660,0,recorrentes de valor médio
+16665,3,"compra única, antiga"
+16666,2,recentes de baixo valor
+16667,3,"compra única, antiga"
+16668,2,recentes de baixo valor
+16669,0,recorrentes de valor médio
+16670,1,recorrentes de alto valor
+16671,0,recorrentes de valor médio
+16672,1,recorrentes de alto valor
+16674,3,"compra única, antiga"
+16676,0,recorrentes de valor médio
+16678,1,recorrentes de alto valor
+16679,3,"compra única, antiga"
+16680,3,"compra única, antiga"
+16681,0,recorrentes de valor médio
+16682,2,recentes de baixo valor
+16684,1,recorrentes de alto valor
+16685,3,"compra única, antiga"
+16686,0,recorrentes de valor médio
+16688,2,recentes de baixo valor
+16689,3,"compra única, antiga"
+16690,3,"compra única, antiga"
+16692,3,"compra única, antiga"
+16693,3,"compra única, antiga"
+16696,0,recorrentes de valor médio
+16697,3,"compra única, antiga"
+16698,0,recorrentes de valor médio
+16700,1,recorrentes de alto valor
+16701,1,recorrentes de alto valor
+16705,1,recorrentes de alto valor
+16706,0,recorrentes de valor médio
+16708,2,recentes de baixo valor
+16709,0,recorrentes de valor médio
+16710,1,recorrentes de alto valor
+16711,1,recorrentes de alto valor
+16712,1,recorrentes de alto valor
+16713,1,recorrentes de alto valor
+16714,3,"compra única, antiga"
+16715,3,"compra única, antiga"
+16716,3,"compra única, antiga"
+16717,1,recorrentes de alto valor
+16718,3,"compra única, antiga"
+16719,1,recorrentes de alto valor
+16720,2,recentes de baixo valor
+16721,3,"compra única, antiga"
+16722,1,recorrentes de alto valor
+16723,3,"compra única, antiga"
+16725,0,recorrentes de valor médio
+16726,0,recorrentes de valor médio
+16727,3,"compra única, antiga"
+16728,0,recorrentes de valor médio
+16729,1,recorrentes de alto valor
+16730,0,recorrentes de valor médio
+16732,2,recentes de baixo valor
+16734,0,recorrentes de valor médio
+16735,0,recorrentes de valor médio
+16737,3,"compra única, antiga"
+16738,3,"compra única, antiga"
+16739,3,"compra única, antiga"
+16743,0,recorrentes de valor médio
+16744,1,recorrentes de alto valor
+16745,1,recorrentes de alto valor
+16746,1,recorrentes de alto valor
+16747,0,recorrentes de valor médio
+16748,0,recorrentes de valor médio
+16750,0,recorrentes de valor médio
+16751,0,recorrentes de valor médio
+16752,3,"compra única, antiga"
+16753,3,"compra única, antiga"
+16754,3,"compra única, antiga"
+16755,0,recorrentes de valor médio
+16756,3,"compra única, antiga"
+16757,3,"compra única, antiga"
+16758,3,"compra única, antiga"
+16759,2,recentes de baixo valor
+16761,3,"compra única, antiga"
+16762,0,recorrentes de valor médio
+16763,3,"compra única, antiga"
+16764,1,recorrentes de alto valor
+16765,3,"compra única, antiga"
+16766,3,"compra única, antiga"
+16767,1,recorrentes de alto valor
+16768,0,recorrentes de valor médio
+16769,3,"compra única, antiga"
+16770,0,recorrentes de valor médio
+16771,0,recorrentes de valor médio
+16773,3,"compra única, antiga"
+16774,0,recorrentes de valor médio
+16775,1,recorrentes de alto valor
+16776,3,"compra única, antiga"
+16777,3,"compra única, antiga"
+16778,3,"compra única, antiga"
+16779,1,recorrentes de alto valor
+16780,3,"compra única, antiga"
+16781,3,"compra única, antiga"
+16782,1,recorrentes de alto valor
+16784,2,recentes de baixo valor
+16788,3,"compra única, antiga"
+16789,2,recentes de baixo valor
+16790,1,recorrentes de alto valor
+16791,0,recorrentes de valor médio
+16792,3,"compra única, antiga"
+16793,3,"compra única, antiga"
+16794,1,recorrentes de alto valor
+16795,3,"compra única, antiga"
+16796,3,"compra única, antiga"
+16800,2,recentes de baixo valor
+16801,0,recorrentes de valor médio
+16803,3,"compra única, antiga"
+16804,2,recentes de baixo valor
+16805,3,"compra única, antiga"
+16806,0,recorrentes de valor médio
+16807,0,recorrentes de valor médio
+16808,3,"compra única, antiga"
+16809,0,recorrentes de valor médio
+16810,3,"compra única, antiga"
+16811,2,recentes de baixo valor
+16812,3,"compra única, antiga"
+16813,1,recorrentes de alto valor
+16814,1,recorrentes de alto valor
+16816,0,recorrentes de valor médio
+16817,1,recorrentes de alto valor
+16818,1,recorrentes de alto valor
+16820,3,"compra única, antiga"
+16823,3,"compra única, antiga"
+16824,2,recentes de baixo valor
+16825,0,recorrentes de valor médio
+16826,3,"compra única, antiga"
+16828,3,"compra única, antiga"
+16829,3,"compra única, antiga"
+16830,2,recentes de baixo valor
+16832,3,"compra única, antiga"
+16833,2,recentes de baixo valor
+16834,3,"compra única, antiga"
+16835,3,"compra única, antiga"
+16836,2,recentes de baixo valor
+16837,1,recorrentes de alto valor
+16838,3,"compra única, antiga"
+16839,1,recorrentes de alto valor
+16841,0,recorrentes de valor médio
+16842,0,recorrentes de valor médio
+16843,1,recorrentes de alto valor
+16846,3,"compra única, antiga"
+16847,3,"compra única, antiga"
+16848,3,"compra única, antiga"
+16849,3,"compra única, antiga"
+16850,3,"compra única, antiga"
+16851,2,recentes de baixo valor
+16852,2,recentes de baixo valor
+16855,2,recentes de baixo valor
+16856,2,recentes de baixo valor
+16858,3,"compra única, antiga"
+16859,3,"compra única, antiga"
+16861,3,"compra única, antiga"
+16863,2,recentes de baixo valor
+16866,3,"compra única, antiga"
+16869,0,recorrentes de valor médio
+16871,0,recorrentes de valor médio
+16872,0,recorrentes de valor médio
+16873,1,recorrentes de alto valor
+16875,0,recorrentes de valor médio
+16877,0,recorrentes de valor médio
+16878,3,"compra única, antiga"
+16880,0,recorrentes de valor médio
+16881,3,"compra única, antiga"
+16882,0,recorrentes de valor médio
+16883,3,"compra única, antiga"
+16884,2,recentes de baixo valor
+16885,2,recentes de baixo valor
+16887,2,recentes de baixo valor
+16889,0,recorrentes de valor médio
+16891,2,recentes de baixo valor
+16892,2,recentes de baixo valor
+16893,3,"compra única, antiga"
+16895,3,"compra única, antiga"
+16897,3,"compra única, antiga"
+16898,2,recentes de baixo valor
+16899,1,recorrentes de alto valor
+16900,2,recentes de baixo valor
+16902,0,recorrentes de valor médio
+16903,2,recentes de baixo valor
+16904,1,recorrentes de alto valor
+16905,1,recorrentes de alto valor
+16906,0,recorrentes de valor médio
+16907,0,recorrentes de valor médio
+16909,3,"compra única, antiga"
+16910,1,recorrentes de alto valor
+16912,1,recorrentes de alto valor
+16913,3,"compra única, antiga"
+16914,2,recentes de baixo valor
+16915,2,recentes de baixo valor
+16916,2,recentes de baixo valor
+16917,3,"compra única, antiga"
+16918,0,recorrentes de valor médio
+16919,0,recorrentes de valor médio
+16921,3,"compra única, antiga"
+16923,1,recorrentes de alto valor
+16924,2,recentes de baixo valor
+16926,3,"compra única, antiga"
+16927,0,recorrentes de valor médio
+16928,1,recorrentes de alto valor
+16929,1,recorrentes de alto valor
+16930,2,recentes de baixo valor
+16931,1,recorrentes de alto valor
+16932,3,"compra única, antiga"
+16933,2,recentes de baixo valor
+16934,0,recorrentes de valor médio
+16936,2,recentes de baixo valor
+16938,1,recorrentes de alto valor
+16940,0,recorrentes de valor médio
+16942,1,recorrentes de alto valor
+16943,0,recorrentes de valor médio
+16945,1,recorrentes de alto valor
+16947,3,"compra única, antiga"
+16948,3,"compra única, antiga"
+16949,1,recorrentes de alto valor
+16950,0,recorrentes de valor médio
+16951,0,recorrentes de valor médio
+16952,3,"compra única, antiga"
+16953,3,"compra única, antiga"
+16954,1,recorrentes de alto valor
+16955,0,recorrentes de valor médio
+16956,2,recentes de baixo valor
+16957,3,"compra única, antiga"
+16959,3,"compra única, antiga"
+16960,0,recorrentes de valor médio
+16961,3,"compra única, antiga"
+16963,3,"compra única, antiga"
+16965,3,"compra única, antiga"
+16966,1,recorrentes de alto valor
+16967,3,"compra única, antiga"
+16968,2,recentes de baixo valor
+16969,0,recorrentes de valor médio
+16971,2,recentes de baixo valor
+16976,3,"compra única, antiga"
+16978,3,"compra única, antiga"
+16979,1,recorrentes de alto valor
+16980,3,"compra única, antiga"
+16982,3,"compra única, antiga"
+16983,1,recorrentes de alto valor
+16984,0,recorrentes de valor médio
+16985,1,recorrentes de alto valor
+16986,0,recorrentes de valor médio
+16987,1,recorrentes de alto valor
+16988,2,recentes de baixo valor
+16989,1,recorrentes de alto valor
+16990,3,"compra única, antiga"
+16992,0,recorrentes de valor médio
+16996,0,recorrentes de valor médio
+16997,3,"compra única, antiga"
+16998,3,"compra única, antiga"
+16999,2,recentes de baixo valor
+17001,1,recorrentes de alto valor
+17002,0,recorrentes de valor médio
+17004,0,recorrentes de valor médio
+17006,2,recentes de baixo valor
+17007,0,recorrentes de valor médio
+17010,2,recentes de baixo valor
+17011,2,recentes de baixo valor
+17014,2,recentes de baixo valor
+17015,0,recorrentes de valor médio
+17017,1,recorrentes de alto valor
+17018,0,recorrentes de valor médio
+17019,0,recorrentes de valor médio
+17022,3,"compra única, antiga"
+17024,3,"compra única, antiga"
+17025,3,"compra única, antiga"
+17026,3,"compra única, antiga"
+17027,0,recorrentes de valor médio
+17029,3,"compra única, antiga"
+17030,3,"compra única, antiga"
+17031,2,recentes de baixo valor
+17033,0,recorrentes de valor médio
+17034,2,recentes de baixo valor
+17035,3,"compra única, antiga"
+17037,3,"compra única, antiga"
+17038,2,recentes de baixo valor
+17040,3,"compra única, antiga"
+17041,0,recorrentes de valor médio
+17042,2,recentes de baixo valor
+17043,0,recorrentes de valor médio
+17044,2,recentes de baixo valor
+17045,3,"compra única, antiga"
+17046,3,"compra única, antiga"
+17047,0,recorrentes de valor médio
+17048,0,recorrentes de valor médio
+17049,1,recorrentes de alto valor
+17050,0,recorrentes de valor médio
+17051,3,"compra única, antiga"
+17052,2,recentes de baixo valor
+17053,3,"compra única, antiga"
+17054,0,recorrentes de valor médio
+17058,0,recorrentes de valor médio
+17059,0,recorrentes de valor médio
+17060,3,"compra única, antiga"
+17061,1,recorrentes de alto valor
+17062,3,"compra única, antiga"
+17063,0,recorrentes de valor médio
+17064,0,recorrentes de valor médio
+17068,1,recorrentes de alto valor
+17069,1,recorrentes de alto valor
+17070,3,"compra única, antiga"
+17071,1,recorrentes de alto valor
+17073,0,recorrentes de valor médio
+17075,0,recorrentes de valor médio
+17076,0,recorrentes de valor médio
+17078,2,recentes de baixo valor
+17079,3,"compra única, antiga"
+17080,2,recentes de baixo valor
+17081,2,recentes de baixo valor
+17082,0,recorrentes de valor médio
+17083,0,recorrentes de valor médio
+17084,0,recorrentes de valor médio
+17085,0,recorrentes de valor médio
+17086,1,recorrentes de alto valor
+17088,0,recorrentes de valor médio
+17090,1,recorrentes de alto valor
+17091,1,recorrentes de alto valor
+17092,0,recorrentes de valor médio
+17094,3,"compra única, antiga"
+17095,0,recorrentes de valor médio
+17096,0,recorrentes de valor médio
+17097,1,recorrentes de alto valor
+17100,2,recentes de baixo valor
+17101,0,recorrentes de valor médio
+17102,3,"compra única, antiga"
+17105,3,"compra única, antiga"
+17107,1,recorrentes de alto valor
+17109,0,recorrentes de valor médio
+17110,3,"compra única, antiga"
+17111,3,"compra única, antiga"
+17114,1,recorrentes de alto valor
+17115,2,recentes de baixo valor
+17117,3,"compra única, antiga"
+17118,3,"compra única, antiga"
+17119,2,recentes de baixo valor
+17120,3,"compra única, antiga"
+17122,3,"compra única, antiga"
+17123,3,"compra única, antiga"
+17124,3,"compra única, antiga"
+17125,3,"compra única, antiga"
+17126,0,recorrentes de valor médio
+17128,3,"compra única, antiga"
+17131,1,recorrentes de alto valor
+17133,1,recorrentes de alto valor
+17134,3,"compra única, antiga"
+17135,0,recorrentes de valor médio
+17138,3,"compra única, antiga"
+17139,1,recorrentes de alto valor
+17140,3,"compra única, antiga"
+17142,3,"compra única, antiga"
+17144,2,recentes de baixo valor
+17146,0,recorrentes de valor médio
+17147,0,recorrentes de valor médio
+17148,3,"compra única, antiga"
+17152,0,recorrentes de valor médio
+17153,2,recentes de baixo valor
+17154,3,"compra única, antiga"
+17155,2,recentes de baixo valor
+17157,2,recentes de baixo valor
+17158,0,recorrentes de valor médio
+17159,0,recorrentes de valor médio
+17160,0,recorrentes de valor médio
+17162,1,recorrentes de alto valor
+17163,2,recentes de baixo valor
+17164,0,recorrentes de valor médio
+17165,3,"compra única, antiga"
+17166,2,recentes de baixo valor
+17169,0,recorrentes de valor médio
+17171,3,"compra única, antiga"
+17172,3,"compra única, antiga"
+17173,1,recorrentes de alto valor
+17174,3,"compra única, antiga"
+17175,0,recorrentes de valor médio
+17176,3,"compra única, antiga"
+17179,0,recorrentes de valor médio
+17180,0,recorrentes de valor médio
+17181,3,"compra única, antiga"
+17183,1,recorrentes de alto valor
+17186,3,"compra única, antiga"
+17187,3,"compra única, antiga"
+17188,1,recorrentes de alto valor
+17189,3,"compra única, antiga"
+17190,3,"compra única, antiga"
+17191,0,recorrentes de valor médio
+17193,0,recorrentes de valor médio
+17194,3,"compra única, antiga"
+17197,2,recentes de baixo valor
+17198,2,recentes de baixo valor
+17201,3,"compra única, antiga"
+17203,0,recorrentes de valor médio
+17204,0,recorrentes de valor médio
+17205,3,"compra única, antiga"
+17206,3,"compra única, antiga"
+17211,1,recorrentes de alto valor
+17212,3,"compra única, antiga"
+17213,0,recorrentes de valor médio
+17214,0,recorrentes de valor médio
+17217,3,"compra única, antiga"
+17218,1,recorrentes de alto valor
+17219,2,recentes de baixo valor
+17220,1,recorrentes de alto valor
+17221,2,recentes de baixo valor
+17222,3,"compra única, antiga"
+17223,3,"compra única, antiga"
+17226,3,"compra única, antiga"
+17227,0,recorrentes de valor médio
+17228,1,recorrentes de alto valor
+17229,3,"compra única, antiga"
+17230,0,recorrentes de valor médio
+17231,1,recorrentes de alto valor
+17232,2,recentes de baixo valor
+17233,2,recentes de baixo valor
+17234,3,"compra única, antiga"
+17235,2,recentes de baixo valor
+17236,0,recorrentes de valor médio
+17237,2,recentes de baixo valor
+17238,1,recorrentes de alto valor
+17239,3,"compra única, antiga"
+17242,0,recorrentes de valor médio
+17243,1,recorrentes de alto valor
+17244,3,"compra única, antiga"
+17245,3,"compra única, antiga"
+17247,2,recentes de baixo valor
+17248,3,"compra única, antiga"
+17250,2,recentes de baixo valor
+17251,3,"compra única, antiga"
+17252,3,"compra única, antiga"
+17253,2,recentes de baixo valor
+17254,2,recentes de baixo valor
+17255,2,recentes de baixo valor
+17256,3,"compra única, antiga"
+17259,3,"compra única, antiga"
+17262,0,recorrentes de valor médio
+17263,3,"compra única, antiga"
+17265,3,"compra única, antiga"
+17266,2,recentes de baixo valor
+17267,3,"compra única, antiga"
+17268,0,recorrentes de valor médio
+17272,0,recorrentes de valor médio
+17274,3,"compra única, antiga"
+17277,3,"compra única, antiga"
+17278,3,"compra única, antiga"
+17279,3,"compra única, antiga"
+17282,0,recorrentes de valor médio
+17284,0,recorrentes de valor médio
+17286,2,recentes de baixo valor
+17287,0,recorrentes de valor médio
+17288,1,recorrentes de alto valor
+17289,0,recorrentes de valor médio
+17290,2,recentes de baixo valor
+17291,3,"compra única, antiga"
+17293,1,recorrentes de alto valor
+17295,2,recentes de baixo valor
+17297,2,recentes de baixo valor
+17298,3,"compra única, antiga"
+17299,2,recentes de baixo valor
+17301,2,recentes de baixo valor
+17302,0,recorrentes de valor médio
+17303,3,"compra única, antiga"
+17306,1,recorrentes de alto valor
+17309,3,"compra única, antiga"
+17311,0,recorrentes de valor médio
+17312,0,recorrentes de valor médio
+17313,0,recorrentes de valor médio
+17314,1,recorrentes de alto valor
+17315,1,recorrentes de alto valor
+17317,0,recorrentes de valor médio
+17320,0,recorrentes de valor médio
+17321,2,recentes de baixo valor
+17323,0,recorrentes de valor médio
+17324,0,recorrentes de valor médio
+17325,3,"compra única, antiga"
+17329,2,recentes de baixo valor
+17330,2,recentes de baixo valor
+17331,3,"compra única, antiga"
+17333,3,"compra única, antiga"
+17334,3,"compra única, antiga"
+17337,0,recorrentes de valor médio
+17338,1,recorrentes de alto valor
+17339,3,"compra única, antiga"
+17340,1,recorrentes de alto valor
+17341,0,recorrentes de valor médio
+17343,3,"compra única, antiga"
+17344,3,"compra única, antiga"
+17345,2,recentes de baixo valor
+17346,1,recorrentes de alto valor
+17347,3,"compra única, antiga"
+17348,0,recorrentes de valor médio
+17349,3,"compra única, antiga"
+17350,2,recentes de baixo valor
+17351,0,recorrentes de valor médio
+17353,0,recorrentes de valor médio
+17354,0,recorrentes de valor médio
+17356,3,"compra única, antiga"
+17357,2,recentes de baixo valor
+17358,3,"compra única, antiga"
+17359,2,recentes de baixo valor
+17360,2,recentes de baixo valor
+17361,0,recorrentes de valor médio
+17362,3,"compra única, antiga"
+17364,1,recorrentes de alto valor
+17365,1,recorrentes de alto valor
+17367,3,"compra única, antiga"
+17368,1,recorrentes de alto valor
+17370,0,recorrentes de valor médio
+17371,2,recentes de baixo valor
+17372,0,recorrentes de valor médio
+17373,0,recorrentes de valor médio
+17374,3,"compra única, antiga"
+17375,3,"compra única, antiga"
+17376,3,"compra única, antiga"
+17377,1,recorrentes de alto valor
+17379,2,recentes de baixo valor
+17381,1,recorrentes de alto valor
+17382,3,"compra única, antiga"
+17383,2,recentes de baixo valor
+17384,2,recentes de baixo valor
+17385,2,recentes de baixo valor
+17386,1,recorrentes de alto valor
+17387,2,recentes de baixo valor
+17388,0,recorrentes de valor médio
+17389,1,recorrentes de alto valor
+17391,3,"compra única, antiga"
+17392,3,"compra única, antiga"
+17394,3,"compra única, antiga"
+17396,1,recorrentes de alto valor
+17397,2,recentes de baixo valor
+17398,0,recorrentes de valor médio
+17400,0,recorrentes de valor médio
+17402,1,recorrentes de alto valor
+17403,2,recentes de baixo valor
+17404,1,recorrentes de alto valor
+17405,2,recentes de baixo valor
+17406,0,recorrentes de valor médio
+17408,3,"compra única, antiga"
+17409,3,"compra única, antiga"
+17410,0,recorrentes de valor médio
+17411,2,recentes de baixo valor
+17412,1,recorrentes de alto valor
+17414,0,recorrentes de valor médio
+17415,3,"compra única, antiga"
+17416,1,recorrentes de alto valor
+17418,2,recentes de baixo valor
+17419,1,recorrentes de alto valor
+17420,0,recorrentes de valor médio
+17422,0,recorrentes de valor médio
+17423,0,recorrentes de valor médio
+17425,2,recentes de baixo valor
+17426,1,recorrentes de alto valor
+17427,3,"compra única, antiga"
+17428,1,recorrentes de alto valor
+17429,3,"compra única, antiga"
+17430,2,recentes de baixo valor
+17431,3,"compra única, antiga"
+17432,2,recentes de baixo valor
+17433,3,"compra única, antiga"
+17434,1,recorrentes de alto valor
+17436,2,recentes de baixo valor
+17438,3,"compra única, antiga"
+17440,3,"compra única, antiga"
+17442,0,recorrentes de valor médio
+17443,3,"compra única, antiga"
+17444,0,recorrentes de valor médio
+17446,3,"compra única, antiga"
+17447,2,recentes de baixo valor
+17449,1,recorrentes de alto valor
+17450,1,recorrentes de alto valor
+17451,1,recorrentes de alto valor
+17453,2,recentes de baixo valor
+17454,0,recorrentes de valor médio
+17455,3,"compra única, antiga"
+17456,3,"compra única, antiga"
+17457,0,recorrentes de valor médio
+17458,2,recentes de baixo valor
+17459,2,recentes de baixo valor
+17460,0,recorrentes de valor médio
+17461,2,recentes de baixo valor
+17462,0,recorrentes de valor médio
+17463,0,recorrentes de valor médio
+17464,3,"compra única, antiga"
+17466,2,recentes de baixo valor
+17468,2,recentes de baixo valor
+17469,0,recorrentes de valor médio
+17470,0,recorrentes de valor médio
+17472,0,recorrentes de valor médio
+17475,3,"compra única, antiga"
+17480,3,"compra única, antiga"
+17481,2,recentes de baixo valor
+17483,0,recorrentes de valor médio
+17486,3,"compra única, antiga"
+17489,3,"compra única, antiga"
+17490,1,recorrentes de alto valor
+17491,1,recorrentes de alto valor
+17492,3,"compra única, antiga"
+17495,2,recentes de baixo valor
+17496,3,"compra única, antiga"
+17498,3,"compra única, antiga"
+17499,3,"compra única, antiga"
+17500,0,recorrentes de valor médio
+17501,3,"compra única, antiga"
+17502,2,recentes de baixo valor
+17503,2,recentes de baixo valor
+17504,0,recorrentes de valor médio
+17505,0,recorrentes de valor médio
+17506,3,"compra única, antiga"
+17507,3,"compra única, antiga"
+17508,3,"compra única, antiga"
+17509,0,recorrentes de valor médio
+17510,2,recentes de baixo valor
+17511,1,recorrentes de alto valor
+17512,1,recorrentes de alto valor
+17513,3,"compra única, antiga"
+17514,3,"compra única, antiga"
+17515,0,recorrentes de valor médio
+17516,0,recorrentes de valor médio
+17517,3,"compra única, antiga"
+17519,0,recorrentes de valor médio
+17520,3,"compra única, antiga"
+17521,0,recorrentes de valor médio
+17522,1,recorrentes de alto valor
+17523,2,recentes de baixo valor
+17524,3,"compra única, antiga"
+17525,3,"compra única, antiga"
+17526,2,recentes de baixo valor
+17527,0,recorrentes de valor médio
+17528,1,recorrentes de alto valor
+17530,1,recorrentes de alto valor
+17531,3,"compra única, antiga"
+17534,3,"compra única, antiga"
+17535,3,"compra única, antiga"
+17536,3,"compra única, antiga"
+17537,2,recentes de baixo valor
+17538,2,recentes de baixo valor
+17540,2,recentes de baixo valor
+17542,3,"compra única, antiga"
+17545,0,recorrentes de valor médio
+17548,3,"compra única, antiga"
+17549,2,recentes de baixo valor
+17550,3,"compra única, antiga"
+17551,3,"compra única, antiga"
+17552,0,recorrentes de valor médio
+17553,3,"compra única, antiga"
+17554,1,recorrentes de alto valor
+17555,2,recentes de baixo valor
+17556,3,"compra única, antiga"
+17557,2,recentes de baixo valor
+17560,0,recorrentes de valor médio
+17561,2,recentes de baixo valor
+17562,0,recorrentes de valor médio
+17564,2,recentes de baixo valor
+17566,2,recentes de baixo valor
+17567,1,recorrentes de alto valor
+17569,3,"compra única, antiga"
+17571,0,recorrentes de valor médio
+17572,3,"compra única, antiga"
+17573,2,recentes de baixo valor
+17574,3,"compra única, antiga"
+17576,1,recorrentes de alto valor
+17578,3,"compra única, antiga"
+17579,2,recentes de baixo valor
+17580,3,"compra única, antiga"
+17581,1,recorrentes de alto valor
+17582,3,"compra única, antiga"
+17584,2,recentes de baixo valor
+17585,0,recorrentes de valor médio
+17588,0,recorrentes de valor médio
+17589,0,recorrentes de valor médio
+17590,2,recentes de baixo valor
+17591,0,recorrentes de valor médio
+17593,1,recorrentes de alto valor
+17594,0,recorrentes de valor médio
+17595,2,recentes de baixo valor
+17596,1,recorrentes de alto valor
+17597,3,"compra única, antiga"
+17600,2,recentes de baixo valor
+17601,3,"compra única, antiga"
+17602,1,recorrentes de alto valor
+17603,3,"compra única, antiga"
+17604,3,"compra única, antiga"
+17608,2,recentes de baixo valor
+17609,0,recorrentes de valor médio
+17611,1,recorrentes de alto valor
+17612,0,recorrentes de valor médio
+17613,1,recorrentes de alto valor
+17614,3,"compra única, antiga"
+17615,3,"compra única, antiga"
+17616,3,"compra única, antiga"
+17618,2,recentes de baixo valor
+17619,3,"compra única, antiga"
+17620,3,"compra única, antiga"
+17621,0,recorrentes de valor médio
+17623,2,recentes de baixo valor
+17624,2,recentes de baixo valor
+17625,0,recorrentes de valor médio
+17628,3,"compra única, antiga"
+17629,1,recorrentes de alto valor
+17630,3,"compra única, antiga"
+17631,2,recentes de baixo valor
+17633,0,recorrentes de valor médio
+17634,0,recorrentes de valor médio
+17636,2,recentes de baixo valor
+17637,2,recentes de baixo valor
+17639,3,"compra única, antiga"
+17640,3,"compra única, antiga"
+17642,3,"compra única, antiga"
+17643,3,"compra única, antiga"
+17644,1,recorrentes de alto valor
+17646,0,recorrentes de valor médio
+17647,3,"compra única, antiga"
+17648,0,recorrentes de valor médio
+17649,3,"compra única, antiga"
+17650,2,recentes de baixo valor
+17651,1,recorrentes de alto valor
+17652,1,recorrentes de alto valor
+17653,0,recorrentes de valor médio
+17654,3,"compra única, antiga"
+17655,1,recorrentes de alto valor
+17656,0,recorrentes de valor médio
+17658,2,recentes de baixo valor
+17659,1,recorrentes de alto valor
+17660,3,"compra única, antiga"
+17663,0,recorrentes de valor médio
+17664,2,recentes de baixo valor
+17666,2,recentes de baixo valor
+17667,0,recorrentes de valor médio
+17668,2,recentes de baixo valor
+17669,0,recorrentes de valor médio
+17670,3,"compra única, antiga"
+17671,0,recorrentes de valor médio
+17672,0,recorrentes de valor médio
+17673,1,recorrentes de alto valor
+17674,3,"compra única, antiga"
+17675,1,recorrentes de alto valor
+17676,1,recorrentes de alto valor
+17677,1,recorrentes de alto valor
+17678,3,"compra única, antiga"
+17679,0,recorrentes de valor médio
+17680,2,recentes de baixo valor
+17682,1,recorrentes de alto valor
+17684,3,"compra única, antiga"
+17685,1,recorrentes de alto valor
+17686,1,recorrentes de alto valor
+17690,1,recorrentes de alto valor
+17691,3,"compra única, antiga"
+17692,0,recorrentes de valor médio
+17693,3,"compra única, antiga"
+17694,3,"compra única, antiga"
+17695,3,"compra única, antiga"
+17696,0,recorrentes de valor médio
+17697,3,"compra única, antiga"
+17698,3,"compra única, antiga"
+17700,0,recorrentes de valor médio
+17701,3,"compra única, antiga"
+17702,0,recorrentes de valor médio
+17703,0,recorrentes de valor médio
+17704,3,"compra única, antiga"
+17705,1,recorrentes de alto valor
+17706,1,recorrentes de alto valor
+17707,3,"compra única, antiga"
+17708,3,"compra única, antiga"
+17709,3,"compra única, antiga"
+17711,2,recentes de baixo valor
+17712,2,recentes de baixo valor
+17714,3,"compra única, antiga"
+17715,3,"compra única, antiga"
+17716,1,recorrentes de alto valor
+17718,3,"compra única, antiga"
+17719,1,recorrentes de alto valor
+17720,0,recorrentes de valor médio
+17722,0,recorrentes de valor médio
+17723,0,recorrentes de valor médio
+17724,0,recorrentes de valor médio
+17725,1,recorrentes de alto valor
+17727,2,recentes de baixo valor
+17728,1,recorrentes de alto valor
+17730,1,recorrentes de alto valor
+17731,0,recorrentes de valor médio
+17732,3,"compra única, antiga"
+17733,2,recentes de baixo valor
+17734,0,recorrentes de valor médio
+17735,1,recorrentes de alto valor
+17736,2,recentes de baixo valor
+17737,2,recentes de baixo valor
+17738,0,recorrentes de valor médio
+17739,1,recorrentes de alto valor
+17742,3,"compra única, antiga"
+17744,1,recorrentes de alto valor
+17746,3,"compra única, antiga"
+17747,3,"compra única, antiga"
+17749,3,"compra única, antiga"
+17750,1,recorrentes de alto valor
+17752,3,"compra única, antiga"
+17754,1,recorrentes de alto valor
+17757,1,recorrentes de alto valor
+17758,1,recorrentes de alto valor
+17759,2,recentes de baixo valor
+17760,2,recentes de baixo valor
+17761,2,recentes de baixo valor
+17763,3,"compra única, antiga"
+17764,0,recorrentes de valor médio
+17765,3,"compra única, antiga"
+17767,2,recentes de baixo valor
+17768,0,recorrentes de valor médio
+17769,1,recorrentes de alto valor
+17770,0,recorrentes de valor médio
+17771,3,"compra única, antiga"
+17772,2,recentes de baixo valor
+17774,0,recorrentes de valor médio
+17775,3,"compra única, antiga"
+17777,2,recentes de baixo valor
+17779,2,recentes de baixo valor
+17781,3,"compra única, antiga"
+17783,3,"compra única, antiga"
+17785,3,"compra única, antiga"
+17786,3,"compra única, antiga"
+17787,0,recorrentes de valor médio
+17788,0,recorrentes de valor médio
+17789,3,"compra única, antiga"
+17790,1,recorrentes de alto valor
+17791,2,recentes de baixo valor
+17793,2,recentes de baixo valor
+17795,3,"compra única, antiga"
+17796,0,recorrentes de valor médio
+17797,2,recentes de baixo valor
+17799,1,recorrentes de alto valor
+17800,0,recorrentes de valor médio
+17802,0,recorrentes de valor médio
+17805,3,"compra única, antiga"
+17806,2,recentes de baixo valor
+17809,1,recorrentes de alto valor
+17811,1,recorrentes de alto valor
+17812,2,recentes de baixo valor
+17813,0,recorrentes de valor médio
+17816,2,recentes de baixo valor
+17817,2,recentes de baixo valor
+17819,0,recorrentes de valor médio
+17824,3,"compra única, antiga"
+17827,1,recorrentes de alto valor
+17828,0,recorrentes de valor médio
+17829,3,"compra única, antiga"
+17830,2,recentes de baixo valor
+17831,3,"compra única, antiga"
+17832,3,"compra única, antiga"
+17835,2,recentes de baixo valor
+17836,3,"compra única, antiga"
+17837,0,recorrentes de valor médio
+17838,0,recorrentes de valor médio
+17839,3,"compra única, antiga"
+17841,1,recorrentes de alto valor
+17843,3,"compra única, antiga"
+17844,3,"compra única, antiga"
+17848,0,recorrentes de valor médio
+17849,0,recorrentes de valor médio
+17850,1,recorrentes de alto valor
+17852,2,recentes de baixo valor
+17854,3,"compra única, antiga"
+17855,3,"compra única, antiga"
+17856,2,recentes de baixo valor
+17857,1,recorrentes de alto valor
+17858,1,recorrentes de alto valor
+17859,3,"compra única, antiga"
+17860,3,"compra única, antiga"
+17861,1,recorrentes de alto valor
+17862,3,"compra única, antiga"
+17863,0,recorrentes de valor médio
+17864,2,recentes de baixo valor
+17865,1,recorrentes de alto valor
+17866,3,"compra única, antiga"
+17867,0,recorrentes de valor médio
+17869,0,recorrentes de valor médio
+17870,1,recorrentes de alto valor
+17871,3,"compra única, antiga"
+17873,0,recorrentes de valor médio
+17874,0,recorrentes de valor médio
+17877,3,"compra única, antiga"
+17878,3,"compra única, antiga"
+17879,3,"compra única, antiga"
+17880,3,"compra única, antiga"
+17881,3,"compra única, antiga"
+17883,2,recentes de baixo valor
+17884,2,recentes de baixo valor
+17885,2,recentes de baixo valor
+17886,0,recorrentes de valor médio
+17887,3,"compra única, antiga"
+17888,0,recorrentes de valor médio
+17889,3,"compra única, antiga"
+17890,3,"compra única, antiga"
+17891,3,"compra única, antiga"
+17892,3,"compra única, antiga"
+17893,3,"compra única, antiga"
+17894,0,recorrentes de valor médio
+17895,3,"compra única, antiga"
+17896,2,recentes de baixo valor
+17897,3,"compra única, antiga"
+17898,3,"compra única, antiga"
+17899,3,"compra única, antiga"
+17900,3,"compra única, antiga"
+17901,2,recentes de baixo valor
+17904,2,recentes de baixo valor
+17905,0,recorrentes de valor médio
+17906,3,"compra única, antiga"
+17908,3,"compra única, antiga"
+17911,2,recentes de baixo valor
+17912,3,"compra única, antiga"
+17913,3,"compra única, antiga"
+17914,2,recentes de baixo valor
+17917,2,recentes de baixo valor
+17919,3,"compra única, antiga"
+17920,1,recorrentes de alto valor
+17921,0,recorrentes de valor médio
+17923,3,"compra única, antiga"
+17924,1,recorrentes de alto valor
+17925,3,"compra única, antiga"
+17926,3,"compra única, antiga"
+17928,3,"compra única, antiga"
+17929,2,recentes de baixo valor
+17930,0,recorrentes de valor médio
+17931,3,"compra única, antiga"
+17932,0,recorrentes de valor médio
+17934,0,recorrentes de valor médio
+17935,3,"compra única, antiga"
+17936,2,recentes de baixo valor
+17937,1,recorrentes de alto valor
+17939,3,"compra única, antiga"
+17940,0,recorrentes de valor médio
+17941,3,"compra única, antiga"
+17942,2,recentes de baixo valor
+17946,3,"compra única, antiga"
+17947,3,"compra única, antiga"
+17948,3,"compra única, antiga"
+17949,1,recorrentes de alto valor
+17950,0,recorrentes de valor médio
+17951,0,recorrentes de valor médio
+17954,1,recorrentes de alto valor
+17955,0,recorrentes de valor médio
+17956,3,"compra única, antiga"
+17957,3,"compra única, antiga"
+17958,3,"compra única, antiga"
+17960,3,"compra única, antiga"
+17961,1,recorrentes de alto valor
+17962,3,"compra única, antiga"
+17964,2,recentes de baixo valor
+17965,1,recorrentes de alto valor
+17966,0,recorrentes de valor médio
+17967,3,"compra única, antiga"
+17968,3,"compra única, antiga"
+17969,3,"compra única, antiga"
+17970,3,"compra única, antiga"
+17972,3,"compra única, antiga"
+17973,3,"compra única, antiga"
+17974,2,recentes de baixo valor
+17975,1,recorrentes de alto valor
+17976,3,"compra única, antiga"
+17977,2,recentes de baixo valor
+17978,3,"compra única, antiga"
+17979,0,recorrentes de valor médio
+17980,0,recorrentes de valor médio
+17984,3,"compra única, antiga"
+17985,2,recentes de baixo valor
+17986,3,"compra única, antiga"
+17987,3,"compra única, antiga"
+17988,2,recentes de baixo valor
+17990,3,"compra única, antiga"
+17991,3,"compra única, antiga"
+17994,0,recorrentes de valor médio
+17995,3,"compra única, antiga"
+17997,0,recorrentes de valor médio
+17999,2,recentes de baixo valor
+18001,2,recentes de baixo valor
+18004,3,"compra única, antiga"
+18005,2,recentes de baixo valor
+18006,2,recentes de baixo valor
+18008,0,recorrentes de valor médio
+18009,3,"compra única, antiga"
+18010,3,"compra única, antiga"
+18011,3,"compra única, antiga"
+18013,3,"compra única, antiga"
+18014,2,recentes de baixo valor
+18015,2,recentes de baixo valor
+18016,0,recorrentes de valor médio
+18017,0,recorrentes de valor médio
+18018,3,"compra única, antiga"
+18019,3,"compra única, antiga"
+18022,2,recentes de baixo valor
+18024,3,"compra única, antiga"
+18027,3,"compra única, antiga"
+18030,2,recentes de baixo valor
+18032,3,"compra única, antiga"
+18033,3,"compra única, antiga"
+18034,2,recentes de baixo valor
+18035,0,recorrentes de valor médio
+18036,2,recentes de baixo valor
+18037,3,"compra única, antiga"
+18040,2,recentes de baixo valor
+18041,1,recorrentes de alto valor
+18042,3,"compra única, antiga"
+18043,2,recentes de baixo valor
+18044,1,recorrentes de alto valor
+18045,3,"compra única, antiga"
+18048,3,"compra única, antiga"
+18050,3,"compra única, antiga"
+18053,3,"compra única, antiga"
+18055,1,recorrentes de alto valor
+18056,3,"compra única, antiga"
+18058,2,recentes de baixo valor
+18059,2,recentes de baixo valor
+18061,1,recorrentes de alto valor
+18062,0,recorrentes de valor médio
+18064,3,"compra única, antiga"
+18065,1,recorrentes de alto valor
+18066,3,"compra única, antiga"
+18067,2,recentes de baixo valor
+18068,3,"compra única, antiga"
+18069,0,recorrentes de valor médio
+18071,3,"compra única, antiga"
+18072,3,"compra única, antiga"
+18073,0,recorrentes de valor médio
+18074,3,"compra única, antiga"
+18075,1,recorrentes de alto valor
+18077,1,recorrentes de alto valor
+18078,3,"compra única, antiga"
+18079,0,recorrentes de valor médio
+18080,2,recentes de baixo valor
+18081,2,recentes de baixo valor
+18082,2,recentes de baixo valor
+18084,2,recentes de baixo valor
+18085,3,"compra única, antiga"
+18086,3,"compra única, antiga"
+18087,0,recorrentes de valor médio
+18088,3,"compra única, antiga"
+18092,1,recorrentes de alto valor
+18093,0,recorrentes de valor médio
+18094,0,recorrentes de valor médio
+18095,3,"compra única, antiga"
+18096,2,recentes de baixo valor
+18097,1,recorrentes de alto valor
+18099,3,"compra única, antiga"
+18101,2,recentes de baixo valor
+18102,1,recorrentes de alto valor
+18104,2,recentes de baixo valor
+18105,3,"compra única, antiga"
+18106,3,"compra única, antiga"
+18108,3,"compra única, antiga"
+18109,1,recorrentes de alto valor
+18110,2,recentes de baixo valor
+18112,2,recentes de baixo valor
+18113,3,"compra única, antiga"
+18114,3,"compra única, antiga"
+18116,0,recorrentes de valor médio
+18117,2,recentes de baixo valor
+18118,1,recorrentes de alto valor
+18119,3,"compra única, antiga"
+18120,3,"compra única, antiga"
+18121,3,"compra única, antiga"
+18122,1,recorrentes de alto valor
+18123,2,recentes de baixo valor
+18125,0,recorrentes de valor médio
+18126,3,"compra única, antiga"
+18127,2,recentes de baixo valor
+18129,3,"compra única, antiga"
+18130,2,recentes de baixo valor
+18133,3,"compra única, antiga"
+18135,0,recorrentes de valor médio
+18136,0,recorrentes de valor médio
+18138,3,"compra única, antiga"
+18139,1,recorrentes de alto valor
+18142,0,recorrentes de valor médio
+18143,0,recorrentes de valor médio
+18144,1,recorrentes de alto valor
+18145,0,recorrentes de valor médio
+18146,3,"compra única, antiga"
+18147,3,"compra única, antiga"
+18149,0,recorrentes de valor médio
+18150,2,recentes de baixo valor
+18151,3,"compra única, antiga"
+18154,2,recentes de baixo valor
+18155,3,"compra única, antiga"
+18156,2,recentes de baixo valor
+18158,2,recentes de baixo valor
+18159,3,"compra única, antiga"
+18160,0,recorrentes de valor médio
+18161,0,recorrentes de valor médio
+18164,2,recentes de baixo valor
+18165,3,"compra única, antiga"
+18167,0,recorrentes de valor médio
+18168,0,recorrentes de valor médio
+18169,3,"compra única, antiga"
+18170,0,recorrentes de valor médio
+18171,0,recorrentes de valor médio
+18172,1,recorrentes de alto valor
+18173,0,recorrentes de valor médio
+18174,2,recentes de baixo valor
+18176,3,"compra única, antiga"
+18177,0,recorrentes de valor médio
+18178,0,recorrentes de valor médio
+18179,1,recorrentes de alto valor
+18180,1,recorrentes de alto valor
+18181,2,recentes de baixo valor
+18183,3,"compra única, antiga"
+18184,2,recentes de baixo valor
+18185,3,"compra única, antiga"
+18188,0,recorrentes de valor médio
+18189,0,recorrentes de valor médio
+18190,3,"compra única, antiga"
+18191,3,"compra única, antiga"
+18192,3,"compra única, antiga"
+18193,3,"compra única, antiga"
+18194,3,"compra única, antiga"
+18196,3,"compra única, antiga"
+18198,1,recorrentes de alto valor
+18200,3,"compra única, antiga"
+18202,0,recorrentes de valor médio
+18203,3,"compra única, antiga"
+18204,0,recorrentes de valor médio
+18205,2,recentes de baixo valor
+18209,2,recentes de baixo valor
+18210,1,recorrentes de alto valor
+18211,0,recorrentes de valor médio
+18212,3,"compra única, antiga"
+18213,3,"compra única, antiga"
+18215,3,"compra única, antiga"
+18216,2,recentes de baixo valor
+18217,2,recentes de baixo valor
+18218,3,"compra única, antiga"
+18219,1,recorrentes de alto valor
+18220,3,"compra única, antiga"
+18221,0,recorrentes de valor médio
+18222,3,"compra única, antiga"
+18223,1,recorrentes de alto valor
+18224,3,"compra única, antiga"
+18225,1,recorrentes de alto valor
+18226,1,recorrentes de alto valor
+18227,3,"compra única, antiga"
+18228,0,recorrentes de valor médio
+18229,1,recorrentes de alto valor
+18230,1,recorrentes de alto valor
+18231,0,recorrentes de valor médio
+18232,0,recorrentes de valor médio
+18233,3,"compra única, antiga"
+18235,0,recorrentes de valor médio
+18236,0,recorrentes de valor médio
+18237,2,recentes de baixo valor
+18239,0,recorrentes de valor médio
+18240,3,"compra única, antiga"
+18241,1,recorrentes de alto valor
+18242,0,recorrentes de valor médio
+18245,1,recorrentes de alto valor
+18246,2,recentes de baixo valor
+18248,3,"compra única, antiga"
+18249,2,recentes de baixo valor
+18250,3,"compra única, antiga"
+18251,0,recorrentes de valor médio
+18252,2,recentes de baixo valor
+18255,3,"compra única, antiga"
+18257,0,recorrentes de valor médio
+18259,0,recorrentes de valor médio
+18260,0,recorrentes de valor médio
+18261,2,recentes de baixo valor
+18262,3,"compra única, antiga"
+18263,0,recorrentes de valor médio
+18265,0,recorrentes de valor médio
+18268,3,"compra única, antiga"
+18269,3,"compra única, antiga"
+18270,2,recentes de baixo valor
+18272,1,recorrentes de alto valor
+18273,2,recentes de baixo valor
+18274,2,recentes de baixo valor
+18276,3,"compra única, antiga"
+18277,3,"compra única, antiga"
+18278,3,"compra única, antiga"
+18280,3,"compra única, antiga"
+18281,3,"compra única, antiga"
+18282,2,recentes de baixo valor
+18283,1,recorrentes de alto valor
+18287,0,recorrentes de valor médio
