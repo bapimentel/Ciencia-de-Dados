@@ -1,6 +1,6 @@
 # Ciência de Dados
 
-> Material da disciplina de Ciência de Dados do Instituto de Computação da Universidade Federal de Alagoas (UFAL). Os slides das aulas, em PDF, estão no [site da disciplina](https://sites.google.com/ic.ufal.br/ciencia-de-dados/documentos?authuser=0). Este repositório é autocontido: tudo o que é preciso para estudar e executar está aqui.
+> Material da disciplina de Ciência de Dados do Instituto de Computação da Universidade Federal de Alagoas (UFAL). Os slides das aulas, em PDF, estão no [site da disciplina](https://sites.google.com/ic.ufal.br/ciencia-de-dados/documentos?authuser=0). Tudo o que é preciso para estudar e executar está aqui; só a parte de Big Data da unidade 01 baixa, na primeira execução, dados públicos grandes demais para o repositório.
 
 **Uma loja vendeu mais neste mês. Ela deveria comprar mais estoque para o próximo?**
 
@@ -19,7 +19,7 @@ Não precisa saber Python. Comece pela primeira unidade e siga no seu ritmo. Cad
 | Unidade | O que você vai investigar |
 |---|---|
 | [00 · Como começar](00_como_comecar/) | Instalar o Python e executar os primeiros comandos |
-| [01 · Conceitos e Big Data](01_conceitos_e_big_data/) | O que é Ciência de Dados, o processo de análise, volume, variedade e velocidade |
+| [01 · Conceitos e Big Data](01_conceitos_e_big_data/) | O que é Ciência de Dados, o processo de análise e os Vs do Big Data; Apache Spark com 41 milhões de corridas de táxi e com o fluxo ao vivo de edições da Wikipédia |
 | [02 · Python do zero](02_python/) | Como transformar perguntas simples em instruções |
 | [03 · Primeiros dados](03_primeiros_dados/) | Como ler uma tabela e encontrar padrões com `pandas` |
 | [04 · Estatística](04_estatistica/) | Medidas, distribuições, intervalos, testes, tabelas de contingência, Simpson, sobrevivência |
@@ -97,7 +97,7 @@ Para quem quiser a fundamentação teórica e o desenvolvimento das aplicações
 
 Os casos 04 a 07 não fazem parte do livro. A correspondência entre unidades, temas e capítulos está em [materiais/mapa_capitulos_aplicacoes.md](materiais/mapa_capitulos_aplicacoes.md).
 
-Você pode conhecer o livro na [página oficial](https://github.com/bapimentel/livro), na [Amazon](https://www.amazon.com.br/gp/product/6501351715) ou na [UICLAP](https://loja.uiclap.com/titulo/ua86619/). Ele é uma opção de aprofundamento; tudo o que está aqui roda e se estuda sem ele.
+Você pode conhecer o livro na [página oficial](https://github.com/bapimentel/livro), na [Amazon](https://www.amazon.com.br/gp/product/6501351715) ou na [UICLAP](https://loja.uiclap.com/titulo/ua86619/). O livro é o aprofundamento. Este repositório é uma tentativa de trazer os assuntos do livro de forma resumida e didática, com implementação em Python.
 
 ## Como está organizado
 
@@ -108,6 +108,9 @@ dados/                                 bases pequenas usadas pelas unidades
 figuras/  animacoes/                   estilo.mplstyle, fontes/ (geradores) e geradas/ (saídas)
 materiais/                             roteiro de temas, mapa com o livro, manual visual
 scripts/                               executar_todos.py e verificar_links.py
+requirements-basico.txt                bibliotecas das unidades (instaladas na unidade 00)
+requirements-aplicacoes.txt            extras dos complementos dos estudos de caso
+requirements-bigdata.txt               Spark para os scripts 08 a 12 da unidade 01 (precisa também do Java 17)
 ```
 
 Para conferir que tudo roda, da pasta principal e com o ambiente ativado:
@@ -116,7 +119,7 @@ Para conferir que tudo roda, da pasta principal e com o ambiente ativado:
 python scripts/executar_todos.py
 ```
 
-Os scripts rodam com `matplotlib` em modo não interativo e gravam as figuras; o resultado fica em `scripts/relatorio_execucao.txt`. Para rodar só uma unidade, passe o nome da pasta: `python scripts/executar_todos.py 12_arvores_de_decisao`.
+Os scripts rodam com `matplotlib` em modo não interativo e gravam as figuras; o resultado fica em `scripts/relatorio_execucao.txt`. Para rodar só uma unidade, passe o nome da pasta: `python scripts/executar_todos.py 12_arvores_de_decisao`. Os scripts de Spark da unidade 01 só rodam com o `requirements-bigdata.txt` instalado; sem ele, aparecem como `PULADO` e não contam como erro.
 
 Material organizado por **Bruno Pimentel**, professor do Instituto de Computação da UFAL.
 

@@ -1,0 +1,3 @@
+# Ambiente virtual criado na unidade 00 e arquivos compilados do Python
+.venv/
+__pycache__/

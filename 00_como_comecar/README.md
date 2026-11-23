@@ -67,6 +67,8 @@ Quando o ambiente está ativo, o nome `(.venv)` aparece no começo da linha do t
 
 A instalação baixa `numpy`, `pandas`, `matplotlib`, `scipy`, `scikit-learn`, `statsmodels` e `networkx`. As unidades 02 e 03 usam só o Python e o `pandas`; as outras bibliotecas entram quando forem necessárias.
 
+A parte de Big Data da unidade 01 (scripts 08 a 12) usa o Apache Spark, que precisa de `pip install -r requirements-bigdata.txt` e do Java 17. Ela é opcional para o resto do curso; as instruções estão na [própria unidade](../01_conceitos_e_big_data/#instalação-do-spark).
+
 ## 5. Executar o primeiro programa
 
 ```

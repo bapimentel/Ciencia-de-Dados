@@ -7,12 +7,15 @@
 #
 # Cada script roda em um processo separado, a partir da propria pasta, com MPLBACKEND=Agg
 # (matplotlib nao interativo). O resultado fica em scripts/relatorio_execucao.txt.
+# Scripts com uma linha "# requer: modulo" no cabecalho (por exemplo, os de Spark da unidade 01)
+# sao PULADOS, sem contar como erro, quando o modulo nao esta instalado.
 
 import os
 import re
 import sys
 import time
 import subprocess
+import importlib.util
 
 raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -41,10 +44,29 @@ ambiente = dict(os.environ)
 ambiente['MPLBACKEND'] = 'Agg'
 ambiente['PYTHONIOENCODING'] = 'utf-8'
 
+
+def modulos_faltando(script):
+    with open(script, encoding='utf-8') as arquivo:
+        for linha in arquivo.readlines()[:20]:
+            if linha.startswith('# requer:'):
+                modulos = [m.strip() for m in linha.split(':', 1)[1].split(',') if m.strip()]
+                return [m for m in modulos if importlib.util.find_spec(m) is None]
+    return []
+
+
 linhas = []
 falhas = 0
+pulados = 0
 inicio_geral = time.time()
 for script in scripts:
+    faltando = modulos_faltando(script)
+    if faltando:
+        pulados += 1
+        linha = (f'PULADO          {os.path.relpath(script, raiz)}  (falta {", ".join(faltando)}: '
+                 'pip install -r requirements-bigdata.txt)')
+        print(linha, flush=True)
+        linhas.append(linha)
+        continue
     inicio = time.time()
     resultado = subprocess.run([sys.executable, '-X', 'utf8', script], cwd=os.path.dirname(script),
                                capture_output=True, text=True, env=ambiente, encoding='utf-8')
@@ -59,7 +81,10 @@ for script in scripts:
     print(linha, flush=True)
     linhas.append(linha)
 
-resumo = f'\n{len(scripts) - falhas} de {len(scripts)} scripts executaram sem erro ({time.time() - inicio_geral:.0f} s no total).'
+executados = len(scripts) - pulados
+resumo = f'\n{executados - falhas} de {executados} scripts executaram sem erro ({time.time() - inicio_geral:.0f} s no total).'
+if pulados:
+    resumo += f'\n{pulados} script(s) pulado(s) por falta de dependencias opcionais.'
 print(resumo)
 with open(os.path.join(raiz, 'scripts', 'relatorio_execucao.txt'), 'w', encoding='utf-8') as arq:
     arq.write('\n'.join(linhas) + resumo + '\n')

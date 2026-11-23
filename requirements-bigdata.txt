@@ -1,0 +1,8 @@
+# Dependencias da parte de Big Data da unidade 01 (scripts 08 a 12, com Apache Spark).
+# Instale depois do requirements-basico.txt:  pip install -r requirements-bigdata.txt
+# Precisa de Python 3.11 ou mais novo. O Spark tambem precisa do Java 17 ou 21;
+# veja a secao "Instalacao do Spark" em 01_conceitos_e_big_data/README.md.
+# Testado em 2026-11 com Python 3.12, PySpark 4.3.0, PyArrow 26 e Java 17 (Eclipse Temurin).
+-r requirements-basico.txt
+pyspark>=4.0
+pyarrow>=15          # leitura de Parquet pelo pandas, para comparar com o Spark

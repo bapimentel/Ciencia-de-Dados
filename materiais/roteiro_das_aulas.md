@@ -6,7 +6,7 @@ Os temas da disciplina, na ordem em que costumam ser apresentados, e a unidade d
 |---|---|---|
 | Apresentação da disciplina | O que é Ciência de Dados; por que estudar; plano do curso | [00 · Como começar](../00_como_comecar/), [01 · Conceitos e Big Data](../01_conceitos_e_big_data/) |
 | Conceitos de Ciência de Dados | Cientista de dados; processo de análise; produto de dados; aplicações | [01 · Conceitos e Big Data](../01_conceitos_e_big_data/) |
-| Big Data | Geração de dados; volume, variedade, velocidade, veracidade; MapReduce | [01 · Conceitos e Big Data](../01_conceitos_e_big_data/) |
+| Big Data | Geração de dados; volume, variedade, velocidade, veracidade; MapReduce; Apache Spark (partições, avaliação preguiçosa, shuffle, Parquet); pandas × Spark; dados em fluxo (Structured Streaming, janelas, marca d'água, checkpoint) | [01 · Conceitos e Big Data](../01_conceitos_e_big_data/) |
 | Introdução a Python | Operações, tipos, estruturas de controle, funções, arquivos; primeiras tabelas | [02 · Python do zero](../02_python/), [03 · Primeiros dados](../03_primeiros_dados/) |
 | Estatística | Tipos de variáveis; medidas; distribuições e amostragem; intervalos; correlação; testes; duas variáveis qualitativas (qui-quadrado, kappa); médias e diferenças (Bland-Altman); várias variáveis (ANOVA); Simpson e Mantel-Haenszel; sobrevivência | [04 · Estatística](../04_estatistica/) |
 | Visualização de dados | Contexto; gráficos eficazes; saturação; atenção; pensar como designer; contar uma história | [05 · Visualização](../05_visualizacao/), [manual visual](manual_visual.md) |
