@@ -23,7 +23,7 @@ Se aparecer algo como `Python 3.12.4`, está pronto. Se aparecer um erro, em Lin
 Dois caminhos funcionam bem com este material:
 
 - **VS Code** (<https://code.visualstudio.com/>) com a extensão *Python*. Abra a pasta do repositório com *File > Open Folder*. Para executar um arquivo, use o botão de play no canto superior direito ou o terminal integrado.
-- **Spyder** (vem com a distribuição Anaconda, ou `pip install spyder`). Abra o arquivo e aperte F5 para rodar tudo, ou selecione algumas linhas e aperte F9 para rodar só aquele trecho. Esse modo "linha a linha" é ótimo para a unidade 01.
+- **Spyder** (vem com a distribuição Anaconda, ou `pip install spyder`). Abra o arquivo e aperte F5 para rodar tudo, ou selecione algumas linhas e aperte F9 para rodar só aquele trecho. Esse modo "linha a linha" é ótimo para a unidade 02 (Python do zero).
 
 Os scripts deste repositório são arquivos `.py` comuns. Não é preciso Jupyter.
 
@@ -65,7 +65,7 @@ pip install -r requirements-basico.txt
 
 Quando o ambiente está ativo, o nome `(.venv)` aparece no começo da linha do terminal. É preciso ativá-lo de novo toda vez que abrir um terminal novo. No VS Code, escolha esse ambiente como interpretador (*Python: Select Interpreter*).
 
-A instalação baixa `numpy`, `pandas`, `matplotlib`, `scipy`, `scikit-learn`, `statsmodels` e `networkx`. As unidades 01 e 02 usam só o Python e o `pandas`; as outras bibliotecas entram quando forem necessárias.
+A instalação baixa `numpy`, `pandas`, `matplotlib`, `scipy`, `scikit-learn`, `statsmodels` e `networkx`. As unidades 02 e 03 usam só o Python e o `pandas`; as outras bibliotecas entram quando forem necessárias.
 
 ## 5. Executar o primeiro programa
 
@@ -84,7 +84,7 @@ Se você digitar apenas `python` no terminal, entra no **console interativo**. N
 5
 ```
 
-Quando você executa um **arquivo** com `python nome.py`, o Python calcula as expressões, mas só mostra na tela o que estiver dentro de `print()`. Por isso os scripts da unidade 01 usam `print()` nos pontos em que você precisa ver algo. No Spyder, selecionar linhas e apertar F9 equivale ao console interativo.
+Quando você executa um **arquivo** com `python nome.py`, o Python calcula as expressões, mas só mostra na tela o que estiver dentro de `print()`. Por isso os scripts da unidade 02 usam `print()` nos pontos em que você precisa ver algo. No Spyder, selecionar linhas e apertar F9 equivale ao console interativo.
 
 Para sair do console, digite `exit()`.
 
@@ -117,4 +117,4 @@ pasta = os.path.dirname(os.path.abspath(__file__))
 
 ## Próxima etapa
 
-[01 · Python do zero](../01_python/)
+[01 · Conceitos e Big Data](../01_conceitos_e_big_data/) (ou, se preferir começar programando, [02 · Python do zero](../02_python/))

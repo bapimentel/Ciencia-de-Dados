@@ -1,5 +1,5 @@
 # Animacao: as arestas de um grafo pequeno entram uma a uma e a matriz de adjacencia vai sendo preenchida.
-# Saidas: animacoes/geradas/matriz_adjacencia_construcao.gif e .png. Mesmo grafo da aula 09.
+# Saidas: animacoes/geradas/matriz_adjacencia_construcao.gif e .png. Mesmo grafo da unidade 17.
 
 import os
 import numpy as np

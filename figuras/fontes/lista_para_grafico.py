@@ -1,5 +1,5 @@
 # Figura didatica: uma lista em Python vira tabela e depois grafico de barras.
-# Saida: figuras/geradas/lista_para_grafico.png. Dados inventados para a aula.
+# Saida: figuras/geradas/lista_para_grafico.png. Dados inventados para o exemplo.
 
 import os
 import matplotlib.pyplot as plt
